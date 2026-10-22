@@ -1,0 +1,394 @@
+{
+  "currentVersion": 11.5,
+  "cimVersion": "3.5.0",
+  "id": 2,
+  "name": "EDP_wardBoundary_2025",
+  "type": "Feature Layer",
+  "parentLayer": null,
+  "defaultVisibility": true,
+  "minScale": 0,
+  "maxScale": 0,
+  "canScaleSymbols": false,
+  "geometryType": "esriGeometryPolygon",
+  "description": "",
+  "copyrightText": "",
+  "editFieldsInfo": null,
+  "ownershipBasedAccessControlForFeatures": null,
+  "syncCanReturnChanges": false,
+  "relationships": [],
+  "isDataVersioned": false,
+  "isDataArchived": false,
+  "infoInEstimates": [
+    "extent",
+    "count"
+  ],
+  "isDataBranchVersioned": false,
+  "isDataReplicaTracked": false,
+  "isCoGoEnabled": false,
+  "supportsRollbackOnFailureParameter": true,
+  "archivingInfo": {
+    "supportsQueryWithHistoricMoment": false,
+    "startArchivingMoment": -1
+  },
+  "supportsStatistics": true,
+  "supportsExceedsLimitStatistics": true,
+  "supportsAdvancedQueries": true,
+  "supportsValidateSQL": true,
+  "supportsCoordinatesQuantization": true,
+  "supportsQuantizationEditMode": true,
+  "supportsCalculate": true,
+  "supportsASyncCalculate": true,
+  "supportsDatumTransformation": true,
+  "advancedQueryCapabilities": {
+    "supportsPagination": true,
+    "supportsQueryWithDistance": true,
+    "supportsReturningQueryExtent": true,
+    "supportsStatistics": true,
+    "supportsPercentileStatistics": true,
+    "supportsHavingClause": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsCountDistinct": true,
+    "supportsAdvancedQueryRelated": true,
+    "supportsQueryRelatedPagination": true,
+    "supportsCurrentUserQueries": true,
+    "supportsFullTextSearch": true,
+    "fullTextSearchCapabilities": {
+      "supportsSearchOperator": true,
+      "supportsOperator": false,
+      "supportsSqlExpressionInFullText": true
+    },
+    "fullTextSearchableFields": [],
+    "supportsQueryWithResultType": true,
+    "supportsReturningGeometryCentroid": true,
+    "supportsReturningGeometryEnvelope": true,
+    "supportsSqlExpression": true,
+    "supportsQueryWithDatumTransformation": true,
+    "supportsLod": false,
+    "supportsQueryWithLodSR": false,
+    "supportsQueryAnalytic": true,
+    "supportsTrueCurve": true,
+    "supportedCurveTypes": [
+      "esriGeometryCircularArc",
+      "esriGeometryEllipticArc",
+      "esriGeometryBezier3Curve"
+    ],
+    "supportsQueryWithCacheHint": false
+  },
+  "advancedQueryAnalyticCapabilities": {
+    "supportsLinearRegression": true,
+    "supportsAsync": true,
+    "supportsPercentileAnalytic": false
+  },
+  "advancedEditingCapabilities": {
+    "supportedSqlFormatsInCalculate": [
+      "standard"
+    ],
+    "supportsAsyncApplyEdits": true,
+    "supportsApplyEditsbyUploadID": true,
+    "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+  },
+  "hasGeometryProperties": true,
+  "geometryProperties": {
+    "shapeAreaFieldName": "Shape__Area",
+    "shapeLengthFieldName": "Shape__Length",
+    "units": "esriMeters"
+  },
+  "hasMetadata": true,
+  "extent": {
+    "xmin": 406113.7298999997,
+    "ymin": 1420903.5183000006,
+    "xmax": 427572.7926000003,
+    "ymax": 1463227.0953000002,
+    "zmin": 0,
+    "zmax": 0,
+    "mmin": -9.999e+35,
+    "mmax": -9.999e+35,
+    "spatialReference": {
+      "wkid": 32644,
+      "latestWkid": 32644,
+      "xyTolerance": 0.001,
+      "zTolerance": 0.001,
+      "mTolerance": 0.001,
+      "falseX": -5120900,
+      "falseY": -9998100,
+      "xyUnits": 10000,
+      "falseZ": -100000,
+      "zUnits": 10000,
+      "falseM": -100000,
+      "mUnits": 10000
+    }
+  },
+  "spatialReference": {
+    "wkid": 32644,
+    "latestWkid": 32644,
+    "xyTolerance": 0.001,
+    "zTolerance": 0.001,
+    "mTolerance": 0.001,
+    "falseX": -5120900,
+    "falseY": -9998100,
+    "xyUnits": 10000,
+    "falseZ": -100000,
+    "zUnits": 10000,
+    "falseM": -100000,
+    "mUnits": 10000
+  },
+  "sourceSpatialReference": {
+    "wkid": 32644,
+    "latestWkid": 32644,
+    "xyTolerance": 0.001,
+    "zTolerance": 0.001,
+    "mTolerance": 0.001,
+    "falseX": -5120900,
+    "falseY": -9998100,
+    "xyUnits": 10000,
+    "falseZ": -100000,
+    "zUnits": 10000,
+    "falseM": -100000,
+    "mUnits": 10000
+  },
+  "drawingInfo": {
+    "renderer": {
+      "type": "simple",
+      "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+          191,
+          252,
+          204,
+          255
+        ],
+        "outline": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            110,
+            110,
+            110,
+            255
+          ],
+          "width": 0.7
+        }
+      }
+    },
+    "scaleSymbols": true,
+    "transparency": 0,
+    "labelingInfo": null
+  },
+  "hasM": true,
+  "hasZ": true,
+  "enableZDefaults": true,
+  "zDefault": 0,
+  "supportsVCSProjection": true,
+  "allowUpdateWithoutMValues": true,
+  "allowGeometryUpdates": true,
+  "allowTrueCurvesUpdates": true,
+  "onlyAllowTrueCurveUpdatesByTrueCurveClients": true,
+  "hasAttachments": false,
+  "supportsApplyEditsWithGlobalIds": false,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "objectIdField": "objectid",
+  "globalIdField": "",
+  "displayField": "ac_name",
+  "typeIdField": "",
+  "subtypeField": "",
+  "fields": [
+    {
+      "name": "objectid",
+      "type": "esriFieldTypeOID",
+      "alias": "objectid",
+      "domain": null,
+      "editable": false,
+      "nullable": false,
+      "defaultValue": null,
+      "modelName": "objectid"
+    },
+    {
+      "name": "zone_id",
+      "type": "esriFieldTypeString",
+      "alias": "Zone_ID",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 50,
+      "defaultValue": null,
+      "modelName": "zone_id"
+    },
+    {
+      "name": "ward_id",
+      "type": "esriFieldTypeString",
+      "alias": "Ward_ID",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 50,
+      "defaultValue": null,
+      "modelName": "ward_id"
+    },
+    {
+      "name": "ward",
+      "type": "esriFieldTypeString",
+      "alias": "WARD_NO",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 254,
+      "defaultValue": null,
+      "modelName": "ward_no"
+    },
+    {
+      "name": "zone",
+      "type": "esriFieldTypeString",
+      "alias": "ZONE_NO",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 50,
+      "defaultValue": null,
+      "modelName": "zone_no"
+    },
+    {
+      "name": "gccdept_sde_wardboundary_area",
+      "type": "esriFieldTypeDouble",
+      "alias": "gccdept.sde.WardBoundary.area",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "defaultValue": null,
+      "modelName": "gccdept_sde_wardboundary_area"
+    },
+    {
+      "name": "region",
+      "type": "esriFieldTypeString",
+      "alias": "region",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 255,
+      "defaultValue": null,
+      "modelName": "region"
+    },
+    {
+      "name": "ac_name",
+      "type": "esriFieldTypeString",
+      "alias": "ac_name",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 1073741822,
+      "defaultValue": null,
+      "modelName": "ac_name"
+    },
+    {
+      "name": "ac_no",
+      "type": "esriFieldTypeString",
+      "alias": "ac_no",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 1073741822,
+      "defaultValue": null,
+      "modelName": "ac_no"
+    },
+    {
+      "name": "Shape__Area",
+      "type": "esriFieldTypeDouble",
+      "alias": "st_area(shape)",
+      "domain": null,
+      "editable": false,
+      "nullable": true,
+      "defaultValue": null,
+      "modelName": "st_area(shape)",
+      "required": true
+    },
+    {
+      "name": "Shape__Length",
+      "type": "esriFieldTypeDouble",
+      "alias": "st_perimeter(shape)",
+      "domain": null,
+      "editable": false,
+      "nullable": true,
+      "defaultValue": null,
+      "modelName": "st_perimeter(shape)",
+      "required": true
+    }
+  ],
+  "geometryField": {
+    "name": "shape",
+    "type": "esriFieldTypeGeometry",
+    "alias": "shape",
+    "domain": null,
+    "editable": true,
+    "nullable": true,
+    "defaultValue": null,
+    "modelName": "shape"
+  },
+  "indexes": [
+    {
+      "name": "r172_sde_rowid_uk",
+      "isAscending": true,
+      "isUnique": true,
+      "description": "",
+      "fields": "objectid"
+    },
+    {
+      "name": "a63_ix1",
+      "isAscending": true,
+      "isUnique": true,
+      "description": "",
+      "fields": "shape"
+    }
+  ],
+  "datesInUnknownTimezone": false,
+  "dateFieldsTimeReference": {
+    "timeZone": "UTC",
+    "timeZoneIANA": "Etc/UTC",
+    "respectsDaylightSaving": false
+  },
+  "preferredTimeReference": null,
+  "types": [],
+  "templates": [
+    {
+      "name": "EDP_wardBoundary_2025",
+      "description": "",
+      "prototype": {
+        "attributes": {
+          "ac_no": null,
+          "ac_name": null,
+          "zone_id": null,
+          "ward_id": null,
+          "ward": null,
+          "zone": null,
+          "gccdept_sde_wardboundary_area": null,
+          "region": null
+        }
+      },
+      "drawingTool": "esriFeatureEditToolPolygon"
+    }
+  ],
+  "maxRecordCount": 2000,
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "supportedExportFormats": "sqlite,filegdb,shapefile,csv,geojson",
+  "capabilities": "Query",
+  "useStandardizedQueries": true,
+  "bigIntegerRestrictedTo53Bits": true,
+  "supportedSpatialRelationships": [
+    "esriSpatialRelIntersects",
+    "esriSpatialRelContains",
+    "esriSpatialRelCrosses",
+    "esriSpatialRelEnvelopeIntersects",
+    "esriSpatialRelIndexIntersects",
+    "esriSpatialRelOverlaps",
+    "esriSpatialRelTouches",
+    "esriSpatialRelWithin",
+    "esriSpatialRelRelation"
+  ],
+  "supportsAppend": true,
+  "supportedAppendFormats": "FILEGDB,PBF",
+  "standardMaxRecordCount": 4000,
+  "tileMaxRecordCount": 4000,
+  "standardMaxRecordCountNoGeometry": 32000,
+  "maxRecordCountFactor": 1,
+  "serviceItemId": "5365e5b036b04051b898a3f8cdc07ea5"
+}

@@ -1,0 +1,37 @@
+{
+  "retrievedAt": "2026-10-21T06:25:50.435Z",
+  "serviceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2",
+  "layer": {
+    "id": 2,
+    "name": "EDP_wardBoundary_2025",
+    "geometryType": "esriGeometryPolygon"
+  },
+  "sourceSpatialReference": "EPSG:32644",
+  "canonicalSpatialReference": "EPSG:4326",
+  "featureCount": 200,
+  "uniqueWardIds": 200,
+  "geometryTypes": [
+    "Polygon",
+    "MultiPolygon"
+  ],
+  "bounds": {
+    "minLongitude": 80.13409479088227,
+    "minLatitude": 12.852092938839165,
+    "maxLongitude": 80.33149353038425,
+    "maxLatitude": 13.235049055200307
+  },
+  "retainedProperties": [
+    "objectid",
+    "zone_id",
+    "ward_id",
+    "ward",
+    "zone",
+    "region",
+    "ac_name",
+    "ac_no"
+  ],
+  "validation": {
+    "missingWardIds": 0,
+    "duplicateWardIds": []
+  }
+}
