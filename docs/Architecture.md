@@ -38,3 +38,12 @@ GCC Feature Service
 ```
 
 Retain identifiers and source attributes needed for selection: ward number/ID, zone ID, ward, zone, region, assembly-constituency name, and assembly-constituency number, when present and verified.
+
+## Authority-data extension (2026-10-25)
+
+Static source-backed JSON datasets have been collected for ward cards. They live in data/authorities/source/ (raw), data/authorities/canonical/ (generated canonical records), and app/public/data/authorities/ (browser-ready copies). scripts/build-authority-data.mjs regenerates the records.
+
+The selected-ward card fetches the browser-ready authority JSON separately from map geometry and indexes records by ward number, zone number, and Assembly Constituency ID. Candidate ward labels carry nameConfirmed: no; the UI appends * at render time. Missing records are shown as missing or pending, not inferred. No database or backend is needed for this snapshot.
+
+Only 108 of 200 ward-to-Assembly links are populated in GCC's 2025 ward layer. Keep other links explicitly unmapped until an official crosswalk is available. See docs/WARD_AND_AUTHORITY_DATA.md.
+

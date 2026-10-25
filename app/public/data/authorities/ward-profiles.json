@@ -1,0 +1,4179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-25",
+  "source": "GCC 2025 ward layer for IDs/zones/available AC fields; supplied list for candidate locality labels",
+  "wards": [
+    {
+      "wardNumber": 1,
+      "wardId": "18887",
+      "name": "Kathivakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 2,
+      "wardId": "18888",
+      "name": "Ennore",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 3,
+      "wardId": "18889",
+      "name": "Ernavoor",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 4,
+      "wardId": "18890",
+      "name": "Ajax",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 5,
+      "wardId": "18891",
+      "name": "Tiruvottiyur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 6,
+      "wardId": "18892",
+      "name": "Kaladipet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 7,
+      "wardId": "18893",
+      "name": "Rajakadai",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 8,
+      "wardId": "18894",
+      "name": "Thangal",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 9,
+      "wardId": "18895",
+      "name": "Tollgate",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 10,
+      "wardId": "18896",
+      "name": "Korukkupet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 11,
+      "wardId": "18897",
+      "name": "Dr. Radhakrishnan Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 12,
+      "wardId": "18898",
+      "name": "Cheriyan Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 13,
+      "wardId": "18899",
+      "name": "Jeeva Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 14,
+      "wardId": "18900",
+      "name": "Tondiarpet (North)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 1,
+        "name": "Thiruvottriyur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 15,
+      "wardId": "18901",
+      "name": "Edayanchavadi",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 2,
+        "name": "Manali",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 16,
+      "wardId": "18902",
+      "name": "Kadapakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 2,
+        "name": "Manali",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 17,
+      "wardId": "18903",
+      "name": "Theeyambakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 2,
+        "name": "Manali",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 18,
+      "wardId": "18904",
+      "name": "Manali",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 2,
+        "name": "Manali",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 19,
+      "wardId": "18905",
+      "name": "Mathur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 2,
+        "name": "Manali",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 20,
+      "wardId": "18906",
+      "name": "Vadaperumbakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 2,
+        "name": "Manali",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 21,
+      "wardId": "18907",
+      "name": "Kosapur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 2,
+        "name": "Manali",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 22,
+      "wardId": "92157",
+      "name": "Kavankarai",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 2,
+        "name": "Manali",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 23,
+      "wardId": "18909",
+      "name": "Puzhal",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 24,
+      "wardId": "18910",
+      "name": "Puthagaram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 25,
+      "wardId": "18911",
+      "name": "Kathirvedu",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 26,
+      "wardId": "18912",
+      "name": "Surapet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 27,
+      "wardId": "18913",
+      "name": "Kathirvedu (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 28,
+      "wardId": "18914",
+      "name": "Tatankuppam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 29,
+      "wardId": "18915",
+      "name": "Madhavaram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 30,
+      "wardId": "18916",
+      "name": "Madhavaram (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 31,
+      "wardId": "18917",
+      "name": "Kodungaiyur (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 32,
+      "wardId": "18918",
+      "name": "Kodungaiyur (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 33,
+      "wardId": "18919",
+      "name": "Erukkencherry",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 3,
+        "name": "Madhavaram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 34,
+      "wardId": "18920",
+      "name": "Vyasarpadi",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 12,
+          "name": "Perambur",
+          "mlaName": "C. Joseph Vijay",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Perambur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 35,
+      "wardId": "18921",
+      "name": "Perambur (North)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 12,
+          "name": "Perambur",
+          "mlaName": "C. Joseph Vijay",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Perambur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 36,
+      "wardId": "18922",
+      "name": "Perambur (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 12,
+          "name": "Perambur",
+          "mlaName": "C. Joseph Vijay",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Perambur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 37,
+      "wardId": "18923",
+      "name": "Sharma Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 12,
+          "name": "Perambur",
+          "mlaName": "C. Joseph Vijay",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Perambur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 38,
+      "wardId": "18924",
+      "name": "Tondiarpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 11,
+          "name": "Dr. Radhakrishnan Nagar",
+          "mlaName": "N. Marie Wilson",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Dr.R.K.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 39,
+      "wardId": "18925",
+      "name": "Old Washermanpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 11,
+          "name": "Dr. Radhakrishnan Nagar",
+          "mlaName": "N. Marie Wilson",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Dr.R.K.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 40,
+      "wardId": "18926",
+      "name": "Meenambal Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 11,
+          "name": "Dr. Radhakrishnan Nagar",
+          "mlaName": "N. Marie Wilson",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Dr.R.K.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 41,
+      "wardId": "18927",
+      "name": "Bojaraja Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 11,
+          "name": "Dr. Radhakrishnan Nagar",
+          "mlaName": "N. Marie Wilson",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Dr.R.K.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 42,
+      "wardId": "18928",
+      "name": "Sanjeevirayanpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 11,
+          "name": "Dr. Radhakrishnan Nagar",
+          "mlaName": "N. Marie Wilson",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Dr.R.K.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 43,
+      "wardId": "18929",
+      "name": "Grace Garden",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 11,
+          "name": "Dr. Radhakrishnan Nagar",
+          "mlaName": "N. Marie Wilson",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Dr.R.K.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 44,
+      "wardId": "18930",
+      "name": "Royapuram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 12,
+          "name": "Perambur",
+          "mlaName": "C. Joseph Vijay",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Perambur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 45,
+      "wardId": "18931",
+      "name": "Singara Garden",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 12,
+          "name": "Perambur",
+          "mlaName": "C. Joseph Vijay",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Perambur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 46,
+      "wardId": "18932",
+      "name": "Kalmandapam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 12,
+          "name": "Perambur",
+          "mlaName": "C. Joseph Vijay",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Perambur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 47,
+      "wardId": "18933",
+      "name": "Clive Battery",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 11,
+          "name": "Dr. Radhakrishnan Nagar",
+          "mlaName": "N. Marie Wilson",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Dr.R.K.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 48,
+      "wardId": "18934",
+      "name": "Harbour",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 4,
+        "name": "Tondiarpet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 17,
+          "name": "Royapuram",
+          "mlaName": "K. V. Vijay Damu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Royapuram"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 49,
+      "wardId": "18935",
+      "name": "George Town",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 17,
+          "name": "Royapuram",
+          "mlaName": "K. V. Vijay Damu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Royapuram"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 50,
+      "wardId": "18936",
+      "name": "Elephant Gate",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 17,
+          "name": "Royapuram",
+          "mlaName": "K. V. Vijay Damu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Royapuram"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 51,
+      "wardId": "18937",
+      "name": "Sowcarpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 17,
+          "name": "Royapuram",
+          "mlaName": "K. V. Vijay Damu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Royapuram"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 52,
+      "wardId": "18938",
+      "name": "Park Town",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 17,
+          "name": "Royapuram",
+          "mlaName": "K. V. Vijay Damu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Royapuram"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 53,
+      "wardId": "18939",
+      "name": "Periamet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 17,
+          "name": "Royapuram",
+          "mlaName": "K. V. Vijay Damu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Royapuram"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 54,
+      "wardId": "18940",
+      "name": "Edapalayam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 18,
+          "name": "Harbour",
+          "mlaName": "P. K. Sekarbabu",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Harbour"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 55,
+      "wardId": "18941",
+      "name": "Choolai",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 18,
+          "name": "Harbour",
+          "mlaName": "P. K. Sekarbabu",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Harbour"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 56,
+      "wardId": "18942",
+      "name": "Pattalam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 18,
+          "name": "Harbour",
+          "mlaName": "P. K. Sekarbabu",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Harbour"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 57,
+      "wardId": "18943",
+      "name": "Pulianthope",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 18,
+          "name": "Harbour",
+          "mlaName": "P. K. Sekarbabu",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Harbour"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 58,
+      "wardId": "18944",
+      "name": "Kosapet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 16,
+          "name": "Egmore (SC)",
+          "mlaName": "Rajmohan",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Egmore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 59,
+      "wardId": "18945",
+      "name": "Otteri",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 18,
+          "name": "Harbour",
+          "mlaName": "P. K. Sekarbabu",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Harbour"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 60,
+      "wardId": "18946",
+      "name": "Basin Bridge",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 18,
+          "name": "Harbour",
+          "mlaName": "P. K. Sekarbabu",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Harbour"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 61,
+      "wardId": "18947",
+      "name": "Kondithope",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 16,
+          "name": "Egmore (SC)",
+          "mlaName": "Rajmohan",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Egmore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 62,
+      "wardId": "18948",
+      "name": "Mint",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 19,
+          "name": "Chepauk-Thiruvallikeni",
+          "mlaName": "Udhayanidhi Stalin",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Chepaulk Triplicane"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 63,
+      "wardId": "18949",
+      "name": "Vallal Seethakathi Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 5,
+        "name": "Royapuram",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 19,
+          "name": "Chepauk-Thiruvallikeni",
+          "mlaName": "Udhayanidhi Stalin",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Chepaulk Triplicane"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 64,
+      "wardId": "18950",
+      "name": "Kolathur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 13,
+          "name": "Kolathur",
+          "mlaName": "V. S. Babu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Kolathur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 65,
+      "wardId": "18951",
+      "name": "Srinivasa Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 13,
+          "name": "Kolathur",
+          "mlaName": "V. S. Babu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Kolathur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 66,
+      "wardId": "18952",
+      "name": "Jagannathan Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 13,
+          "name": "Kolathur",
+          "mlaName": "V. S. Babu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Kolathur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 67,
+      "wardId": "18953",
+      "name": "Villivakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 13,
+          "name": "Kolathur",
+          "mlaName": "V. S. Babu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Kolathur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 68,
+      "wardId": "18954",
+      "name": "Villivakkam (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 13,
+          "name": "Kolathur",
+          "mlaName": "V. S. Babu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Kolathur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 69,
+      "wardId": "18955",
+      "name": "Ayanavaram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 13,
+          "name": "Kolathur",
+          "mlaName": "V. S. Babu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Kolathur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 70,
+      "wardId": "18956",
+      "name": "Ayanavaram (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 13,
+          "name": "Kolathur",
+          "mlaName": "V. S. Babu",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Kolathur"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 71,
+      "wardId": "18957",
+      "name": "Konnur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 15,
+          "name": "Thiru-Vi-Ka Nagar (SC)",
+          "mlaName": "M. R. Pallavi",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thiru.Vi.Ka.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 72,
+      "wardId": "18958",
+      "name": "Perambur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 15,
+          "name": "Thiru-Vi-Ka Nagar (SC)",
+          "mlaName": "M. R. Pallavi",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thiru.Vi.Ka.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 73,
+      "wardId": "18959",
+      "name": "Perambur High Road",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 15,
+          "name": "Thiru-Vi-Ka Nagar (SC)",
+          "mlaName": "M. R. Pallavi",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thiru.Vi.Ka.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 74,
+      "wardId": "18960",
+      "name": "Thiru. Vi. Ka. Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 15,
+          "name": "Thiru-Vi-Ka Nagar (SC)",
+          "mlaName": "M. R. Pallavi",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thiru.Vi.Ka.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 75,
+      "wardId": "18961",
+      "name": "Wadia Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 15,
+          "name": "Thiru-Vi-Ka Nagar (SC)",
+          "mlaName": "M. R. Pallavi",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thiru.Vi.Ka.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 76,
+      "wardId": "18962",
+      "name": "Dr. Ambedkar Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 15,
+          "name": "Thiru-Vi-Ka Nagar (SC)",
+          "mlaName": "M. R. Pallavi",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thiru.Vi.Ka.Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 77,
+      "wardId": "18963",
+      "name": "Pulianthope (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 16,
+          "name": "Egmore (SC)",
+          "mlaName": "Rajmohan",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Egmore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 78,
+      "wardId": "18964",
+      "name": "Otteri (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 6,
+        "name": "Thiru-Vi-Ka Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 16,
+          "name": "Egmore (SC)",
+          "mlaName": "Rajmohan",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Egmore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 79,
+      "wardId": "18965",
+      "name": "Oragadam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 80,
+      "wardId": "18966",
+      "name": "Menambedu",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 81,
+      "wardId": "18967",
+      "name": "Korattur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 82,
+      "wardId": "18968",
+      "name": "Korattur (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 83,
+      "wardId": "18969",
+      "name": "Padi",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 84,
+      "wardId": "18970",
+      "name": "Ambattur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 85,
+      "wardId": "18971",
+      "name": "Ambattur Industrial Estate",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 86,
+      "wardId": "18972",
+      "name": "Mannurpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 87,
+      "wardId": "18973",
+      "name": "Mogappair (North)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 88,
+      "wardId": "18974",
+      "name": "Mogappair (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 89,
+      "wardId": "18975",
+      "name": "Mogappair (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 90,
+      "wardId": "18976",
+      "name": "Nolambur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 91,
+      "wardId": "18977",
+      "name": "Anna Nagar (West Extn)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 92,
+      "wardId": "18978",
+      "name": "Padi (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 93,
+      "wardId": "18979",
+      "name": "TVS Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 7,
+        "name": "Ambattur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 94,
+      "wardId": "18980",
+      "name": "Anna Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 14,
+          "name": "Villivakkam",
+          "mlaName": "Aadhav Arjuna",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Villivakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 95,
+      "wardId": "18981",
+      "name": "Anna Nagar (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 14,
+          "name": "Villivakkam",
+          "mlaName": "Aadhav Arjuna",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Villivakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 96,
+      "wardId": "18982",
+      "name": "Shenoy Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 14,
+          "name": "Villivakkam",
+          "mlaName": "Aadhav Arjuna",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Villivakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 97,
+      "wardId": "18983",
+      "name": "Aminjikarai",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 14,
+          "name": "Villivakkam",
+          "mlaName": "Aadhav Arjuna",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Villivakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 98,
+      "wardId": "18984",
+      "name": "Aminjikarai (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 14,
+          "name": "Villivakkam",
+          "mlaName": "Aadhav Arjuna",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Villivakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 99,
+      "wardId": "18985",
+      "name": "Kilpauk",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 16,
+          "name": "Egmore (SC)",
+          "mlaName": "Rajmohan",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Egmore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 100,
+      "wardId": "18986",
+      "name": "Kilpauk (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 21,
+          "name": "Anna Nagar",
+          "mlaName": "V. K. Ramkumar",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Anna Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 101,
+      "wardId": "18987",
+      "name": "Chetpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 21,
+          "name": "Anna Nagar",
+          "mlaName": "V. K. Ramkumar",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Anna Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 102,
+      "wardId": "18988",
+      "name": "Nungambakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 21,
+          "name": "Anna Nagar",
+          "mlaName": "V. K. Ramkumar",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Anna Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 103,
+      "wardId": "18989",
+      "name": "Thousand Lights",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 21,
+          "name": "Anna Nagar",
+          "mlaName": "V. K. Ramkumar",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Anna Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 104,
+      "wardId": "18990",
+      "name": "Thousand Lights (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 14,
+          "name": "Villivakkam",
+          "mlaName": "Aadhav Arjuna",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Villivakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 105,
+      "wardId": "18991",
+      "name": "Choolaimedu",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 21,
+          "name": "Anna Nagar",
+          "mlaName": "V. K. Ramkumar",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Anna Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 106,
+      "wardId": "18992",
+      "name": "Choolaimedu (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 21,
+          "name": "Anna Nagar",
+          "mlaName": "V. K. Ramkumar",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Anna Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 107,
+      "wardId": "18993",
+      "name": "MMDA Colony",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 21,
+          "name": "Anna Nagar",
+          "mlaName": "V. K. Ramkumar",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Anna Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 108,
+      "wardId": "18994",
+      "name": "Arumbakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 8,
+        "name": "Anna Nagar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 16,
+          "name": "Egmore (SC)",
+          "mlaName": "Rajmohan",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Egmore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 109,
+      "wardId": "18995",
+      "name": "Gopalapuram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 20,
+          "name": "Thousand Lights",
+          "mlaName": "Prabhakar J. C. D.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thousand Light"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 110,
+      "wardId": "18996",
+      "name": "Royapettah",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 20,
+          "name": "Thousand Lights",
+          "mlaName": "Prabhakar J. C. D.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thousand Light"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 111,
+      "wardId": "18997",
+      "name": "Chepauk",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 20,
+          "name": "Thousand Lights",
+          "mlaName": "Prabhakar J. C. D.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thousand Light"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 112,
+      "wardId": "18998",
+      "name": "Triplicane",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 20,
+          "name": "Thousand Lights",
+          "mlaName": "Prabhakar J. C. D.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thousand Light"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 113,
+      "wardId": "18999",
+      "name": "Triplicane (Teplicane East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 20,
+          "name": "Thousand Lights",
+          "mlaName": "Prabhakar J. C. D.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thousand Light"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 114,
+      "wardId": "19000",
+      "name": "Marina",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 19,
+          "name": "Chepauk-Thiruvallikeni",
+          "mlaName": "Udhayanidhi Stalin",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Chepaulk Triplicane"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 115,
+      "wardId": "19001",
+      "name": "Santhome",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 19,
+          "name": "Chepauk-Thiruvallikeni",
+          "mlaName": "Udhayanidhi Stalin",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Chepaulk Triplicane"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 116,
+      "wardId": "19002",
+      "name": "Mylapore",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 19,
+          "name": "Chepauk-Thiruvallikeni",
+          "mlaName": "Udhayanidhi Stalin",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Chepaulk Triplicane"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 117,
+      "wardId": "19003",
+      "name": "Alwarpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 20,
+          "name": "Thousand Lights",
+          "mlaName": "Prabhakar J. C. D.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thousand Light"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 118,
+      "wardId": "19004",
+      "name": "Teynampet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 20,
+          "name": "Thousand Lights",
+          "mlaName": "Prabhakar J. C. D.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thousand Light"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 119,
+      "wardId": "19005",
+      "name": "Teynampet (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 19,
+          "name": "Chepauk-Thiruvallikeni",
+          "mlaName": "Udhayanidhi Stalin",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Chepaulk Triplicane"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 120,
+      "wardId": "19006",
+      "name": "Nandanam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 19,
+          "name": "Chepauk-Thiruvallikeni",
+          "mlaName": "Udhayanidhi Stalin",
+          "party": "Dravida Munnetra Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Chepaulk Triplicane"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 121,
+      "wardId": "19007",
+      "name": "CIT Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 25,
+          "name": "Mylapore",
+          "mlaName": "Venkataramanan P.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Mylapore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 122,
+      "wardId": "19008",
+      "name": "T. Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 25,
+          "name": "Mylapore",
+          "mlaName": "Venkataramanan P.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Mylapore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 123,
+      "wardId": "19009",
+      "name": "Pondy Bazaar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 25,
+          "name": "Mylapore",
+          "mlaName": "Venkataramanan P.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Mylapore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 124,
+      "wardId": "19010",
+      "name": "Kodambakkam (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 25,
+          "name": "Mylapore",
+          "mlaName": "Venkataramanan P.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Mylapore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 125,
+      "wardId": "19011",
+      "name": "Mylapore (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 25,
+          "name": "Mylapore",
+          "mlaName": "Venkataramanan P.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Mylapore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 126,
+      "wardId": "19012",
+      "name": "Mandaveli",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 9,
+        "name": "Teynampet",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 25,
+          "name": "Mylapore",
+          "mlaName": "Venkataramanan P.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Mylapore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 127,
+      "wardId": "19013",
+      "name": "Kodambakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 22,
+          "name": "Virugampakkam",
+          "mlaName": "Sabarinathan R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Virugambakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 128,
+      "wardId": "19014",
+      "name": "Vadapalani",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 22,
+          "name": "Virugampakkam",
+          "mlaName": "Sabarinathan R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Virugambakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 129,
+      "wardId": "19015",
+      "name": "Vadapalani (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 22,
+          "name": "Virugampakkam",
+          "mlaName": "Sabarinathan R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Virugambakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 130,
+      "wardId": "19016",
+      "name": "Virugambakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 24,
+          "name": "Thiyagarayanagar",
+          "mlaName": "Anand N.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thyagaraya Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 131,
+      "wardId": "19017",
+      "name": "Virugambakkam (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 24,
+          "name": "Thiyagarayanagar",
+          "mlaName": "Anand N.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thyagaraya Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 132,
+      "wardId": "19018",
+      "name": "Saligramam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 24,
+          "name": "Thiyagarayanagar",
+          "mlaName": "Anand N.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thyagaraya Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 133,
+      "wardId": "19019",
+      "name": "Ashok Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 24,
+          "name": "Thiyagarayanagar",
+          "mlaName": "Anand N.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thyagaraya Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 134,
+      "wardId": "19020",
+      "name": "Ashok Nagar (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 24,
+          "name": "Thiyagarayanagar",
+          "mlaName": "Anand N.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thyagaraya Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 135,
+      "wardId": "19021",
+      "name": "MGR Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 24,
+          "name": "Thiyagarayanagar",
+          "mlaName": "Anand N.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thyagaraya Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 136,
+      "wardId": "19022",
+      "name": "K K Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 22,
+          "name": "Virugampakkam",
+          "mlaName": "Sabarinathan R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Virugambakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 137,
+      "wardId": "19023",
+      "name": "K K Nagar (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 22,
+          "name": "Virugampakkam",
+          "mlaName": "Sabarinathan R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Virugambakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 138,
+      "wardId": "19024",
+      "name": "Saidapet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 22,
+          "name": "Virugampakkam",
+          "mlaName": "Sabarinathan R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Virugambakkam"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 139,
+      "wardId": "19025",
+      "name": "Saidapet (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 23,
+          "name": "Saidapet",
+          "mlaName": "Arul Prakasam M.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Saidapet"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 140,
+      "wardId": "19026",
+      "name": "Jafferkhanpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 23,
+          "name": "Saidapet",
+          "mlaName": "Arul Prakasam M.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Saidapet"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 141,
+      "wardId": "19027",
+      "name": "Guindy (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 24,
+          "name": "Thiyagarayanagar",
+          "mlaName": "Anand N.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Thyagaraya Nagar"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 142,
+      "wardId": "19028",
+      "name": "Guindy (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 10,
+        "name": "Kodambakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 23,
+          "name": "Saidapet",
+          "mlaName": "Arul Prakasam M.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Saidapet"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 143,
+      "wardId": "19029",
+      "name": "Koyambedu",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 144,
+      "wardId": "19030",
+      "name": "Chinmaya Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 145,
+      "wardId": "19031",
+      "name": "Nerkundram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 146,
+      "wardId": "19032",
+      "name": "Alapakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 147,
+      "wardId": "19033",
+      "name": "Valasaravakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 148,
+      "wardId": "19034",
+      "name": "Karambakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 149,
+      "wardId": "19035",
+      "name": "Porur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 150,
+      "wardId": "19036",
+      "name": "Ramapuram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 151,
+      "wardId": "19037",
+      "name": "Ramapuram (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 152,
+      "wardId": "19038",
+      "name": "Mugalivakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 153,
+      "wardId": "19039",
+      "name": "Manapakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 154,
+      "wardId": "19040",
+      "name": "Nesapakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 155,
+      "wardId": "19041",
+      "name": "Rayala Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 11,
+        "name": "Valasaravakkam",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 156,
+      "wardId": "19042",
+      "name": "Alandur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 157,
+      "wardId": "19043",
+      "name": "Adambakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 158,
+      "wardId": "19044",
+      "name": "Pazhavanthangal",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 159,
+      "wardId": "19045",
+      "name": "Nanganallur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 160,
+      "wardId": "19046",
+      "name": "Nanganallur (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 161,
+      "wardId": "19047",
+      "name": "Meenambakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 162,
+      "wardId": "19048",
+      "name": "St. Thomas Mount",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 163,
+      "wardId": "19049",
+      "name": "Cantonment",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 164,
+      "wardId": "19050",
+      "name": "Mugalivakkam (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 165,
+      "wardId": "19051",
+      "name": "Thillaiganga Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 166,
+      "wardId": "19052",
+      "name": "Moovarasampet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 167,
+      "wardId": "19053",
+      "name": "Cowl Bazaar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 12,
+        "name": "Alandur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 168,
+      "wardId": "92158",
+      "name": "Guindy",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 23,
+          "name": "Saidapet",
+          "mlaName": "Arul Prakasam M.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Saidapet"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 169,
+      "wardId": "92159",
+      "name": "Saidapet (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 23,
+          "name": "Saidapet",
+          "mlaName": "Arul Prakasam M.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Saidapet"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 170,
+      "wardId": "19056",
+      "name": "Kotturpuram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 23,
+          "name": "Saidapet",
+          "mlaName": "Arul Prakasam M.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Saidapet"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 171,
+      "wardId": "19057",
+      "name": "Taramani",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 25,
+          "name": "Mylapore",
+          "mlaName": "Venkataramanan P.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Mylapore"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 172,
+      "wardId": "19058",
+      "name": "Adyar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 23,
+          "name": "Saidapet",
+          "mlaName": "Arul Prakasam M.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Saidapet"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 173,
+      "wardId": "19059",
+      "name": "Besant Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 174,
+      "wardId": "19060",
+      "name": "Kalakshetra Colony",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 175,
+      "wardId": "19061",
+      "name": "Thiruvanmiyur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 176,
+      "wardId": "19062",
+      "name": "Thiruvanmiyur (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 177,
+      "wardId": "19063",
+      "name": "Velachery",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 178,
+      "wardId": "19064",
+      "name": "Velachery (East)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 179,
+      "wardId": "19065",
+      "name": "Velachery (West)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 180,
+      "wardId": "19066",
+      "name": "Gandhi Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 13,
+        "name": "Adyar",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 181,
+      "wardId": "92160",
+      "name": "Puzhuthivakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [
+        {
+          "number": 26,
+          "name": "Velachery",
+          "mlaName": "Kumar R.",
+          "party": "Tamilaga Vettri Kazhagam",
+          "status": "confirmed_from_GCC_2025_ward_layer",
+          "sourceAttributeName": "Velachery"
+        }
+      ],
+      "assemblyMappingStatus": "confirmed_from_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 182,
+      "wardId": "92161",
+      "name": "Ullagaram",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 183,
+      "wardId": "19069",
+      "name": "Madipakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 184,
+      "wardId": "19070",
+      "name": "Madipakkam (South)",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 185,
+      "wardId": "19071",
+      "name": "Jaladianpet",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 186,
+      "wardId": "19072",
+      "name": "Perungudi",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 187,
+      "wardId": "19073",
+      "name": "Apollo Apollo Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 188,
+      "wardId": "19074",
+      "name": "Kottivakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 189,
+      "wardId": "19075",
+      "name": "Palavakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 190,
+      "wardId": "19076",
+      "name": "Ramchandra Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied Ward 190 description (not independently confirmed)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 191,
+      "wardId": "19077",
+      "name": "Nehru Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 14,
+        "name": "Perungudi",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 192,
+      "wardId": "19078",
+      "name": "Neelankarai",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 193,
+      "wardId": "19079",
+      "name": "Injambakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 194,
+      "wardId": "19080",
+      "name": "Karapakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 195,
+      "wardId": "19081",
+      "name": "Okkiyam Thuraipakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 196,
+      "wardId": "19082",
+      "name": "Kannagi Nagar",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 197,
+      "wardId": "19083",
+      "name": "Sholinganallur",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 198,
+      "wardId": "19084",
+      "name": "Semmancheri",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 199,
+      "wardId": "19085",
+      "name": "Perumbakkam",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    },
+    {
+      "wardNumber": 200,
+      "wardId": "19086",
+      "name": "Uthandi",
+      "nameStatus": "candidate",
+      "nameConfirmed": "no",
+      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "zone": {
+        "number": 15,
+        "name": "Sozhinganallur",
+        "status": "confirmed",
+        "sourceUrl": "https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2"
+      },
+      "assemblyConstituencies": [],
+      "assemblyMappingStatus": "unmapped_in_GCC_2025_ward_layer"
+    }
+  ]
+}

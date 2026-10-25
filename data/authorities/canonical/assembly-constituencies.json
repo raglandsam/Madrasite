@@ -1,0 +1,547 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-25",
+  "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+  "records": [
+    {
+      "number": 1,
+      "name": "Gummidipoondi",
+      "mla": {
+        "name": "S. Vijayakumar",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 2,
+      "name": "Ponneri (SC)",
+      "mla": {
+        "name": "Dr. Ravi M. S.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 3,
+      "name": "Tiruttani",
+      "mla": {
+        "name": "G. Hari",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 4,
+      "name": "Thiruvallur",
+      "mla": {
+        "name": "Dr. T. Arunkumar",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 5,
+      "name": "Poonamallee (SC)",
+      "mla": {
+        "name": "Prakasam R.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 6,
+      "name": "Avadi",
+      "mla": {
+        "name": "R. Ramesh Kumar",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 7,
+      "name": "Maduravoyal",
+      "mla": {
+        "name": "Rhevanth Charan",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 8,
+      "name": "Ambattur",
+      "mla": {
+        "name": "Balamurugan G.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 9,
+      "name": "Madhavaram",
+      "mla": {
+        "name": "M. L. Vijayprabhu",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 10,
+      "name": "Tiruvottiyur",
+      "mla": {
+        "name": "Senthil Kumar N.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 11,
+      "name": "Dr. Radhakrishnan Nagar",
+      "mla": {
+        "name": "N. Marie Wilson",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        47
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 12,
+      "name": "Perambur",
+      "mla": {
+        "name": "C. Joseph Vijay",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        34,
+        35,
+        36,
+        37,
+        44,
+        45,
+        46
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 13,
+      "name": "Kolathur",
+      "mla": {
+        "name": "V. S. Babu",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 14,
+      "name": "Villivakkam",
+      "mla": {
+        "name": "Aadhav Arjuna",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        104
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 15,
+      "name": "Thiru-Vi-Ka Nagar (SC)",
+      "mla": {
+        "name": "M. R. Pallavi",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 16,
+      "name": "Egmore (SC)",
+      "mla": {
+        "name": "Rajmohan",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        58,
+        61,
+        77,
+        78,
+        99,
+        108
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 17,
+      "name": "Royapuram",
+      "mla": {
+        "name": "K. V. Vijay Damu",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 18,
+      "name": "Harbour",
+      "mla": {
+        "name": "P. K. Sekarbabu",
+        "party": "Dravida Munnetra Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        54,
+        55,
+        56,
+        57,
+        59,
+        60
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 19,
+      "name": "Chepauk-Thiruvallikeni",
+      "mla": {
+        "name": "Udhayanidhi Stalin",
+        "party": "Dravida Munnetra Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        62,
+        63,
+        114,
+        115,
+        116,
+        119,
+        120
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 20,
+      "name": "Thousand Lights",
+      "mla": {
+        "name": "Prabhakar J. C. D.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        117,
+        118
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 21,
+      "name": "Anna Nagar",
+      "mla": {
+        "name": "V. K. Ramkumar",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        100,
+        101,
+        102,
+        103,
+        105,
+        106,
+        107
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 22,
+      "name": "Virugampakkam",
+      "mla": {
+        "name": "Sabarinathan R.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        127,
+        128,
+        129,
+        136,
+        137,
+        138
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 23,
+      "name": "Saidapet",
+      "mla": {
+        "name": "Arul Prakasam M.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        139,
+        140,
+        142,
+        168,
+        169,
+        170,
+        172
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 24,
+      "name": "Thiyagarayanagar",
+      "mla": {
+        "name": "Anand N.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        141
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 25,
+      "name": "Mylapore",
+      "mla": {
+        "name": "Venkataramanan P.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        171
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 26,
+      "name": "Velachery",
+      "mla": {
+        "name": "Kumar R.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181
+      ],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 27,
+      "name": "Sholinganallur",
+      "mla": {
+        "name": "ECR P. Saravanan",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 28,
+      "name": "Alandur",
+      "mla": {
+        "name": "M. Harish",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 29,
+      "name": "Sriperumbudur (SC)",
+      "mla": {
+        "name": "Thennarasu K.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 30,
+      "name": "Pallavaram",
+      "mla": {
+        "name": "J. Kamatchi",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 31,
+      "name": "Tambaram",
+      "mla": {
+        "name": "D. Sarathkumar",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    },
+    {
+      "number": 32,
+      "name": "Chengalpattu",
+      "mla": {
+        "name": "S. Thiyagarajan",
+        "party": "Tamilaga Vettri Kazhagam",
+        "electedIn": 2026
+      },
+      "sourceUrl": "https://www.eci.gov.in/eci-backend/public/all_files/election_report/General_Election_to_the_Legislative_Assembly_of_Tamil_Nadu_2026_2026/10-Detailed_Results_1778165153.pdf",
+      "verifiedAt": "2026-10-25",
+      "wardNumbers": [],
+      "wardMappingCoverage": "partial_GCC_layer_coverage"
+    }
+  ]
+}

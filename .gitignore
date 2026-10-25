@@ -29,4 +29,3 @@ Thumbs.db
 *.sln
 *.sw?
 /docs
-app\.env.example

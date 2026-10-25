@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-25",
+  "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+  "records": [
+    {
+      "number": 1,
+      "name": "Thiruvottriyur",
+      "wardNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "T.M.Thaniarasu",
+        "phones": [
+          "9445467010",
+          "9941441508"
+        ],
+        "email": "ward010@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "A.Sankar",
+        "title": "Assistant Commissioner, Senior Grade(Zone), Zone-I (Thiruvottriyur)",
+        "phones": [
+          "9445190001",
+          "9445190201",
+          "25993494"
+        ],
+        "email": "aczone1@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 2,
+      "name": "Manali",
+      "wardNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "A.V.Arumugam",
+        "phones": [
+          "9445467020",
+          "9444332834"
+        ],
+        "email": "ward020@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": null,
+      "zonalOfficerStatus": "not_listed_on_GCC_page",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 3,
+      "name": "Madhavaram",
+      "wardNumbers": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "Nandagopal.S",
+        "phones": [
+          "9445467025",
+          "9444207715"
+        ],
+        "email": "ward025@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "N.Sridevi",
+        "title": "Assistant Commissioner, Senior Grade(Zone), Zone III (Madhavaram)",
+        "phones": [
+          "9445190003",
+          "9445190203",
+          "25530427"
+        ],
+        "email": "aczone3@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 4,
+      "name": "Tondiarpet",
+      "wardNumbers": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "Nethaji U.Ganesan",
+        "phones": [
+          "9445467038",
+          "9840796759"
+        ],
+        "email": "ward038@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": null,
+      "zonalOfficerStatus": "not_listed_on_GCC_page",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 5,
+      "name": "Royapuram",
+      "wardNumbers": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "P.Sriramulu",
+        "phones": [
+          "9445467054",
+          "9841279999"
+        ],
+        "email": "ward054@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": null,
+      "zonalOfficerStatus": "not_listed_on_GCC_page",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 6,
+      "name": "Thiru-Vi-Ka Nagar",
+      "wardNumbers": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "R.Saritha",
+        "phones": [
+          "9445467069",
+          "9884243977"
+        ],
+        "email": "ward069@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "R.Haribabu",
+        "title": "Assistant Commissioner, Senior Grade(Zone)(i/c), Zone VI (Thiru-Vi-Ka Nagar),",
+        "phones": [
+          "9445190006",
+          "9445190206",
+          "26741802"
+        ],
+        "email": "aczone6@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 7,
+      "name": "Ambattur",
+      "wardNumbers": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "B.K. Murthy",
+        "phones": [
+          "9445467080",
+          "9840093697"
+        ],
+        "email": "ward080@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "M.P. Thanigaivelan",
+        "title": "Assistant Commissioner, Senior Grade(Zone), Zone VII (Ambattur),",
+        "phones": [
+          "94451 90007",
+          "9445190207",
+          "26241999"
+        ],
+        "email": "aczone7@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 8,
+      "name": "Anna Nagar",
+      "wardNumbers": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "K.P. Jain",
+        "phones": [
+          "9445467094",
+          "9283184848"
+        ],
+        "email": "ward094@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "T.Enian",
+        "title": "Assistant Commissioner, Senior Grade(Zone), Zone VIII (Anna Nagar),",
+        "phones": [
+          "9445190208",
+          "9445190008",
+          "26412646",
+          "26415372"
+        ],
+        "email": "aczone8@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 9,
+      "name": "Teynampet",
+      "wardNumbers": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "S.Madhan Mohan",
+        "phones": [
+          "9445467114",
+          "9444071150"
+        ],
+        "email": "ward114@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": null,
+      "zonalOfficerStatus": "not_listed_on_GCC_page",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 10,
+      "name": "Kodambakkam",
+      "wardNumbers": [
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "M.Krishna Moorthy",
+        "phones": [
+          "9445467142",
+          "9444047366"
+        ],
+        "email": "ward142@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "R. Purushothaman",
+        "title": "Assistant Commissioner, Senior Grade(Zone), Zone X (Kodambakkam)",
+        "phones": [
+          "94451 90010",
+          "9445190210",
+          "24838968",
+          "24801959"
+        ],
+        "email": "aczone10@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 11,
+      "name": "Valasaravakkam",
+      "wardNumbers": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "V.Rajan",
+        "phones": [
+          "9445467143",
+          "9600015565"
+        ],
+        "email": "ward143@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "N.Kalidass",
+        "title": "Assistant Commissioner, Senior Grade(Zone), Zone XI (Valasaravakkam),",
+        "phones": [
+          "9445190011",
+          "24867725"
+        ],
+        "email": "aczone11@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 12,
+      "name": "Alandur",
+      "wardNumbers": [
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "N.Chandran",
+        "phones": [
+          "9445467166",
+          "9445012999"
+        ],
+        "email": "ward166@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": null,
+      "zonalOfficerStatus": "not_listed_on_GCC_page",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 13,
+      "name": "Adyar",
+      "wardNumbers": [
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "R.Durai Raj",
+        "phones": [
+          "9445467172",
+          "9884464668"
+        ],
+        "email": "ward172@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "N.Dakshnamoorthy",
+        "title": "Assistant Commissioner, Senior Grade(Zone), Zone XIII (Adyar)",
+        "phones": [
+          "9445190013",
+          "9445190213",
+          "24425961",
+          "24425963"
+        ],
+        "email": "aczone13@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 14,
+      "name": "Perungudi",
+      "wardNumbers": [
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "S.V.Ravichandran",
+        "phones": [
+          "9445467184",
+          "9790961590"
+        ],
+        "email": "ward184@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "Hartin Rozario",
+        "title": "Assistant Commissioner, Senior Grade(Zone)(i/c), Zone-XIV (Perungudi)",
+        "phones": [
+          "9445190014",
+          "9445190214",
+          "22420520"
+        ],
+        "email": "aczone14@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "number": 15,
+      "name": "Sozhinganallur",
+      "wardNumbers": [
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "status": "confirmed_from_GCC_2025_ward_layer",
+      "wardCommitteeChairman": {
+        "name": "V.E Mathiyalagan",
+        "phones": [
+          "9445467192",
+          "9962550333"
+        ],
+        "email": "ward192@chennaicorporation.gov.in"
+      },
+      "zonalOfficer": {
+        "name": "G.Lokeshwaran",
+        "title": "Assistant Commissioner, Senior Grade(Zone)(i/c), Zone-XV (Sozhinganallur),",
+        "phones": [
+          "9445190015",
+          "9445190215",
+          "24500923"
+        ],
+        "email": "aczone15@chennaicorporation.gov.in"
+      },
+      "zonalOfficerStatus": "published_by_GCC",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/who-is-who/",
+      "verifiedAt": "2026-10-25"
+    }
+  ]
+}

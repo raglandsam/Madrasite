@@ -1,0 +1,244 @@
+
+Zone 1: THIRUVOTTRIYUR
+
+• Ward 1: Kathivakkam
+• Ward 2: Ennore
+• Ward 3: Ernavoor
+• Ward 4: Ajax
+• Ward 5: Tiruvottiyur
+• Ward 6: Kaladipet
+• Ward 7: Rajakadai
+• Ward 8: Thangal
+• Ward 9: Tollgate
+• Ward 10: Korukkupet
+• Ward 11: Dr. Radhakrishnan Nagar
+• Ward 12: Cheriyan Nagar
+• Ward 13: Jeeva Nagar
+• Ward 14: Tondiarpet (North)
+
+Zone 2: MANALI
+
+• Ward 15: Edayanchavadi
+• Ward 16: Kadapakkam
+• Ward 17: Theeyambakkam
+• Ward 18: Manali
+• Ward 19: Mathur
+• Ward 20: Vadaperumbakkam
+• Ward 21: Kosapur
+
+Zone 3: MADHAVARAM
+
+• Ward 22: Kavankarai
+• Ward 23: Puzhal
+• Ward 24: Puthagaram
+• Ward 25: Kathirvedu
+• Ward 26: Surapet
+• Ward 27: Kathirvedu (South)
+• Ward 28: Tatankuppam
+• Ward 29: Madhavaram
+• Ward 30: Madhavaram (East)
+• Ward 31: Kodungaiyur (West)
+• Ward 32: Kodungaiyur (East)
+• Ward 33: Erukkencherry
+
+Zone 4: TONDIARPET
+
+• Ward 34: Vyasarpadi
+• Ward 35: Perambur (North)
+• Ward 36: Perambur (South)
+• Ward 37: Sharma Nagar
+• Ward 38: Tondiarpet
+• Ward 39: Old Washermanpet
+• Ward 40: Meenambal Nagar
+• Ward 41: Bojaraja Nagar
+• Ward 42: Sanjeevirayanpet
+• Ward 43: Grace Garden
+• Ward 44: Royapuram
+• Ward 45: Singara Garden
+• Ward 46: Kalmandapam
+• Ward 47: Clive Battery
+• Ward 48: Harbour
+
+Zone 5: ROYAPURAM
+
+• Ward 49: George Town
+• Ward 50: Elephant Gate
+• Ward 51: Sowcarpet
+• Ward 52: Park Town
+• Ward 53: Periamet
+• Ward 54: Edapalayam
+• Ward 55: Choolai
+• Ward 56: Pattalam
+• Ward 57: Pulianthope
+• Ward 58: Kosapet
+• Ward 59: Otteri
+• Ward 60: Basin Bridge
+• Ward 61: Kondithope
+• Ward 62: Mint
+• Ward 63: Vallal Seethakathi Nagar
+
+Zone 6: THIRU. VI. KA. NAGAR
+
+• Ward 64: Kolathur
+• Ward 65: Srinivasa Nagar
+• Ward 66: Jagannathan Nagar
+• Ward 67: Villivakkam
+• Ward 68: Villivakkam (South)
+• Ward 69: Ayanavaram
+• Ward 70: Ayanavaram (East)
+• Ward 71: Konnur
+• Ward 72: Perambur
+• Ward 73: Perambur High Road
+• Ward 74: Thiru. Vi. Ka. Nagar
+• Ward 75: Wadia Nagar
+• Ward 76: Dr. Ambedkar Nagar
+• Ward 77: Pulianthope (West)
+• Ward 78: Otteri (West)
+
+Zone 7: AMBATTUR
+
+• Ward 79: Oragadam
+• Ward 80: Menambedu
+• Ward 81: Korattur
+• Ward 82: Korattur (South)
+• Ward 83: Padi
+• Ward 84: Ambattur
+• Ward 85: Ambattur Industrial Estate
+• Ward 86: Mannurpet
+• Ward 87: Mogappair (North)
+• Ward 88: Mogappair (West)
+• Ward 89: Mogappair (East)
+• Ward 90: Nolambur
+• Ward 91: Anna Nagar (West Extn)
+• Ward 92: Padi (South)
+• Ward 93: TVS Nagar
+
+Zone 8: ANNA NAGAR
+
+• Ward 94: Anna Nagar
+• Ward 95: Anna Nagar (East)
+• Ward 96: Shenoy Nagar
+• Ward 97: Aminjikarai
+• Ward 98: Aminjikarai (East)
+• Ward 99: Kilpauk
+• Ward 100: Kilpauk (West)
+• Ward 101: Chetpet
+• Ward 102: Nungambakkam
+• Ward 103: Thousand Lights
+• Ward 104: Thousand Lights (West)
+• Ward 105: Choolaimedu
+• Ward 106: Choolaimedu (South)
+• Ward 107: MMDA Colony
+• Ward 108: Arumbakkam
+
+Zone 9: TEYNAMPET
+
+• Ward 109: Gopalapuram
+• Ward 110: Royapettah
+• Ward 111: Chepauk
+• Ward 112: Triplicane
+• Ward 113: Triplicane (Teplicane East)
+• Ward 114: Marina
+• Ward 115: Santhome
+• Ward 116: Mylapore
+• Ward 117: Alwarpet
+• Ward 118: Teynampet
+• Ward 119: Teynampet (South)
+• Ward 120: Nandanam
+• Ward 121: CIT Nagar
+• Ward 122: T. Nagar
+• Ward 123: Pondy Bazaar
+• Ward 124: Kodambakkam (East)
+• Ward 125: Mylapore (South)
+• Ward 126: Mandaveli
+
+Zone 10: KODAMBAKKAM
+
+• Ward 127: Kodambakkam
+• Ward 128: Vadapalani
+• Ward 129: Vadapalani (South)
+• Ward 130: Virugambakkam
+• Ward 131: Virugambakkam (South)
+• Ward 132: Saligramam
+• Ward 133: Ashok Nagar
+• Ward 134: Ashok Nagar (South)
+• Ward 135: MGR Nagar
+• Ward 136: K K Nagar
+• Ward 137: K K Nagar (South)
+• Ward 138: Saidapet
+• Ward 139: Saidapet (West)
+• Ward 140: Jafferkhanpet
+• Ward 141: Guindy (West)
+• Ward 142: Guindy (East)
+
+Zone 11: VALASARAVAKKAM
+
+• Ward 143: Koyambedu
+• Ward 144: Chinmaya Nagar
+• Ward 145: Nerkundram
+• Ward 146: Alapakkam
+• Ward 147: Valasaravakkam
+• Ward 148: Karambakkam
+• Ward 149: Porur
+• Ward 150: Ramapuram
+• Ward 151: Ramapuram (South)
+• Ward 152: Mugalivakkam
+• Ward 153: Manapakkam
+• Ward 154: Nesapakkam
+• Ward 155: Rayala Nagar
+
+Zone 12: ALANDUR
+
+• Ward 156: Alandur
+• Ward 157: Adambakkam
+• Ward 158: Pazhavanthangal
+• Ward 159: Nanganallur
+• Ward 160: Nanganallur (South)
+• Ward 161: Meenambakkam
+• Ward 162: St. Thomas Mount
+• Ward 163: Cantonment
+• Ward 164: Mugalivakkam (South)
+• Ward 165: Thillaiganga Nagar
+• Ward 166: Moovarasampet
+• Ward 167: Cowl Bazaar
+
+Zone 13: ADYAR
+
+• Ward 168: Guindy
+• Ward 169: Saidapet (East)
+• Ward 170: Kotturpuram
+• Ward 171: Taramani
+• Ward 172: Adyar
+• Ward 173: Besant Nagar
+• Ward 174: Kalakshetra Colony
+• Ward 175: Thiruvanmiyur
+• Ward 176: Thiruvanmiyur (South)
+• Ward 177: Velachery
+• Ward 178: Velachery (East)
+• Ward 179: Velachery (West)
+• Ward 180: Gandhi Nagar
+
+Zone 14: PERUNGUDI
+
+• Ward 181: Puzhuthivakkam
+• Ward 182: Ullagaram
+• Ward 183: Madipakkam
+• Ward 184: Madipakkam (South)
+• Ward 185: Jaladianpet
+• Ward 186: Perungudi
+• Ward 187: Apollo Apollo Nagar
+• Ward 188: Kottivakkam
+• Ward 189: Palavakkam
+• Ward 191: Nehru Nagar
+
+Zone 15: SHOLINGANALLUR
+
+• Ward 192: Neelankarai
+• Ward 193: Injambakkam
+• Ward 194: Karapakkam
+• Ward 195: Okkiyam Thuraipakkam
+• Ward 196: Kannagi Nagar
+• Ward 197: Sholinganallur
+• Ward 198: Semmancheri
+• Ward 199: Perumbakkam
+• Ward 200: Uthandi

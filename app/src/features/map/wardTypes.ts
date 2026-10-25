@@ -1,9 +1,26 @@
 export type WardProperties = {
-  ward_id?: string | number
-  ward?: string | number
-  zone_id?: string | number
-  zone?: string | number
-  region?: string
-  ac_name?: string
-  ac_no?: string | number
+  objectid: number
+  ward_id: string
+  ward: string
+  zone_id: string
+  zone: string
+  region: string | null
+  ac_name: string | null
+  ac_no: string | null
+}
+
+export type WardGeometry = {
+  type: 'Polygon' | 'MultiPolygon'
+  coordinates: number[][][] | number[][][][]
+}
+
+export type WardFeature = {
+  type: 'Feature'
+  properties: WardProperties
+  geometry: WardGeometry
+}
+
+export type WardFeatureCollection = {
+  type: 'FeatureCollection'
+  features: WardFeature[]
 }

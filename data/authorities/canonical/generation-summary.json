@@ -1,0 +1,76 @@
+{
+  "wardCount": 200,
+  "wardsWithCandidateNames": 200,
+  "wardsByZone": [
+    {
+      "zone": 1,
+      "wards": 14
+    },
+    {
+      "zone": 2,
+      "wards": 8
+    },
+    {
+      "zone": 3,
+      "wards": 11
+    },
+    {
+      "zone": 4,
+      "wards": 15
+    },
+    {
+      "zone": 5,
+      "wards": 15
+    },
+    {
+      "zone": 6,
+      "wards": 15
+    },
+    {
+      "zone": 7,
+      "wards": 15
+    },
+    {
+      "zone": 8,
+      "wards": 15
+    },
+    {
+      "zone": 9,
+      "wards": 18
+    },
+    {
+      "zone": 10,
+      "wards": 16
+    },
+    {
+      "zone": 11,
+      "wards": 13
+    },
+    {
+      "zone": 12,
+      "wards": 12
+    },
+    {
+      "zone": 13,
+      "wards": 13
+    },
+    {
+      "zone": 14,
+      "wards": 11
+    },
+    {
+      "zone": 15,
+      "wards": 9
+    }
+  ],
+  "councillorStatusCounts": {
+    "active": 192,
+    "vacant": 4,
+    "unknown": 4
+  },
+  "zonesWithChairman": 15,
+  "zonesWithOfficer": 10,
+  "wardsWithGccAcMapping": 108,
+  "wardsWithoutGccAcMapping": 92,
+  "assemblyRecords": 32
+}

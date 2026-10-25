@@ -1,0 +1,2583 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-25",
+  "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+  "records": [
+    {
+      "wardNumber": 1,
+      "status": "active",
+      "name": "M. Sivakumar",
+      "phones": [
+        "9445467001",
+        "9445727777"
+      ],
+      "email": "ward001@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward001.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 2,
+      "status": "active",
+      "name": "S. Gomathi Santhosh Kumar",
+      "phones": [
+        "9445467002",
+        "8056161161"
+      ],
+      "email": "ward002@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward002.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 3,
+      "status": "active",
+      "name": "B. Tamilarasan",
+      "phones": [
+        "9445467003",
+        "9884303000"
+      ],
+      "email": "ward003@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward003.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 4,
+      "status": "active",
+      "name": "R. Jayaraman",
+      "phones": [
+        "9445467004",
+        "9840823517"
+      ],
+      "email": "ward004@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward004.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 5,
+      "status": "unknown",
+      "name": null,
+      "phones": [],
+      "email": null,
+      "photoSourceUrl": null,
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 6,
+      "status": "active",
+      "name": "M. Samuel Diraviam",
+      "phones": [
+        "9445467006",
+        "9841233335"
+      ],
+      "email": "ward006@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward006.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 7,
+      "status": "active",
+      "name": "K. Karthik",
+      "phones": [
+        "9445467007",
+        "9962541122"
+      ],
+      "email": "ward007@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward007.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 8,
+      "status": "active",
+      "name": "V. Rajakumari",
+      "phones": [
+        "9445467008",
+        "7401117889"
+      ],
+      "email": "ward008@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward008.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 9,
+      "status": "active",
+      "name": "Uma Saravanan",
+      "phones": [
+        "9445467009",
+        "7200905993"
+      ],
+      "email": "ward009@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward009.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 10,
+      "status": "active",
+      "name": "T.M. Thaniarasu",
+      "phones": [
+        "9445467010",
+        "9941441508"
+      ],
+      "email": "ward010@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward010.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 11,
+      "status": "active",
+      "name": "Saranya Kalaivanan",
+      "phones": [
+        "9445467011",
+        "9884279999"
+      ],
+      "email": "ward011@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward011.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 12,
+      "status": "active",
+      "name": "V. Kaviganesan",
+      "phones": [
+        "9445467012",
+        "9884630696"
+      ],
+      "email": "ward012@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward012.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 13,
+      "status": "active",
+      "name": "R. Susila",
+      "phones": [
+        "9445467013",
+        "9840715034"
+      ],
+      "email": "ward013@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward013.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 14,
+      "status": "active",
+      "name": "C. Banumathi Chanthru",
+      "phones": [
+        "9445467014",
+        "9840337783"
+      ],
+      "email": "ward014@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward014.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 15,
+      "status": "active",
+      "name": "S. Nandhini",
+      "phones": [
+        "9445467015",
+        "9080047775"
+      ],
+      "email": "ward015@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward015.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 16,
+      "status": "active",
+      "name": "A. Rajendran",
+      "phones": [
+        "9445467016",
+        "7904237557"
+      ],
+      "email": "ward016@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward016.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 17,
+      "status": "active",
+      "name": "R. Jaisankar",
+      "phones": [
+        "9445467017",
+        "9380917559"
+      ],
+      "email": "ward017@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward017.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 18,
+      "status": "active",
+      "name": "M. Sridharan",
+      "phones": [
+        "9445467018",
+        "9840417316"
+      ],
+      "email": "ward018@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward018.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 19,
+      "status": "active",
+      "name": "K. Kasinathan",
+      "phones": [
+        "9445467019",
+        "9381091292"
+      ],
+      "email": "ward019@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward019.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 20,
+      "status": "active",
+      "name": "A.V. Arumugam",
+      "phones": [
+        "9445467020",
+        "9444332834"
+      ],
+      "email": "ward020@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward020.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 21,
+      "status": "active",
+      "name": "R.G. Rajesh Sekar",
+      "phones": [
+        "9445467021",
+        "9444451570"
+      ],
+      "email": "ward021@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward021.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 22,
+      "status": "active",
+      "name": "A. Theerthy",
+      "phones": [
+        "9445467022",
+        "9841280617"
+      ],
+      "email": "ward022@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward022.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 23,
+      "status": "active",
+      "name": "B. Rajan",
+      "phones": [
+        "9445467023",
+        "9941657878"
+      ],
+      "email": "ward023@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward023.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 24,
+      "status": "active",
+      "name": "E. Settu",
+      "phones": [
+        "9445467024",
+        "9382138508"
+      ],
+      "email": "ward024@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward024.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 25,
+      "status": "active",
+      "name": "Nandagopal .S",
+      "phones": [
+        "9445467025",
+        "9444207715"
+      ],
+      "email": "ward025@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward025.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 26,
+      "status": "active",
+      "name": "J. Asna Merryshia",
+      "phones": [
+        "9445467026",
+        "9444412957"
+      ],
+      "email": "ward026@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward026.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 27,
+      "status": "active",
+      "name": "A. Chandran",
+      "phones": [
+        "9445467027",
+        "9840222948"
+      ],
+      "email": "ward027@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward027.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 28,
+      "status": "active",
+      "name": "S. Kanimozhisuresh",
+      "phones": [
+        "9445467028",
+        "7550134698"
+      ],
+      "email": "ward028@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward028.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 29,
+      "status": "active",
+      "name": "Karthikeyan Thirunavukarasu",
+      "phones": [
+        "9445467029",
+        "9444805874"
+      ],
+      "email": "ward029@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward029.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 30,
+      "status": "active",
+      "name": "G. Duraiswamy",
+      "phones": [
+        "9445467030",
+        "9840487978"
+      ],
+      "email": "ward030@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward030.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 31,
+      "status": "active",
+      "name": "Sangeetha .B",
+      "phones": [
+        "9445467031",
+        "8939490934"
+      ],
+      "email": "ward031@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward031.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 32,
+      "status": "active",
+      "name": "E. Elumalai",
+      "phones": [
+        "9445467032",
+        "9941708687"
+      ],
+      "email": "ward032@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward032.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 33,
+      "status": "active",
+      "name": "M. Gunasundari",
+      "phones": [
+        "9445467033",
+        "9444329613"
+      ],
+      "email": "ward033@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward033.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 34,
+      "status": "active",
+      "name": "K. Sharmila Gandhi",
+      "phones": [
+        "9445467034",
+        "9790846209"
+      ],
+      "email": "ward034@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward034.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 35,
+      "status": "active",
+      "name": "S. Jeevan",
+      "phones": [
+        "9445467035",
+        "8148898063"
+      ],
+      "email": "ward035@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward035.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 36,
+      "status": "active",
+      "name": "A.R.R. Malaiswamy",
+      "phones": [
+        "9445467036",
+        "9840222194"
+      ],
+      "email": "ward036@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward036.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 37,
+      "status": "active",
+      "name": "J. Dilli Babu",
+      "phones": [
+        "9445467037",
+        "9841077467"
+      ],
+      "email": "ward037@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward037.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 38,
+      "status": "active",
+      "name": "Nethaji U Ganesan",
+      "phones": [
+        "9445467038",
+        "9840796759"
+      ],
+      "email": "ward038@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward038.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 39,
+      "status": "active",
+      "name": "K. Devi or Devi Kathiresan",
+      "phones": [
+        "9445467039",
+        "9710094141"
+      ],
+      "email": "ward039@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward039.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 40,
+      "status": "active",
+      "name": "N. Kumari",
+      "phones": [
+        "9445467040",
+        "9500055443"
+      ],
+      "email": "ward040@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward040.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 41,
+      "status": "active",
+      "name": "B. Vimala",
+      "phones": [
+        "9445467041",
+        "9094927123"
+      ],
+      "email": "ward041@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward041.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 42,
+      "status": "active",
+      "name": "M. Renuka",
+      "phones": [
+        "9445467042",
+        "9840774744"
+      ],
+      "email": "ward042@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward042.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 43,
+      "status": "active",
+      "name": "N. Pavithra",
+      "phones": [
+        "9445467043",
+        "8939536466"
+      ],
+      "email": "ward043@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward043.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 44,
+      "status": "active",
+      "name": "Sarbajaya Das",
+      "phones": [
+        "9445467044",
+        "9840293949"
+      ],
+      "email": "ward044@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward044.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 45,
+      "status": "active",
+      "name": "G. Gopinath",
+      "phones": [
+        "9445467045",
+        "9677110339"
+      ],
+      "email": "ward045@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward045.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 46,
+      "status": "active",
+      "name": "S. Anandhi",
+      "phones": [
+        "9445467046",
+        "7305807522"
+      ],
+      "email": "ward046@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward046.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 47,
+      "status": "active",
+      "name": "E. Manimegalai Elumalai",
+      "phones": [
+        "9445467047",
+        "9176418643"
+      ],
+      "email": "ward047@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward047.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 48,
+      "status": "active",
+      "name": "V. Vijayalakshmi Vijayakumar",
+      "phones": [
+        "9445467048",
+        "9884669998"
+      ],
+      "email": "ward048@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward048.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 49,
+      "status": "active",
+      "name": "D. Elango (alias) D. Elaya Aruna",
+      "phones": [
+        "9445467049",
+        "9444125005"
+      ],
+      "email": "ward049@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward049.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 50,
+      "status": "active",
+      "name": "R. Suresh Kumar",
+      "phones": [
+        "9445467050",
+        "9841018905"
+      ],
+      "email": "ward050@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward050.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 51,
+      "status": "active",
+      "name": "Niranjana Jegadeesan",
+      "phones": [
+        "9445467051",
+        "9841574740"
+      ],
+      "email": "ward051@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward051.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 52,
+      "status": "active",
+      "name": "S. Geetha Suresh",
+      "phones": [
+        "9445467052",
+        "9884076288"
+      ],
+      "email": "ward052@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward052.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 53,
+      "status": "active",
+      "name": "P. Velanganni",
+      "phones": [
+        "9445467053",
+        "9176524268"
+      ],
+      "email": "ward053@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward053.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 54,
+      "status": "active",
+      "name": "P. Sriramulu",
+      "phones": [
+        "9445467054",
+        "9841279999"
+      ],
+      "email": "ward054@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward054.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 55,
+      "status": "active",
+      "name": "L. Naveen",
+      "phones": [
+        "9445467055",
+        "9941786342"
+      ],
+      "email": "ward055@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward055.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 56,
+      "status": "active",
+      "name": "V. Parimalam",
+      "phones": [
+        "9445467056",
+        "9840705805"
+      ],
+      "email": "ward056@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward056.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 57,
+      "status": "active",
+      "name": "Rajesh Jain",
+      "phones": [
+        "9445467057",
+        "9840069916"
+      ],
+      "email": "ward057@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward057.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 58,
+      "status": "active",
+      "name": "Rajeshwari Sridhar",
+      "phones": [
+        "9445467058",
+        "9445812403"
+      ],
+      "email": "ward058@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward058.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 59,
+      "status": "vacant",
+      "name": null,
+      "phones": [],
+      "email": "ward059@chennaicorporation.gov.in",
+      "photoSourceUrl": null,
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 60,
+      "status": "active",
+      "name": "Azad .Z",
+      "phones": [
+        "9445467060",
+        "9840467823"
+      ],
+      "email": "ward060@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward060.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 61,
+      "status": "active",
+      "name": "Fathima Muzaffer Ahmed",
+      "phones": [
+        "9445467061",
+        "9941837786"
+      ],
+      "email": "ward061@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward061.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 62,
+      "status": "active",
+      "name": "Jagadeesan",
+      "phones": [
+        "9445467062",
+        "9941909201"
+      ],
+      "email": "ward062@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward062.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 63,
+      "status": "active",
+      "name": "Siva. Raajashekaran",
+      "phones": [
+        "9445467063",
+        "9940038386"
+      ],
+      "email": "ward063@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward063.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 64,
+      "status": "active",
+      "name": "E. Nagarajan",
+      "phones": [
+        "9445467064",
+        "9841511603"
+      ],
+      "email": "ward064@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward064.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 65,
+      "status": "active",
+      "name": "K. Saradha",
+      "phones": [
+        "9445467065",
+        "9444222729"
+      ],
+      "email": "ward065@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward065.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 66,
+      "status": "active",
+      "name": "D. Yogapriya Dhanasekar",
+      "phones": [
+        "9445467066",
+        "7200600025"
+      ],
+      "email": "ward066@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward066.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 67,
+      "status": "active",
+      "name": "M. Dawood Bee",
+      "phones": [
+        "9445467067",
+        "9840398645"
+      ],
+      "email": "ward067@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward067.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 68,
+      "status": "active",
+      "name": "Amudha Ponnivalavan",
+      "phones": [
+        "9445467068",
+        "9176112371"
+      ],
+      "email": "ward068@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward068.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 69,
+      "status": "active",
+      "name": "R. Saritha",
+      "phones": [
+        "9445467069",
+        "9884243977"
+      ],
+      "email": "ward069@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward069.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 70,
+      "status": "active",
+      "name": "C. Sreedhani",
+      "phones": [
+        "9445467070",
+        "9003095251"
+      ],
+      "email": "ward070@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward070.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 71,
+      "status": "active",
+      "name": "Punithavathi Aththiraasan",
+      "phones": [
+        "9445467071",
+        "9710997997"
+      ],
+      "email": "ward071@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward071.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 72,
+      "status": "active",
+      "name": "M. Saravanan",
+      "phones": [
+        "9445467072",
+        "9840141498"
+      ],
+      "email": "ward072@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward072.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 73,
+      "status": "active",
+      "name": "C. Ambethvalavan (a) C. Kumarasamy",
+      "phones": [
+        "9445467073",
+        "9840298923"
+      ],
+      "email": "ward073@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward073.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 74,
+      "status": "unknown",
+      "name": null,
+      "phones": [],
+      "email": null,
+      "photoSourceUrl": null,
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 75,
+      "status": "active",
+      "name": "L. Ramani",
+      "phones": [
+        "9445467075",
+        "9080420292"
+      ],
+      "email": "ward075@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward075.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 76,
+      "status": "active",
+      "name": "S. Tamilselvi Sasikumar",
+      "phones": [
+        "9445467076",
+        "9884588323"
+      ],
+      "email": "ward076@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward076.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 77,
+      "status": "active",
+      "name": "B. Sumathi",
+      "phones": [
+        "9445467077",
+        "9884163129"
+      ],
+      "email": "ward077@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward077.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 78,
+      "status": "active",
+      "name": "C. Velu",
+      "phones": [
+        "9445467078",
+        "9884902345"
+      ],
+      "email": "ward078@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward078.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 79,
+      "status": "active",
+      "name": "M. Banu Priya",
+      "phones": [
+        "9445467079",
+        "9841258529"
+      ],
+      "email": "ward079@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward079.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 80,
+      "status": "active",
+      "name": "B.K. Murthy",
+      "phones": [
+        "9445467080",
+        "9840093697"
+      ],
+      "email": "ward080@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward080.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 81,
+      "status": "active",
+      "name": "Dr. G. Shanthakumari",
+      "phones": [
+        "9445467081",
+        "9444285765"
+      ],
+      "email": "ward081@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward081.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 82,
+      "status": "active",
+      "name": "V. Ramesh (a) Neelakandan",
+      "phones": [
+        "9445467082",
+        "9551789206"
+      ],
+      "email": "ward082@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward082.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 83,
+      "status": "active",
+      "name": "Usha Nagaraj",
+      "phones": [
+        "9445467083",
+        "9751355555"
+      ],
+      "email": "ward083@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward083.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 84,
+      "status": "active",
+      "name": "J. John",
+      "phones": [
+        "9445467084",
+        "9841920921"
+      ],
+      "email": "ward084@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward084.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 85,
+      "status": "active",
+      "name": "K. Porkodi",
+      "phones": [
+        "9445467085",
+        "6385757127"
+      ],
+      "email": "ward085@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward085.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 86,
+      "status": "active",
+      "name": "M. Kamal",
+      "phones": [
+        "9445467086",
+        "9710307494"
+      ],
+      "email": "ward086@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward086.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 87,
+      "status": "active",
+      "name": "Dr. A.P. Poornima",
+      "phones": [
+        "9445467087",
+        "8925442227"
+      ],
+      "email": "ward087@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward087.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 88,
+      "status": "active",
+      "name": "G.V. Nagavalli",
+      "phones": [
+        "9445467088",
+        "9566033333"
+      ],
+      "email": "ward088@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward088.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 89,
+      "status": "active",
+      "name": "M.E. Sekar",
+      "phones": [
+        "9445467089",
+        "9841723457"
+      ],
+      "email": "ward089@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward089.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 90,
+      "status": "active",
+      "name": "DSP. Rajagopal",
+      "phones": [
+        "9445467090",
+        "9941267772"
+      ],
+      "email": "ward090@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward090.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 91,
+      "status": "active",
+      "name": "A. Malini",
+      "phones": [
+        "9445467091",
+        "9884139999"
+      ],
+      "email": "ward091@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward091.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 92,
+      "status": "active",
+      "name": "V. Thilagar",
+      "phones": [
+        "9445467092",
+        "9941764934"
+      ],
+      "email": "ward092@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward092.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 93,
+      "status": "active",
+      "name": "Uma Santhanam",
+      "phones": [
+        "9445467093",
+        "9840555352"
+      ],
+      "email": "ward093@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward093.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 94,
+      "status": "active",
+      "name": "K.P. Jain",
+      "phones": [
+        "9445467094",
+        "9283184848"
+      ],
+      "email": "ward094@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward094.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 95,
+      "status": "active",
+      "name": "Sudha Deenadhayalan",
+      "phones": [
+        "9445467095",
+        "9790797479"
+      ],
+      "email": "ward095@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward095.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 96,
+      "status": "active",
+      "name": "S. Dhanalakshmi",
+      "phones": [
+        "9445467096",
+        "9790972490"
+      ],
+      "email": "ward096@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward096.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 97,
+      "status": "active",
+      "name": "Latha (a) Lathavasu",
+      "phones": [
+        "9445467097",
+        "9444469531"
+      ],
+      "email": "ward097@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward097.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 98,
+      "status": "active",
+      "name": "A. Priyadharshini",
+      "phones": [
+        "9445467098",
+        "8939545382"
+      ],
+      "email": "ward098@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward098.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 99,
+      "status": "active",
+      "name": "Parithielamsurithi",
+      "phones": [
+        "9445467099",
+        "9962822033"
+      ],
+      "email": "ward099@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward099.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 100,
+      "status": "active",
+      "name": "Vasanthi Paramasivam",
+      "phones": [
+        "9445467100",
+        "6369358023"
+      ],
+      "email": "ward100@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward100.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 101,
+      "status": "active",
+      "name": "Matilda Govindaraj",
+      "phones": [
+        "9445467101",
+        "7401767666"
+      ],
+      "email": "ward101@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward101.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 102,
+      "status": "active",
+      "name": "K. Rani",
+      "phones": [
+        "9445467102",
+        "9952056722"
+      ],
+      "email": "ward102@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward102.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 103,
+      "status": "active",
+      "name": "Pushpalatha Jaisankar",
+      "phones": [
+        "9445467103",
+        "9840098250"
+      ],
+      "email": "ward103@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward103.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 104,
+      "status": "active",
+      "name": "T.V. Shemmozhi",
+      "phones": [
+        "9445467104",
+        "9176621523"
+      ],
+      "email": "ward104@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward104.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 105,
+      "status": "active",
+      "name": "N. Adiyaman",
+      "phones": [
+        "9445467105",
+        "9444129521"
+      ],
+      "email": "ward105@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward105.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 106,
+      "status": "active",
+      "name": "N. Ramalingam",
+      "phones": [
+        "9445467106",
+        "9444072575"
+      ],
+      "email": "ward106@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward106.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 107,
+      "status": "active",
+      "name": "V. Kiran Sharmilee",
+      "phones": [
+        "9445467107",
+        "9500366123"
+      ],
+      "email": "ward107@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward107.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 108,
+      "status": "active",
+      "name": "L. Sunderrajan",
+      "phones": [
+        "9445467108",
+        "9444326660"
+      ],
+      "email": "ward108@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward108.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 109,
+      "status": "active",
+      "name": "Suganya .E",
+      "phones": [
+        "9445467109",
+        "6381382125"
+      ],
+      "email": "ward109@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward109.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 110,
+      "status": "active",
+      "name": "N. Chitrarasu",
+      "phones": [
+        "9445467110",
+        "9003093333"
+      ],
+      "email": "ward110@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward110.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 111,
+      "status": "active",
+      "name": "Nandhini .M.A",
+      "phones": [
+        "9445467111",
+        "9566073023"
+      ],
+      "email": "ward111@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward111.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 112,
+      "status": "active",
+      "name": "Elizabeth Augustine",
+      "phones": [
+        "9445467112",
+        "9003102112"
+      ],
+      "email": "ward112@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward112.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 113,
+      "status": "active",
+      "name": "Mrs. Prema Suesh",
+      "phones": [
+        "9445467113",
+        "9941454532"
+      ],
+      "email": "ward113@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward113.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 114,
+      "status": "active",
+      "name": "S. Madhan Mohan",
+      "phones": [
+        "9445467114",
+        "9444071150"
+      ],
+      "email": "ward114@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward114.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 115,
+      "status": "active",
+      "name": "V. Eswari Venkatesan",
+      "phones": [
+        "9445467115",
+        "9940515387"
+      ],
+      "email": "ward115@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward115.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 116,
+      "status": "active",
+      "name": "A.R.P.M. Kamaraj (a) Dhana Sekaran",
+      "phones": [
+        "9445467116",
+        "9840014849"
+      ],
+      "email": "ward116@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward116.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 117,
+      "status": "active",
+      "name": "P. Thirumalai",
+      "phones": [
+        "9445467117",
+        "9566277888"
+      ],
+      "email": "ward117@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward117.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 118,
+      "status": "active",
+      "name": "Mrs. Malliga Yuvaraj",
+      "phones": [
+        "9445467118",
+        "9841598847"
+      ],
+      "email": "ward118@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward118.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 119,
+      "status": "active",
+      "name": "V. Kamala Chezhiyan",
+      "phones": [
+        "9445467119",
+        "9840091488"
+      ],
+      "email": "ward119@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward119.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 120,
+      "status": "active",
+      "name": "Mangai Rajkumar",
+      "phones": [
+        "9445467120",
+        "9941255111"
+      ],
+      "email": "ward120@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward120.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 121,
+      "status": "active",
+      "name": "K. Mathivanan",
+      "phones": [
+        "9445467121",
+        "9444109216"
+      ],
+      "email": "ward121@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward121.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 122,
+      "status": "vacant",
+      "name": null,
+      "phones": [],
+      "email": "ward122@chennaicorporation.gov.in",
+      "photoSourceUrl": null,
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 123,
+      "status": "active",
+      "name": "M. Saraswathi",
+      "phones": [
+        "9445467123",
+        "9444349820"
+      ],
+      "email": "ward123@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward123.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 124,
+      "status": "active",
+      "name": "K. Vimala",
+      "phones": [
+        "9445467124",
+        "9840491423"
+      ],
+      "email": "ward124@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward124.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 125,
+      "status": "active",
+      "name": "A. Revathy",
+      "phones": [
+        "9445467125",
+        "8428642114"
+      ],
+      "email": "ward125@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward125.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 126,
+      "status": "active",
+      "name": "Amirda Varshini",
+      "phones": [
+        "9445467126",
+        "9500111630"
+      ],
+      "email": "ward126@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward126.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 127,
+      "status": "active",
+      "name": "P. Logu",
+      "phones": [
+        "9445467127",
+        "9941587773"
+      ],
+      "email": "ward127@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward127.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 128,
+      "status": "active",
+      "name": "R. Stella Jasmine Rathna",
+      "phones": [
+        "9445467128",
+        "9841192728"
+      ],
+      "email": "ward128@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward128.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 129,
+      "status": "active",
+      "name": "M. Ravi Shankar",
+      "phones": [
+        "9445467129",
+        "9884409410"
+      ],
+      "email": "ward129@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward129.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 130,
+      "status": "active",
+      "name": "S. Baskar",
+      "phones": [
+        "9445467130",
+        "9962525432"
+      ],
+      "email": "ward130@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward130.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 131,
+      "status": "active",
+      "name": "M. Gomathi",
+      "phones": [
+        "9445467131",
+        "9841035223"
+      ],
+      "email": "ward131@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward131.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 132,
+      "status": "active",
+      "name": "B. Karthika Baskar",
+      "phones": [
+        "9445467132",
+        "9884739824"
+      ],
+      "email": "ward132@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward132.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 133,
+      "status": "active",
+      "name": "K. Elumalai",
+      "phones": [
+        "9445467133",
+        "9500199992"
+      ],
+      "email": "ward133@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward133.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 134,
+      "status": "active",
+      "name": "Uma Anandan",
+      "phones": [
+        "9445467134",
+        "9444543373"
+      ],
+      "email": "ward134@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward134.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 135,
+      "status": "active",
+      "name": "Shanthi (a) Yazhini",
+      "phones": [
+        "9445467135",
+        "9884408024"
+      ],
+      "email": "ward135@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward135.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 136,
+      "status": "active",
+      "name": "Nilavarasi Durairaj",
+      "phones": [
+        "9445467136",
+        "9444958481"
+      ],
+      "email": "ward136@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward136.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 137,
+      "status": "active",
+      "name": "K. Dhanasekaran",
+      "phones": [
+        "9445467137",
+        "9884012130"
+      ],
+      "email": "ward137@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward137.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 138,
+      "status": "active",
+      "name": "K. Kannan",
+      "phones": [
+        "9445467138",
+        "9962002345"
+      ],
+      "email": "ward138@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward138.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 139,
+      "status": "active",
+      "name": "P. Subramani",
+      "phones": [
+        "9445467139",
+        "9444949488"
+      ],
+      "email": "ward139@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward139.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 140,
+      "status": "active",
+      "name": "M. Sridharan",
+      "phones": [
+        "9445467140",
+        "9940016980"
+      ],
+      "email": "ward140@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward140.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 141,
+      "status": "active",
+      "name": "Raja Anbazhzgan",
+      "phones": [
+        "9445467141",
+        "9790966669"
+      ],
+      "email": "ward141@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward141.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 142,
+      "status": "active",
+      "name": "M. Krishnamoorthy",
+      "phones": [
+        "9445467142",
+        "9444047366"
+      ],
+      "email": "ward142@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward142.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 143,
+      "status": "active",
+      "name": "V. Rajan",
+      "phones": [
+        "9445467143",
+        "9600015565"
+      ],
+      "email": "ward143@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward143.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 144,
+      "status": "active",
+      "name": "E. Stalin",
+      "phones": [
+        "9445467144",
+        "9444444734"
+      ],
+      "email": "ward144@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward144.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 145,
+      "status": "active",
+      "name": "T. Sathyanathan",
+      "phones": [
+        "9445467145",
+        "9884458965"
+      ],
+      "email": "ward145@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward145.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 146,
+      "status": "vacant",
+      "name": null,
+      "phones": [],
+      "email": "ward146@chennaicorporation.gov.in",
+      "photoSourceUrl": null,
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 147,
+      "status": "active",
+      "name": "Mrs. Ramani Madhavan",
+      "phones": [
+        "9445467147",
+        "9841134856"
+      ],
+      "email": "ward147@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward147.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 148,
+      "status": "active",
+      "name": "V.V. Giridharan",
+      "phones": [
+        "9445467148",
+        "9941416245"
+      ],
+      "email": "ward148@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward148.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 149,
+      "status": "active",
+      "name": "Selvi Ramesh",
+      "phones": [
+        "9445467149",
+        "9841075583"
+      ],
+      "email": "ward149@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward149.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 150,
+      "status": "active",
+      "name": "Hemalatha Ganapathy",
+      "phones": [
+        "9445467150",
+        "9789078451"
+      ],
+      "email": "ward150@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward150.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 151,
+      "status": "active",
+      "name": "S. Shankar Ganesh",
+      "phones": [
+        "9445467151",
+        "9840970809"
+      ],
+      "email": "ward151@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward151.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 152,
+      "status": "active",
+      "name": "S. Bharathi",
+      "phones": [
+        "9445467152",
+        "9941793906"
+      ],
+      "email": "ward152@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward152.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 153,
+      "status": "active",
+      "name": "Mrs. Santhi Ramalingam",
+      "phones": [
+        "9445467153",
+        "9003274115"
+      ],
+      "email": "ward153@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward153.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 154,
+      "status": "active",
+      "name": "V. Selvakumar",
+      "phones": [
+        "9445467154",
+        "9444115000"
+      ],
+      "email": "ward154@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward154.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 155,
+      "status": "active",
+      "name": "K. Raju",
+      "phones": [
+        "9445467155",
+        "9941329189"
+      ],
+      "email": "ward155@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward155.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 156,
+      "status": "active",
+      "name": "J. Selvendiran",
+      "phones": [
+        "9445467156",
+        "9840612079"
+      ],
+      "email": "ward156@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward156.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 157,
+      "status": "active",
+      "name": "P. Usharani Pandiyan",
+      "phones": [
+        "9445467157",
+        "9840757476"
+      ],
+      "email": "ward157@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward157.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 158,
+      "status": "active",
+      "name": "G.K. Bharathi",
+      "phones": [
+        "9445467158",
+        "9884834799"
+      ],
+      "email": "ward158@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward158.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 159,
+      "status": "active",
+      "name": "S. Amudhapriya",
+      "phones": [
+        "9445467159",
+        "9841841587"
+      ],
+      "email": "ward159@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward159.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 160,
+      "status": "active",
+      "name": "P.M. Brindhaa Shrri",
+      "phones": [
+        "9445467160",
+        "9500771728"
+      ],
+      "email": "ward160@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward160.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 161,
+      "status": "active",
+      "name": "S. Renuka",
+      "phones": [
+        "9445467161",
+        "9710684933"
+      ],
+      "email": "ward161@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward161.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 162,
+      "status": "active",
+      "name": "A. Solomon",
+      "phones": [
+        "9445467162",
+        "8072002345"
+      ],
+      "email": "ward162@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward162.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 163,
+      "status": "active",
+      "name": "Poongodi Jagadeeswaran",
+      "phones": [
+        "9445467163",
+        "7904308484"
+      ],
+      "email": "ward163@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward163.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 164,
+      "status": "active",
+      "name": "Devi Jesudoss",
+      "phones": [
+        "9445467164",
+        "9884456411"
+      ],
+      "email": "ward164@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward164.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 165,
+      "status": "vacant",
+      "name": null,
+      "phones": [],
+      "email": "ward165@chennaicorporation.gov.in",
+      "photoSourceUrl": null,
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 166,
+      "status": "active",
+      "name": "N. Chandran",
+      "phones": [
+        "9445467166",
+        "9445012999"
+      ],
+      "email": "ward166@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward166.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 167,
+      "status": "active",
+      "name": "Durga Devi Natarajan",
+      "phones": [
+        "9445467167",
+        "9952085923"
+      ],
+      "email": "ward167@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward167.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 168,
+      "status": "active",
+      "name": "D. Mohan Kumar",
+      "phones": [
+        "9445467168",
+        "9884310177"
+      ],
+      "email": "ward168@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward168.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 169,
+      "status": "unknown",
+      "name": null,
+      "phones": [],
+      "email": null,
+      "photoSourceUrl": null,
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 170,
+      "status": "active",
+      "name": "K.R. Kathir Murugan",
+      "phones": [
+        "9445467170",
+        "9840724790"
+      ],
+      "email": "ward170@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward170.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 171,
+      "status": "active",
+      "name": "R. Geetha",
+      "phones": [
+        "9445467171",
+        "9840988301"
+      ],
+      "email": "ward171@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward171.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 172,
+      "status": "active",
+      "name": "R. Durairaj",
+      "phones": [
+        "9445467172",
+        "9884464668"
+      ],
+      "email": "ward172@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward172.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 173,
+      "status": "active",
+      "name": "D. Subashini",
+      "phones": [
+        "9445467173",
+        "8939567874"
+      ],
+      "email": "ward173@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward173.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 174,
+      "status": "active",
+      "name": "M. Rathika",
+      "phones": [
+        "9445467174",
+        "9566165526"
+      ],
+      "email": "ward174@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward174.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 175,
+      "status": "active",
+      "name": "Maheswari Murugavel",
+      "phones": [
+        "9445467175",
+        "8667246376"
+      ],
+      "email": "ward175@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward175.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 176,
+      "status": "active",
+      "name": "V. Anandam",
+      "phones": [
+        "9445467176",
+        "9962766635"
+      ],
+      "email": "ward176@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward176.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 177,
+      "status": "active",
+      "name": "P. Manimaran",
+      "phones": [
+        "9445467177",
+        "9176397897"
+      ],
+      "email": "ward177@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward177.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 178,
+      "status": "active",
+      "name": "S. Baskaran",
+      "phones": [
+        "9445467178",
+        "9444066199"
+      ],
+      "email": "ward178@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward178.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 179,
+      "status": "active",
+      "name": "Kayalvizhi Jayakumar",
+      "phones": [
+        "9445467179",
+        "9003917090"
+      ],
+      "email": "ward179@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward179.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 180,
+      "status": "active",
+      "name": "K. Visalakshi",
+      "phones": [
+        "9445467180",
+        "9176179311"
+      ],
+      "email": "ward180@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward180.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 181,
+      "status": "active",
+      "name": "D. Viswanathan",
+      "phones": [
+        "9445467181",
+        "9381006322"
+      ],
+      "email": "ward181@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward181.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 182,
+      "status": "active",
+      "name": "K.P.K. Sathish Kumar",
+      "phones": [
+        "9445467182",
+        "9884860203"
+      ],
+      "email": "ward182@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward182.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 183,
+      "status": "active",
+      "name": "Dr. Tamilarasi Somu",
+      "phones": [
+        "9445467183",
+        "9840265211"
+      ],
+      "email": "ward183@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward183.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 184,
+      "status": "active",
+      "name": "S. V. Ravichandran",
+      "phones": [
+        "9445467184",
+        "9444061590"
+      ],
+      "email": "ward184@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward184.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 185,
+      "status": "active",
+      "name": "D. Sharmila Devi",
+      "phones": [
+        "9445467185",
+        "9841094666"
+      ],
+      "email": "ward185@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward185.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 186,
+      "status": "active",
+      "name": "J.K. Manikandan",
+      "phones": [
+        "9445467186",
+        "9841066761"
+      ],
+      "email": "ward186@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward186.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 187,
+      "status": "active",
+      "name": "J. Sherly Thomas",
+      "phones": [
+        "9445467187",
+        "9841505005"
+      ],
+      "email": "ward187@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward187.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 188,
+      "status": "active",
+      "name": "S. Sameena",
+      "phones": [
+        "9445467188",
+        "9884834463"
+      ],
+      "email": "ward188@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward188.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 189,
+      "status": "unknown",
+      "name": null,
+      "phones": [],
+      "email": null,
+      "photoSourceUrl": null,
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 190,
+      "status": "active",
+      "name": "P. Sivaprakasam",
+      "phones": [
+        "9445467190",
+        "8838068007"
+      ],
+      "email": "ward190@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward190.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 191,
+      "status": "active",
+      "name": "J.L. Lakshmi",
+      "phones": [
+        "9445467191",
+        "9884073092"
+      ],
+      "email": "ward191@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward191.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 192,
+      "status": "active",
+      "name": "V.E. Mathiyalagan",
+      "phones": [
+        "9445467192",
+        "9962550333"
+      ],
+      "email": "ward192@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward192.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 193,
+      "status": "active",
+      "name": "T.C. Govindasamy",
+      "phones": [
+        "9445467193",
+        "9841676715"
+      ],
+      "email": "ward193@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward193.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 194,
+      "status": "active",
+      "name": "K. Vimala Karna",
+      "phones": [
+        "9445467194",
+        "7299666663"
+      ],
+      "email": "ward194@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward194.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 195,
+      "status": "active",
+      "name": "K. Ekambaram",
+      "phones": [
+        "9445467195",
+        "9567755555"
+      ],
+      "email": "ward195@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward195.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 196,
+      "status": "active",
+      "name": "K. Ashwini Karuna",
+      "phones": [
+        "9445467196",
+        "9176661288"
+      ],
+      "email": "ward196@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward196.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 197,
+      "status": "active",
+      "name": "S. Menaga",
+      "phones": [
+        "9445467197",
+        "9841257973"
+      ],
+      "email": "ward197@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward197.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 198,
+      "status": "active",
+      "name": "Leo. N. Sundaram",
+      "phones": [
+        "9445467198",
+        "9840076986"
+      ],
+      "email": "ward198@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward198.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 199,
+      "status": "active",
+      "name": "G. Shankar",
+      "phones": [
+        "9445467199",
+        "9840080210"
+      ],
+      "email": "ward199@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward199.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    },
+    {
+      "wardNumber": 200,
+      "status": "active",
+      "name": "A. Murugesan",
+      "phones": [
+        "9445467200",
+        "9444442707"
+      ],
+      "email": "ward200@chennaicorporation.gov.in",
+      "photoSourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/photo/ward200.jpg",
+      "sourceUrl": "https://chennaicorporation.gov.in/gcc/council/council-address/",
+      "verifiedAt": "2026-10-25"
+    }
+  ]
+}
