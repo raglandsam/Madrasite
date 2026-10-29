@@ -25,7 +25,18 @@
 - Ward-to-Assembly links are populated for the 108 wards that have GCC ac_no attributes. The other 92 remain explicitly unmapped pending an official crosswalk.
 - No ward-card UI, backend, or issue-reporting feature was added.
 
-## 2026-10-25 — Authority data wired into ward cards
+## 2026-10-29 — Unified map theme and graphical zone boundaries
+
+- Switched the default raster basemap from standard OpenStreetMap tiles to Carto Voyager (no labels), eliminating default yellow tinting in favour of a clean, neutral, restrained canvas.
+- Updated ward fill and stroke styling to a single-theme palette:
+  - Deep teal (`#005954`) for selected ward.
+  - Mid teal (`#1d827b`) for hover interactions.
+  - Pale blue-green / cool gray (`#d8ebe7`) for neutral ward fills.
+  - Darker teal (`#003834`) for boundary strokes.
+- Added topological zone-boundary generation via `scripts/build-zone-boundaries.mjs`, deriving clean boundary linestrings between GCC zones directly from canonical ward geometries without modifying raw source data.
+- Added a dedicated zone boundary overlay layer (`gcc-zones-outline`) with darker, theme-harmonised lines (`#003834`, width 2.4px) distinguishing GCC zones.
+- Updated documentation in `docs/Context.md` and `docs/Architecture.md`.
+
 
 - Connected the selected-ward panel to the browser-ready ward, councillor, zone, and Assembly Constituency JSON datasets.
 - Added candidate-label asterisks, councillor status/contact/photo display, zone committee chairman and Zonal Officer details, and MLA records where a ward-to-AC link exists.

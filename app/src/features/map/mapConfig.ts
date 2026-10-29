@@ -2,6 +2,7 @@ export const MAP_CONFIG = {
   fallbackCenter: [80.2707, 13.0827] as const,
   fallbackZoom: 10,
   wardDataUrl: '/data/wards/chennai-wards.geojson',
+  zoneDataUrl: '/data/wards/chennai-zones.geojson',
   wardSourceUrl: 'https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2',
   authorityDataUrls: {
     wards: '/data/authorities/ward-profiles.json',
@@ -12,8 +13,8 @@ export const MAP_CONFIG = {
   basemapStyleUrl: import.meta.env.VITE_BASEMAP_STYLE_URL?.trim() ?? '',
   basemapTileUrl:
     import.meta.env.VITE_BASEMAP_TILE_URL?.trim() ??
-    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    'https://basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png',
   basemapAttribution:
     import.meta.env.VITE_BASEMAP_ATTRIBUTION?.trim() ??
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+    '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noreferrer">CARTO</a>',
 } as const

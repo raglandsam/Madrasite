@@ -6,7 +6,8 @@ Madrasite is a Chennai-focused civic mapping project. The immediate milestone is
 
 ## In scope now
 
-- Interactive MapLibre GL JS map of Chennai.
+- Interactive MapLibre GL JS map of Chennai with neutral basemap tiles and unified single-theme teal styling.
+- Distinct graphical zone boundaries highlighting borders between GCC zones in a darker, theme-harmonised palette.
 - Official ward-boundary extraction, reprojection, validation, and rendering.
 - Source-backed static ward, zone, councillor, Zonal Officer, Assembly Constituency, and MLA datasets displayed in the selected-ward card.
 - Zoom, pan, return-to-Chennai control, hover, selection, and a small verified-attribute panel.

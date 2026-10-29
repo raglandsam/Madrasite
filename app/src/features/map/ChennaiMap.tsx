@@ -14,8 +14,8 @@ import { fetchWardCardData } from './authorityData'
 import type { WardCardData } from './authorityTypes'
 import { WardInfoPanel } from './WardInfoPanel'
 import { MAP_CONFIG } from './mapConfig'
-import { addWardLayers, WARD_FILL_LAYER_ID, WARD_SOURCE_ID } from './wardLayers'
-import type { WardFeatureCollection, WardProperties } from './wardTypes'
+import { addWardLayers, addZoneLayers, WARD_FILL_LAYER_ID, WARD_SOURCE_ID } from './wardLayers'
+import type { WardFeatureCollection, WardProperties, ZoneBoundaryFeatureCollection } from './wardTypes'
 
 setWorkerUrl(workerUrl)
 
@@ -44,6 +44,12 @@ function isWardFeatureCollection(value: unknown): value is WardFeatureCollection
   if (!value || typeof value !== 'object') return false
   const candidate = value as { type?: unknown; features?: unknown }
   return candidate.type === 'FeatureCollection' && Array.isArray(candidate.features) && candidate.features.length > 0
+}
+
+function isZoneBoundaryFeatureCollection(value: unknown): value is ZoneBoundaryFeatureCollection {
+  if (!value || typeof value !== 'object') return false
+  const candidate = value as { type?: unknown; features?: unknown }
+  return candidate.type === 'FeatureCollection' && Array.isArray(candidate.features)
 }
 
 function wardBounds(wards: WardFeatureCollection) {
@@ -153,16 +159,28 @@ export function ChennaiMap() {
 
     const setupWards = async () => {
       try {
-        const response = await fetch(MAP_CONFIG.wardDataUrl, { signal: abortController.signal })
-        if (!response.ok) throw new Error('Ward data request failed with status ' + response.status + '.')
+        const [wardResponse, zoneResponse] = await Promise.all([
+          fetch(MAP_CONFIG.wardDataUrl, { signal: abortController.signal }),
+          fetch(MAP_CONFIG.zoneDataUrl, { signal: abortController.signal }),
+        ])
 
-        const wardData: unknown = await response.json()
+        if (!wardResponse.ok) throw new Error('Ward data request failed with status ' + wardResponse.status + '.')
+
+        const wardData: unknown = await wardResponse.json()
         if (!isWardFeatureCollection(wardData)) throw new Error('The ward dataset is not a valid GeoJSON FeatureCollection.')
 
         const bounds = wardBounds(wardData)
         if (destroyed) return
 
         addWardLayers(map, wardData)
+
+        if (zoneResponse.ok) {
+          const zoneData: unknown = await zoneResponse.json()
+          if (isZoneBoundaryFeatureCollection(zoneData)) {
+            addZoneLayers(map, zoneData)
+          }
+        }
+
         boundsRef.current = bounds
         map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 0, maxZoom: 12 })
         map.on('mousemove', handleMouseMove)

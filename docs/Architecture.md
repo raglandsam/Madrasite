@@ -20,7 +20,8 @@ Madrasite/
 - React and TypeScript via Vite.
 - MapLibre GL JS for interactive rendering.
 - A configurable basemap style URL, never hard-coded throughout components.
-- Local GeoJSON for the first map prototype. MVT/vector tiles are a later performance option, not an initial requirement.
+- Local GeoJSON for the first map prototype (ward polygons and derived zone boundary lines). MVT/vector tiles are a later performance option, not an initial requirement.
+- Neutral raster basemap style (Carto Voyager without labels) matching the restrained teal/cool-gray design palette.
 
 ## Map feature boundaries
 

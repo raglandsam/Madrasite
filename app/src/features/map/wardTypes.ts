@@ -24,3 +24,16 @@ export type WardFeatureCollection = {
   type: 'FeatureCollection'
   features: WardFeature[]
 }
+
+export type ZoneBoundaryFeatureCollection = {
+  type: 'FeatureCollection'
+  features: {
+    type: 'Feature'
+    properties: Record<string, unknown>
+    geometry: {
+      type: 'MultiLineString'
+      coordinates: number[][][]
+    }
+  }[]
+}
+

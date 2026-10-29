@@ -6,6 +6,7 @@ Read `docs/Context.md` and `docs/Architecture.md` before changing product code.
 
 Build only the interactive Chennai ward map. Do not add issue reporting, accounts, dashboards, authority data, or a backend until the project documentation explicitly expands the scope.
 
+keep in mind the scope is ever expanding, not stale, so refer to docs/ too
 ## Data rules
 
 - GCC's 2025 Feature Service is the primary ward-boundary source.
