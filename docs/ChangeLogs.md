@@ -1,5 +1,13 @@
 # Change log
 
+## 2026-10-29 — Redesigned ward card with clean civic hierarchy
+
+- Replaced the flat-text layout with structured visual tiers for instant readability (Hero identifier -> Elected Councillor -> Zone Admin -> Assembly & MLA).
+- Added direct action contact pills (call and email) with phone-number formatting for councillors.
+- Designed compact two-column tiles for Zonal Administration (Committee Chairman & Zonal Officer).
+- Formatted Assembly Constituency and MLA as a dedicated legislative record with clear party and AC badges.
+- Retained full fidelity of verified data without guessing or inventing unconfirmed details.
+
 ## 2026-10-29 — Vector basemap with dark theme and high-detail road rendering
 
 - Replaced raster tiles with OpenFreeMap Dark Vector Map style (zero API keys, zero watermarks).
