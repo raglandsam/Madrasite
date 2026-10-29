@@ -10,11 +10,12 @@ export const MAP_CONFIG = {
     zones: '/data/authorities/zone-profiles.json',
     assemblies: '/data/authorities/assembly-constituencies.json',
   },
-  basemapStyleUrl: import.meta.env.VITE_BASEMAP_STYLE_URL?.trim() ?? '',
+  basemapStyleUrl:
+    import.meta.env.VITE_BASEMAP_STYLE_URL?.trim() || 'https://tiles.openfreemap.org/styles/dark',
   basemapTileUrl:
-    import.meta.env.VITE_BASEMAP_TILE_URL?.trim() ??
-    'https://basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png',
+    import.meta.env.VITE_BASEMAP_TILE_URL?.trim() ||
+    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
   basemapAttribution:
-    import.meta.env.VITE_BASEMAP_ATTRIBUTION?.trim() ??
-    '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noreferrer">CARTO</a>',
+    import.meta.env.VITE_BASEMAP_ATTRIBUTION?.trim() ||
+    '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors &copy; <a href="https://openfreemap.org" target="_blank" rel="noreferrer">OpenFreeMap</a>',
 } as const

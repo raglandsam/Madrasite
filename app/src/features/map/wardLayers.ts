@@ -15,6 +15,7 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection) {
     promoteId: 'ward_id',
   })
 
+  // Find first label layer to keep labels crisp above the ward polygon fills if desired
   map.addLayer({
     id: WARD_FILL_LAYER_ID,
     type: 'fill',
@@ -23,18 +24,18 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection) {
       'fill-color': [
         'case',
         ['boolean', ['feature-state', 'selected'], false],
-        '#005954', // Deep teal for selection
+        '#028478', // Radiant deep teal for selection
         ['boolean', ['feature-state', 'hover'], false],
-        '#1d827b', // Mid teal for hover
-        '#d8ebe7', // Pale blue-green / cool gray neutral fill
+        '#0f766e', // Vibrant mid teal for hover
+        '#11292d', // Dark translucent cool-teal fill (lets streets, roads and water remain visible)
       ],
       'fill-opacity': [
         'case',
         ['boolean', ['feature-state', 'selected'], false],
-        0.7,
+        0.58,
         ['boolean', ['feature-state', 'hover'], false],
-        0.52,
-        0.3,
+        0.42,
+        0.28,
       ],
     },
   })
@@ -47,15 +48,15 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection) {
       'line-color': [
         'case',
         ['boolean', ['feature-state', 'selected'], false],
-        '#003834', // Deepest contrast border for selected ward
+        '#2dd4bf', // Glowing bright teal for selected ward perimeter
         ['boolean', ['feature-state', 'hover'], false],
-        '#0a5852',
-        '#7ca59f', // Subtle restrained ward boundary line
+        '#14b8a6', // Mid-bright teal on hover
+        '#1f4749', // Subtle crisp dark-teal boundary between adjacent wards
       ],
       'line-width': [
         'case',
         ['boolean', ['feature-state', 'selected'], false],
-        2.4,
+        2.5,
         ['boolean', ['feature-state', 'hover'], false],
         1.8,
         0.8,
@@ -70,14 +71,28 @@ export function addZoneLayers(map: MapLibreMap, data: ZoneBoundaryFeatureCollect
     data,
   })
 
+  // Zone border casing / subtle dark halo for maximum contrast over complex road networks
+  map.addLayer({
+    id: `${ZONE_OUTLINE_LAYER_ID}-casing`,
+    type: 'line',
+    source: ZONE_SOURCE_ID,
+    paint: {
+      'line-color': '#061314',
+      'line-width': 4.5,
+      'line-opacity': 0.7,
+    },
+  })
+
+  // Prominent distinct zone graphical boundary line
   map.addLayer({
     id: ZONE_OUTLINE_LAYER_ID,
     type: 'line',
     source: ZONE_SOURCE_ID,
     paint: {
-      'line-color': '#003834', // Darker teal border blending with the theme
-      'line-width': 2.4,
-      'line-opacity': 0.85,
+      'line-color': '#00e5c8', // High-contrast, theme-matching emerald-teal
+      'line-width': 2.6,
+      'line-opacity': 0.95,
+      'line-dasharray': [3, 1], // Clear distinct graphical pattern for zone demarcation
     },
   })
 }

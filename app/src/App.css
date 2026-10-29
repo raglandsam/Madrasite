@@ -7,7 +7,7 @@ main,
   position: relative;
   min-height: 100dvh;
   overflow: hidden;
-  background: #dce8e5;
+  background: #0d1315;
 }
 
 .map-canvas {
@@ -21,10 +21,12 @@ main,
 .map-status {
   position: absolute;
   z-index: 1;
-  border: 1px solid rgba(219, 232, 226, 0.9);
-  background: rgba(13, 43, 40, 0.93);
-  box-shadow: 0 0.75rem 2.5rem rgba(7, 26, 24, 0.22);
-  color: #f7fbf9;
+  border: 1px solid rgba(45, 212, 191, 0.22);
+  background: rgba(10, 20, 22, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 0.75rem 2.5rem rgba(0, 0, 0, 0.45);
+  color: #f0fdfa;
 }
 
 .map-brand {
@@ -38,14 +40,14 @@ main,
 
 .map-brand p {
   margin: 0;
-  color: #c0ece4;
+  color: #2dd4bf;
   font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: -0.03em;
 }
 
 .map-brand span {
-  color: #c7d9d4;
+  color: #94a3b8;
   font-size: 0.75rem;
 }
 

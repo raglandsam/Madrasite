@@ -1,5 +1,13 @@
 # Change log
 
+## 2026-10-29 — Vector basemap with dark theme and high-detail road rendering
+
+- Replaced raster tiles with OpenFreeMap Dark Vector Map style (zero API keys, zero watermarks).
+- Enabled complete vector rendering of roads, highways, secondary streets, water bodies, and building footprints at all zoom levels.
+- Recalibrated ward polygons with translucent cool-dark fills to ensure street-level details and road grids show through clearly.
+- Enhanced zone boundaries with a dual-layer treatment: a dark casing underlay and a high-visibility dash-pattern cyan-teal line (#00e5c8) for unmistakable demarcation of GCC zones.
+- Updated map shell, brand banner, and cards with dark translucent styling and backdrop blur.
+
 ## 2026-10-21 — Map foundation initialised
 
 - Established the map-only MVP scope and data-handling rules.
