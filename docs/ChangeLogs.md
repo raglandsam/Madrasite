@@ -1,5 +1,11 @@
 # Change log
 
+## 2026-10-29 — Standardised Montserrat typography across app and map layers
+
+- Configured Google Fonts preconnect and Montserrat font weights (300 to 900) in index.html.
+- Updated base global root styles in index.css to default to Montserrat across all UI elements, cards, and buttons.
+- Dynamically updated basemap vector style glyphs stack to OpenMapTiles Montserrat PBF glyphs, ensuring map place names, roads, and regions render in Montserrat.
+
 ## 2026-10-29 — Redesigned ward card with clean civic hierarchy
 
 - Replaced the flat-text layout with structured visual tiers for instant readability (Hero identifier -> Elected Councillor -> Zone Admin -> Assembly & MLA).
