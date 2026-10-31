@@ -1,4 +1,5 @@
 import type { Map as MapLibreMap } from 'maplibre-gl'
+import type { MapThemeMode } from './mapConfig'
 import type { WardFeatureCollection, ZoneBoundaryFeatureCollection } from './wardTypes'
 
 export const WARD_SOURCE_ID = 'gcc-wards'
@@ -8,14 +9,17 @@ export const WARD_OUTLINE_LAYER_ID = 'gcc-wards-outline'
 export const ZONE_SOURCE_ID = 'gcc-zones'
 export const ZONE_OUTLINE_LAYER_ID = 'gcc-zones-outline'
 
-export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection) {
-  map.addSource(WARD_SOURCE_ID, {
-    type: 'geojson',
-    data,
-    promoteId: 'ward_id',
-  })
+export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection, mode: MapThemeMode = 'dark') {
+  if (!map.getSource(WARD_SOURCE_ID)) {
+    map.addSource(WARD_SOURCE_ID, {
+      type: 'geojson',
+      data,
+      promoteId: 'ward_id',
+    })
+  }
 
-  // Find first label layer to keep labels crisp above the ward polygon fills if desired
+  const isLight = mode === 'light'
+
   map.addLayer({
     id: WARD_FILL_LAYER_ID,
     type: 'fill',
@@ -24,18 +28,18 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection) {
       'fill-color': [
         'case',
         ['boolean', ['feature-state', 'selected'], false],
-        '#028478', // Radiant deep teal for selection
+        isLight ? '#2f683a' : '#028478', // Deep forest/olive green in light mode, radiant deep teal in dark mode
         ['boolean', ['feature-state', 'hover'], false],
-        '#0f766e', // Vibrant mid teal for hover
-        '#11292d', // Dark translucent cool-teal fill (lets streets, roads and water remain visible)
+        isLight ? '#52824e' : '#0f766e', // Medium olive/sage in light mode, vibrant mid-teal in dark mode
+        isLight ? '#e2ecdf' : '#11292d', // Light mild pale green fill vs dark cool-teal
       ],
       'fill-opacity': [
         'case',
         ['boolean', ['feature-state', 'selected'], false],
-        0.58,
+        isLight ? 0.62 : 0.58,
         ['boolean', ['feature-state', 'hover'], false],
-        0.42,
-        0.28,
+        isLight ? 0.48 : 0.42,
+        isLight ? 0.35 : 0.28,
       ],
     },
   })
@@ -48,10 +52,10 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection) {
       'line-color': [
         'case',
         ['boolean', ['feature-state', 'selected'], false],
-        '#2dd4bf', // Glowing bright teal for selected ward perimeter
+        isLight ? '#194420' : '#2dd4bf', // Dark pine green border on selection in light mode, luminous teal in dark mode
         ['boolean', ['feature-state', 'hover'], false],
-        '#14b8a6', // Mid-bright teal on hover
-        '#1f4749', // Subtle crisp dark-teal boundary between adjacent wards
+        isLight ? '#2e6b37' : '#14b8a6',
+        isLight ? '#8ba887' : '#1f4749', // Subtle crisp olive-sage ward boundary
       ],
       'line-width': [
         'case',
@@ -65,21 +69,25 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection) {
   })
 }
 
-export function addZoneLayers(map: MapLibreMap, data: ZoneBoundaryFeatureCollection) {
-  map.addSource(ZONE_SOURCE_ID, {
-    type: 'geojson',
-    data,
-  })
+export function addZoneLayers(map: MapLibreMap, data: ZoneBoundaryFeatureCollection, mode: MapThemeMode = 'dark') {
+  if (!map.getSource(ZONE_SOURCE_ID)) {
+    map.addSource(ZONE_SOURCE_ID, {
+      type: 'geojson',
+      data,
+    })
+  }
 
-  // Zone border casing / subtle dark halo for maximum contrast over complex road networks
+  const isLight = mode === 'light'
+
+  // Zone border casing / subtle halo for high contrast over street networks
   map.addLayer({
     id: `${ZONE_OUTLINE_LAYER_ID}-casing`,
     type: 'line',
     source: ZONE_SOURCE_ID,
     paint: {
-      'line-color': '#061314',
+      'line-color': isLight ? '#f4f8f2' : '#061314',
       'line-width': 4.5,
-      'line-opacity': 0.7,
+      'line-opacity': isLight ? 0.9 : 0.7,
     },
   })
 
@@ -89,7 +97,8 @@ export function addZoneLayers(map: MapLibreMap, data: ZoneBoundaryFeatureCollect
     type: 'line',
     source: ZONE_SOURCE_ID,
     paint: {
-      'line-color': '#00e5c8', // High-contrast, theme-matching emerald-teal
+      // In light mode: dark olive-pine green (#1a4320); In dark mode: radiant cyan-teal (#00e5c8)
+      'line-color': isLight ? '#1a4320' : '#00e5c8',
       'line-width': 2.6,
       'line-opacity': 0.95,
       'line-dasharray': [3, 1], // Clear distinct graphical pattern for zone demarcation

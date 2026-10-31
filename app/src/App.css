@@ -113,6 +113,32 @@ main,
   gap: 0.65rem;
 }
 
+/* Theme Toggle Button in Header */
+.theme-toggle-header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f0fdfa;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(45, 212, 191, 0.25);
+  border-radius: 0.55rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.theme-toggle-header-btn:hover:not(:disabled) {
+  background: rgba(45, 212, 191, 0.16);
+  border-color: #2dd4bf;
+  color: #2dd4bf;
+}
+
+.theme-toggle-icon {
+  font-size: 0.85rem;
+}
+
 .header-action-btn {
   display: inline-flex;
   align-items: center;
@@ -134,7 +160,8 @@ main,
   color: #ffffff;
 }
 
-.header-action-btn:disabled {
+.header-action-btn:disabled,
+.theme-toggle-header-btn:disabled {
   opacity: 0.5;
   cursor: wait;
 }
@@ -292,6 +319,10 @@ main,
   border-radius: 50%;
   font-size: 1.45rem;
   line-height: 1;
+  border: 0;
+  color: #f7fbf9;
+  background: transparent;
+  cursor: pointer;
 }
 
 .icon-button:hover {
@@ -336,7 +367,7 @@ main,
 }
 
 .map-status {
-  bottom: 1.25rem;
+  bottom: 3.25rem;
   left: 1.25rem;
   max-width: min(25rem, calc(100vw - 2.5rem));
   padding: 0.75rem 0.9rem;
@@ -356,6 +387,188 @@ main,
   box-shadow: 0 0.5rem 1.5rem rgba(7, 26, 24, 0.2) !important;
 }
 
+/* ==========================================================================
+   Light Mode Theme Overrides (Mild Green, Olive & Crisp Dark Green Theme)
+   ========================================================================== */
+
+.theme-light {
+  background: #f0f4ee;
+}
+
+.theme-light .site-header-bar,
+.theme-light .site-footer-bar {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(46, 107, 55, 0.22);
+  color: #1a3320;
+}
+
+.theme-light .brand-name {
+  color: #1b5327;
+}
+
+.theme-light .brand-subtitle {
+  color: #557258;
+}
+
+.theme-light .badge-v0 {
+  background: rgba(46, 107, 55, 0.1);
+  border-color: rgba(46, 107, 55, 0.25);
+  color: #1b5327;
+}
+
+.theme-light .header-status-pill {
+  background: rgba(46, 107, 55, 0.06);
+  border-color: rgba(46, 107, 55, 0.15);
+  color: #274c2d;
+}
+
+.theme-light .theme-toggle-header-btn {
+  background: rgba(46, 107, 55, 0.08);
+  border-color: rgba(46, 107, 55, 0.25);
+  color: #1b5327;
+}
+
+.theme-light .theme-toggle-header-btn:hover:not(:disabled) {
+  background: rgba(46, 107, 55, 0.15);
+  border-color: #1b5327;
+  color: #0f3618;
+}
+
+.theme-light .header-action-btn {
+  background: rgba(46, 107, 55, 0.12);
+  border-color: rgba(46, 107, 55, 0.3);
+  color: #1b5327;
+}
+
+.theme-light .header-action-btn:hover:not(:disabled) {
+  background: rgba(46, 107, 55, 0.2);
+  border-color: #1b5327;
+  color: #0f3618;
+}
+
+.theme-light .footer-version-tag,
+.theme-light .footer-link {
+  color: #1b5327;
+}
+
+.theme-light .footer-note {
+  color: #3b5c40;
+}
+
+.theme-light .footer-crowd-hint {
+  color: #557258;
+}
+
+.theme-light .ward-panel,
+.theme-light .map-status {
+  border: 1px solid rgba(46, 107, 55, 0.28);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 0.75rem 2.2rem rgba(32, 60, 36, 0.15);
+  color: #1a3320;
+}
+
+.theme-light .eyebrow {
+  color: #2e6b37;
+}
+
+.theme-light .ward-panel h1 {
+  color: #123018;
+}
+
+.theme-light .ward-panel > p:not(.eyebrow) {
+  color: #3b5c40;
+}
+
+.theme-light .ward-name {
+  color: #276332;
+}
+
+.theme-light .icon-button {
+  color: #1e5229;
+}
+
+.theme-light .icon-button:hover {
+  background: rgba(67, 138, 77, 0.12);
+}
+
+.theme-light .ward-detail {
+  background: rgba(67, 138, 77, 0.08);
+  border: 1px solid rgba(67, 138, 77, 0.14);
+}
+
+.theme-light .ward-detail dt {
+  color: #4f7353;
+}
+
+.theme-light .ward-detail dd {
+  color: #123018;
+}
+
+.theme-light .ward-section {
+  border-top-color: rgba(67, 138, 77, 0.2);
+}
+
+.theme-light .ward-section__title {
+  color: #26592f;
+}
+
+.theme-light .ward-status-note {
+  color: #4a664e;
+}
+
+.theme-light .ward-representative strong,
+.theme-light .ward-official > strong,
+.theme-light .ward-ac-record > div > strong {
+  color: #102d15;
+}
+
+.theme-light .ward-representative__role,
+.theme-light .ward-contact__label,
+.theme-light .ward-official__role,
+.theme-light .ward-ac-number,
+.theme-light .ward-ac-party {
+  color: #4f7353;
+}
+
+.theme-light .ward-representative__photo {
+  border-color: #2e6b37;
+}
+
+.theme-light .ward-contact__links a,
+.theme-light .ward-source-link {
+  color: #1e632b;
+}
+
+.theme-light .ward-ac-record + .ward-ac-record {
+  border-top-color: rgba(67, 138, 77, 0.18);
+}
+
+.theme-light .ward-ac-record p {
+  color: #2d4c32;
+}
+
+.theme-light .source-note {
+  color: #557258;
+}
+
+.theme-light .map-status {
+  color: #2d4c32;
+}
+
+.theme-light .maplibregl-ctrl-group {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border: 1px solid rgba(46, 107, 55, 0.25) !important;
+  box-shadow: 0 0.5rem 1.5rem rgba(32, 60, 36, 0.15) !important;
+}
+
+.theme-light .maplibregl-ctrl-group button {
+  border-bottom: 1px solid rgba(46, 107, 55, 0.12) !important;
+}
+
+.theme-light .maplibregl-ctrl-icon {
+  filter: none;
+}
+
 @media (max-width: 44rem) {
   .site-header-bar {
     padding: 0 0.85rem;
@@ -363,7 +576,8 @@ main,
   }
 
   .site-header-center,
-  .brand-subtitle {
+  .brand-subtitle,
+  .theme-toggle-text {
     display: none;
   }
 
@@ -406,12 +620,6 @@ main,
   .ward-details {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
-
-.ward-panel {
-  max-height: calc(100dvh - 2.5rem);
-  overflow-y: auto;
-  overscroll-behavior: contain;
 }
 
 .ward-name {
@@ -549,12 +757,4 @@ main,
 
 .source-note .ward-source-link {
   margin-top: 0;
-}
-
-@media (max-width: 44rem) {
-  .ward-panel,
-  .ward-panel--empty {
-    max-height: min(62dvh, 36rem);
-    overflow-y: auto;
-  }
 }
