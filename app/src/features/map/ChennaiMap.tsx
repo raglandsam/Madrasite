@@ -146,7 +146,6 @@ export function ChennaiMap() {
   const [selectedWard, setSelectedWard] = useState<WardProperties | null>(null)
   const [authorityData, setAuthorityData] = useState<WardCardData | null>(null)
   const [authorityStatus, setAuthorityStatus] = useState<AuthorityStatus>('loading')
-  const [isZoomedIn, setIsZoomedIn] = useState(false)
 
   const toggleTheme = () => {
     const nextMode = themeMode === 'dark' ? 'light' : 'dark'
@@ -202,12 +201,6 @@ export function ChennaiMap() {
         mapRef.current = map
         map.addControl(new NavigationControl({ showCompass: false }), 'top-right')
         map.addControl(new ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-right')
-
-        // Track zoom level to toggle footer visibility
-        map.on('zoom', () => {
-          if (!map) return
-          setIsZoomedIn(map.getZoom() > 10.75)
-        })
 
         const clearHover = () => {
           if (hoveredIdRef.current !== null && map) {
@@ -274,7 +267,6 @@ export function ChennaiMap() {
           selectedIdRef.current = nextId
           map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { selected: true })
           setSelectedWard(nextFeature.properties as WardProperties)
-          setIsZoomedIn(true)
         }
 
         const setupWards = async () => {
@@ -363,7 +355,6 @@ export function ChennaiMap() {
     }
     setSelectedWard(null)
     map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 700, maxZoom: 12 })
-    setIsZoomedIn(false)
   }
 
   const deselectWard = () => {
@@ -441,35 +432,6 @@ export function ChennaiMap() {
           <strong>Map unavailable.</strong> {errorMessage}
         </div>
       )}
-
-      {/* Bottom Footer Bar - slides down on zoom, returns on reset / full view */}
-      <footer
-        className={`site-footer-bar ${isZoomedIn ? 'site-footer-bar--hidden' : ''}`}
-        role="contentinfo"
-      >
-        <div className="footer-col-left">
-          <span className="footer-version-tag">Madrasite v0</span>
-          <span className="footer-sep">&bull;</span>
-          <span className="footer-note">Open civic cartography for Chennai citizens</span>
-        </div>
-
-        <div className="footer-col-center">
-          <span className="footer-crowd-hint">
-            Crowdsource-ready &bull; GCC GIS Verified Boundaries &bull; Public Domain Data
-          </span>
-        </div>
-
-        <div className="footer-col-right">
-          <a
-            href={MAP_CONFIG.wardSourceUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="footer-link"
-          >
-            GCC 2025 GIS Source ↗
-          </a>
-        </div>
-      </footer>
     </section>
   )
 }

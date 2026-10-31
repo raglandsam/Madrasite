@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react'
 import type { AssemblyConstituency, OfficialProfile, WardCardData } from './authorityTypes'
 import type { WardProperties } from './wardTypes'
 
@@ -7,15 +6,7 @@ type WardInfoPanelProps = {
   authorityData: WardCardData | null
   authorityStatus: 'loading' | 'ready' | 'error'
   wardSourceUrl: string
-  onDeselect: () => void
-}
-
-function SourceLink({ href, children }: { href: string; children: ReactNode }) {
-  return (
-    <a className="source-anchor" href={href} target="_blank" rel="noreferrer">
-      {children}
-    </a>
-  )
+  onDeselect?: () => void
 }
 
 function PhoneAction({ phone }: { phone: string }) {
@@ -105,8 +96,6 @@ export function WardInfoPanel({
   ward,
   authorityData,
   authorityStatus,
-  wardSourceUrl,
-  onDeselect,
 }: WardInfoPanelProps) {
   if (!ward) {
     return (
@@ -141,29 +130,24 @@ export function WardInfoPanel({
   const assemblies = fallbackAssembly ? [fallbackAssembly] : linkedAssemblies
   const councillorIsActive = councillor?.status === 'active' && Boolean(councillor.name)
 
+  const wardId = ward.ward_id ?? ward.ward
+  const wardHeading = candidateName ? `Ward ${wardId} ${candidateName}` : `Ward ${wardId}`
+
   return (
     <aside className="ward-card" aria-live="polite">
-      {/* 1. Header Banner */}
+      {/* 1. Header: Zone metadata and unified Ward ID + Ward Name title */}
       <div className="ward-card__hero">
         <div className="ward-card__hero-meta">
           <span className="zone-pill">{zoneName}</span>
           {ward.region && <span className="region-pill">{ward.region} Region</span>}
         </div>
-        <div className="ward-card__title-row">
-          <div className="ward-card__title-wrap">
-            <h1 className="ward-card__number">Ward {ward.ward}</h1>
-            {candidateName && <p className="ward-card__locality">{candidateName}</p>}
-          </div>
-          <button className="ward-card__close-btn" type="button" onClick={onDeselect} aria-label="Deselect ward">
-            ✕
-          </button>
-        </div>
+        <h1 className="ward-title">{wardHeading}</h1>
         {wardProfile?.nameConfirmed === 'no' && (
-          <p className="unconfirmed-notice">* Candidate locality label; official GCC ward title pending confirmation.</p>
+          <p className="unconfirmed-notice">* Candidate locality label; official GCC title pending confirmation.</p>
         )}
       </div>
 
-      {/* 2. Primary Tier: Ward Councillor */}
+      {/* 2. Primary Tier: Elected Councillor with circular photo */}
       <section className="councillor-block" aria-labelledby="councillor-heading">
         <div className="section-eyebrow" id="councillor-heading">
           Elected Councillor
@@ -177,7 +161,7 @@ export function WardInfoPanel({
               <div className="councillor-profile">
                 {councillor?.photoSourceUrl ? (
                   <img
-                    className="councillor-profile__avatar"
+                    className="councillor-photo"
                     src={councillor.photoSourceUrl}
                     alt={`${councillor.name}, Councillor for Ward ${ward.ward}`}
                     loading="lazy"
@@ -186,25 +170,22 @@ export function WardInfoPanel({
                     }}
                   />
                 ) : (
-                  <div className="councillor-profile__avatar-fallback" aria-hidden="true">
+                  <div className="councillor-avatar-fallback" aria-hidden="true">
                     👤
                   </div>
                 )}
-                <div className="councillor-profile__info">
-                  <strong className="councillor-profile__name">{councillor?.name}</strong>
-                  <span className="councillor-profile__badge">GCC Ward Representative</span>
+                <div className="councillor-info">
+                  <strong className="councillor-name">{councillor?.name}</strong>
+                  <span className="councillor-tagline">GCC Ward Representative</span>
                 </div>
               </div>
             ) : (
-              <div className="councillor-status-card">
-                <span className="status-indicator"></span>
-                <span>
-                  {councillor?.status === 'vacant'
-                    ? 'Seat marked Vacant in the GCC directory'
-                    : councillor?.status === 'unknown'
-                      ? 'No councillor entry listed by GCC'
-                      : 'Councillor record currently unavailable'}
-                </span>
+              <div className="vacant-notice">
+                {councillor?.status === 'vacant'
+                  ? 'Seat marked Vacant in GCC directory'
+                  : councillor?.status === 'unknown'
+                    ? 'No councillor entry listed by GCC'
+                    : 'Councillor record currently unavailable'}
               </div>
             )}
 
@@ -215,12 +196,6 @@ export function WardInfoPanel({
                   <PhoneAction key={phone} phone={phone} />
                 ))}
                 {councillor.email && <EmailAction email={councillor.email} />}
-              </div>
-            )}
-
-            {councillor?.sourceUrl && (
-              <div className="source-wrap">
-                <SourceLink href={councillor.sourceUrl}>GCC Council Directory Snapshot ↗</SourceLink>
               </div>
             )}
           </>
@@ -250,7 +225,7 @@ export function WardInfoPanel({
       {/* 4. Legislative Tier: Assembly & MLA */}
       <section className="assembly-block" aria-labelledby="assembly-heading">
         <div className="section-eyebrow" id="assembly-heading">
-          Assembly Constituency & MLA
+          Assembly Constituency &amp; MLA
         </div>
         {assemblies.length > 0 ? (
           <div className="assembly-list">
@@ -265,13 +240,6 @@ export function WardInfoPanel({
           </div>
         )}
       </section>
-
-      {/* 5. Footer info */}
-      <footer className="card-footer">
-        <span>Ward ID: {ward.ward_id}</span>
-        <span className="bullet-sep">·</span>
-        <SourceLink href={wardSourceUrl}>GCC 2025 Layer ↗</SourceLink>
-      </footer>
     </aside>
   )
 }

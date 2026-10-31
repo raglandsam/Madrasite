@@ -167,91 +167,12 @@ main,
 }
 
 /* ==========================================================================
-   Bottom Footer Bar (Slides down on zoom, comes back on reset / zoom out)
-   ========================================================================== */
-
-.site-footer-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 4.375rem;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.75rem;
-  background: rgba(10, 20, 22, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(45, 212, 191, 0.18);
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.35);
-  color: #94a3b8;
-  font-size: 0.78rem;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.site-footer-bar--hidden {
-  transform: translateY(100%);
-  opacity: 0;
-  pointer-events: none;
-}
-
-.footer-col-left {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.footer-version-tag {
-  color: #2dd4bf;
-  font-weight: 700;
-}
-
-.footer-sep {
-  opacity: 0.4;
-}
-
-.footer-note {
-  color: #cbd5e1;
-}
-
-.footer-col-center {
-  display: flex;
-  align-items: center;
-}
-
-.footer-crowd-hint {
-  color: #64748b;
-  font-weight: 500;
-}
-
-.footer-col-right {
-  display: flex;
-  align-items: center;
-}
-
-.footer-link {
-  color: #2dd4bf;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.15s ease;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-  color: #5eead4;
-}
-
-/* ==========================================================================
    Map Status Toast
    ========================================================================== */
 
 .map-status {
   position: absolute;
-  bottom: 5.25rem;
+  bottom: 1.5rem;
   left: 1.25rem;
   z-index: 15;
   border: 1px solid rgba(45, 212, 191, 0.22);
@@ -297,7 +218,7 @@ main,
 }
 
 /* ==========================================================================
-   Redesigned Ward Card (Non-AI, Human-Crafted Architecture)
+   Ward Card (Concise, Instant Readability)
    ========================================================================== */
 
 .ward-card {
@@ -306,7 +227,7 @@ main,
   right: 1.25rem;
   z-index: 20;
   width: min(24rem, calc(100vw - 2.5rem));
-  max-height: calc(100dvh - 13rem);
+  max-height: calc(100dvh - 9.25rem);
   overflow-y: auto;
   overscroll-behavior: contain;
   background: rgba(11, 20, 23, 0.94);
@@ -369,7 +290,7 @@ main,
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  padding-bottom: 0.9rem;
+  padding-bottom: 0.85rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -399,56 +320,21 @@ main,
   color: #94a3b8;
 }
 
-.ward-card__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
-.ward-card__title-group {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-}
-
-.ward-hero-badge {
-  background: #2dd4bf;
-  color: #042f2e;
-  font-size: 1.05rem;
-  font-weight: 900;
-  padding: 0.35rem 0.6rem;
-  border-radius: 0.6rem;
-  line-height: 1;
-}
-
 .ward-title {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 800;
   color: #ffffff;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.02em;
 }
 
-.dismiss-btn {
-  background: rgba(255, 255, 255, 0.06);
-  border: none;
+.unconfirmed-notice {
+  margin: 0;
+  font-size: 0.72rem;
   color: #94a3b8;
-  width: 1.8rem;
-  height: 1.8rem;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-  transition: all 0.15s ease;
-}
-
-.dismiss-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  font-style: italic;
+  line-height: 1.35;
 }
 
 /* Card Section Typography */
@@ -474,18 +360,20 @@ main,
   align-items: center;
 }
 
+/* Circular councillor photo */
 .councillor-photo {
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 0.65rem;
+  border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgba(45, 212, 191, 0.3);
+  border: 1px solid rgba(45, 212, 191, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .councillor-avatar-fallback {
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 0.65rem;
+  border-radius: 50%;
   background: rgba(45, 212, 191, 0.1);
   border: 1px solid rgba(45, 212, 191, 0.25);
   display: flex;
@@ -528,7 +416,7 @@ main,
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin-top: 0.2rem;
+  margin-top: 0.15rem;
 }
 
 .contact-pill {
@@ -567,10 +455,6 @@ main,
 
 .contact-pill__icon {
   font-size: 0.8rem;
-}
-
-.source-wrap {
-  margin-top: 0.2rem;
 }
 
 /* Secondary Tier: Zone Administration Grid */
@@ -714,37 +598,10 @@ main,
   line-height: 1.35;
 }
 
-/* Generic Source Links */
-.source-anchor {
-  color: #2dd4bf;
-  font-size: 0.72rem;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.source-anchor:hover {
-  text-decoration: underline;
-}
-
 .tier-status-text {
   color: #64748b;
   font-size: 0.76rem;
   margin: 0;
-}
-
-/* Card footer */
-.card-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.6rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
-  color: #64748b;
-  font-size: 0.72rem;
-}
-
-.bullet-sep {
-  opacity: 0.5;
 }
 
 /* ==========================================================================
@@ -806,33 +663,6 @@ main,
   color: #0c2611;
 }
 
-.theme-light .site-footer-bar {
-  background: rgba(246, 250, 244, 0.94);
-  border-top: 1px solid rgba(46, 107, 55, 0.2);
-  box-shadow: 0 -4px 20px rgba(25, 68, 32, 0.12);
-  color: #496350;
-}
-
-.theme-light .footer-version-tag {
-  color: #1e5c2b;
-}
-
-.theme-light .footer-note {
-  color: #2e4a34;
-}
-
-.theme-light .footer-crowd-hint {
-  color: #637d68;
-}
-
-.theme-light .footer-link {
-  color: #1e5c2b;
-}
-
-.theme-light .footer-link:hover {
-  color: #143e1c;
-}
-
 .theme-light .ward-card,
 .theme-light .map-status {
   border-color: rgba(46, 107, 55, 0.25);
@@ -856,17 +686,12 @@ main,
 .theme-light .empty-desc,
 .theme-light .tier-status-text,
 .theme-light .councillor-tagline,
-.theme-light .card-footer {
+.theme-light .unconfirmed-notice {
   color: #4a6851;
 }
 
 .theme-light .section-eyebrow {
   color: #1e5c2b;
-}
-
-.theme-light .ward-hero-badge {
-  background: #194420;
-  color: #ffffff;
 }
 
 .theme-light .zone-pill {
@@ -879,21 +704,13 @@ main,
   color: #2a5234;
 }
 
-.theme-light .dismiss-btn {
-  background: rgba(0, 0, 0, 0.05);
-  color: #4a6851;
-}
-
-.theme-light .dismiss-btn:hover {
-  background: rgba(46, 107, 55, 0.15);
-  color: #123319;
-}
-
 .theme-light .councillor-photo {
+  border-radius: 50%;
   border-color: rgba(46, 107, 55, 0.35);
 }
 
 .theme-light .councillor-avatar-fallback {
+  border-radius: 50%;
   background: rgba(46, 107, 55, 0.15);
   border-color: rgba(46, 107, 55, 0.3);
   color: #194420;
@@ -932,7 +749,6 @@ main,
 }
 
 .theme-light .tile-contact-link,
-.theme-light .source-anchor,
 .theme-light .gov-tile__source {
   color: #1b5327;
 }
@@ -988,23 +804,13 @@ main,
     display: none;
   }
 
-  .site-footer-bar {
-    height: 3.85rem;
-    padding: 0 1rem;
-    font-size: 0.72rem;
-  }
-
-  .footer-col-center {
-    display: none;
-  }
-
   .ward-card,
   .ward-card--empty {
     top: auto;
     right: 0.75rem;
-    bottom: 4.85rem;
+    bottom: 1rem;
     width: calc(100vw - 1.5rem);
-    max-height: min(52dvh, 28rem);
+    max-height: min(60dvh, 32rem);
     padding: 1rem;
   }
 

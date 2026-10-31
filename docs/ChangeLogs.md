@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-31 — Ward card streamlining and layout consistency
+
+- Removed the dismiss close button from the ward card in favour of direct map/ward click navigation.
+- Unified the ward title into a single concise header line: Ward [ID] [LocalityName].
+- Restored councillor photo to a 50% border-radius circular avatar.
+- Removed redundant bottom horizontal bars to ensure clean, unobstructed vertical navigation.
+
 ## 2026-10-31 — Header and footer dimensional scaling & theme toggle integration
 
 - Scaled header bar height to 7rem (2x) and footer bar height to 4.375rem (1.75x) with adjusted padding.
