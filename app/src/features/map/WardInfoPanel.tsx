@@ -130,8 +130,8 @@ export function WardInfoPanel({
   const assemblies = fallbackAssembly ? [fallbackAssembly] : linkedAssemblies
   const councillorIsActive = councillor?.status === 'active' && Boolean(councillor.name)
 
-  const wardId = ward.ward_id ?? ward.ward
-  const wardHeading = candidateName ? `Ward ${wardId} ${candidateName}` : `Ward ${wardId}`
+  const wardNum = ward.ward.trim()
+  const wardHeading = candidateName ? `Ward ${wardNum}: ${candidateName}` : `Ward ${wardNum}`
 
   return (
     <aside className="ward-card" aria-live="polite">
