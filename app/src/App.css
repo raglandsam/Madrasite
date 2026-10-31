@@ -24,12 +24,12 @@ main,
   top: 0;
   left: 0;
   right: 0;
-  height: 3.5rem;
+  height: 7rem;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.25rem;
+  padding: 0 1.75rem;
   background: rgba(10, 20, 22, 0.9);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -175,19 +175,19 @@ main,
   bottom: 0;
   left: 0;
   right: 0;
-  height: 2.5rem;
+  height: 4.375rem;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.25rem;
+  padding: 0 1.75rem;
   background: rgba(10, 20, 22, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid rgba(45, 212, 191, 0.18);
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.35);
   color: #94a3b8;
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
   transform: translateY(0);
   opacity: 1;
@@ -262,10 +262,10 @@ main,
 }
 
 .ward-panel {
-  top: 4.25rem;
+  top: 7.75rem;
   right: 1.25rem;
   width: min(21.5rem, calc(100vw - 2.5rem));
-  max-height: calc(100dvh - 7.5rem);
+  max-height: calc(100dvh - 13rem);
   padding: 1.25rem;
   border-radius: 1rem;
   overflow-y: auto;
@@ -367,7 +367,7 @@ main,
 }
 
 .map-status {
-  bottom: 3.25rem;
+  bottom: 5.25rem;
   left: 1.25rem;
   max-width: min(25rem, calc(100vw - 2.5rem));
   padding: 0.75rem 0.9rem;
@@ -571,8 +571,8 @@ main,
 
 @media (max-width: 44rem) {
   .site-header-bar {
-    padding: 0 0.85rem;
-    height: 3.2rem;
+    padding: 0 1rem;
+    height: 5.5rem;
   }
 
   .site-header-center,
@@ -582,9 +582,9 @@ main,
   }
 
   .site-footer-bar {
-    height: 2.2rem;
-    padding: 0 0.85rem;
-    font-size: 0.68rem;
+    height: 3.85rem;
+    padding: 0 1rem;
+    font-size: 0.72rem;
   }
 
   .footer-col-center {
@@ -595,16 +595,16 @@ main,
   .ward-panel--empty {
     top: auto;
     right: 0.75rem;
-    bottom: 3rem;
+    bottom: 4.85rem;
     width: calc(100vw - 1.5rem);
-    max-height: min(58dvh, 32rem);
+    max-height: min(52dvh, 28rem);
     padding: 1rem;
   }
 
   .map-status {
     bottom: auto;
     left: 0.75rem;
-    top: 4rem;
+    top: 6rem;
   }
 
   .ward-details {

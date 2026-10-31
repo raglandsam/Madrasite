@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-31 — Header and footer dimensional scaling & theme toggle integration
+
+- Scaled header bar height to 7rem (2x) and footer bar height to 4.375rem (1.75x) with adjusted padding.
+- Re-anchored the floating selected-ward panel and map status indicator to maintain clean offsets and prevent visual overlap.
+- Integrated persistent light/dark theme toggle into the top navigation header bar alongside brand identity and search placeholder.
+- Updated responsive rules for mobile viewports maintaining proportionate bar sizing.
+
 ## 2026-10-29 — Vector basemap with dark theme and high-detail road rendering
 
 - Replaced raster tiles with OpenFreeMap Dark Vector Map style (zero API keys, zero watermarks).
