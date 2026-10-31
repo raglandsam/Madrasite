@@ -1,3 +1,5 @@
+export type MapThemeMode = 'dark' | 'light'
+
 export const MAP_CONFIG = {
   fallbackCenter: [80.2707, 13.0827] as const,
   fallbackZoom: 10,
@@ -9,6 +11,10 @@ export const MAP_CONFIG = {
     councillors: '/data/authorities/councillor-profiles.json',
     zones: '/data/authorities/zone-profiles.json',
     assemblies: '/data/authorities/assembly-constituencies.json',
+  },
+  basemapStyles: {
+    dark: import.meta.env.VITE_BASEMAP_STYLE_URL_DARK?.trim() || 'https://tiles.openfreemap.org/styles/dark',
+    light: import.meta.env.VITE_BASEMAP_STYLE_URL_LIGHT?.trim() || 'https://tiles.openfreemap.org/styles/positron',
   },
   basemapStyleUrl:
     import.meta.env.VITE_BASEMAP_STYLE_URL?.trim() || 'https://tiles.openfreemap.org/styles/dark',

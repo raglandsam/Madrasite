@@ -56,6 +56,159 @@ main,
   left: 1.25rem;
   border-radius: 0.7rem;
   overflow: hidden;
+  display: flex;
+}
+
+.map-actions button + button {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.theme-toggle-btn {
+  font-size: 0.8rem !important;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* ==========================================================================
+   Light Mode Theme Overrides (Mild Green, Olive & Crisp Dark Green Theme)
+   ========================================================================== */
+
+.theme-light {
+  background: #f0f4ee;
+}
+
+.theme-light .map-brand,
+.theme-light .map-actions,
+.theme-light .ward-panel,
+.theme-light .map-status {
+  border: 1px solid rgba(46, 107, 55, 0.28);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0.75rem 2.2rem rgba(32, 60, 36, 0.15);
+  color: #1a3320;
+}
+
+.theme-light .map-brand p {
+  color: #1e5229;
+}
+
+.theme-light .map-brand span {
+  color: #557258;
+}
+
+.theme-light .map-actions button {
+  color: #1e5229;
+}
+
+.theme-light .map-actions button:hover:not(:disabled) {
+  background: rgba(67, 138, 77, 0.12);
+}
+
+.theme-light .map-actions button + button {
+  border-left: 1px solid rgba(46, 107, 55, 0.2);
+}
+
+.theme-light .eyebrow {
+  color: #2e6b37;
+}
+
+.theme-light .ward-panel h1 {
+  color: #123018;
+}
+
+.theme-light .ward-panel > p:not(.eyebrow) {
+  color: #3b5c40;
+}
+
+.theme-light .ward-name {
+  color: #276332;
+}
+
+.theme-light .icon-button {
+  color: #1e5229;
+}
+
+.theme-light .icon-button:hover {
+  background: rgba(67, 138, 77, 0.12);
+}
+
+.theme-light .ward-detail {
+  background: rgba(67, 138, 77, 0.08);
+  border: 1px solid rgba(67, 138, 77, 0.14);
+}
+
+.theme-light .ward-detail dt {
+  color: #4f7353;
+}
+
+.theme-light .ward-detail dd {
+  color: #123018;
+}
+
+.theme-light .ward-section {
+  border-top-color: rgba(67, 138, 77, 0.2);
+}
+
+.theme-light .ward-section__title {
+  color: #26592f;
+}
+
+.theme-light .ward-status-note {
+  color: #4a664e;
+}
+
+.theme-light .ward-representative strong,
+.theme-light .ward-official > strong,
+.theme-light .ward-ac-record > div > strong {
+  color: #102d15;
+}
+
+.theme-light .ward-representative__role,
+.theme-light .ward-contact__label,
+.theme-light .ward-official__role,
+.theme-light .ward-ac-number,
+.theme-light .ward-ac-party {
+  color: #4f7353;
+}
+
+.theme-light .ward-representative__photo {
+  border-color: #2e6b37;
+}
+
+.theme-light .ward-contact__links a,
+.theme-light .ward-source-link {
+  color: #1e632b;
+}
+
+.theme-light .ward-ac-record + .ward-ac-record {
+  border-top-color: rgba(67, 138, 77, 0.18);
+}
+
+.theme-light .ward-ac-record p {
+  color: #2d4c32;
+}
+
+.theme-light .source-note {
+  color: #557258;
+}
+
+.theme-light .map-status {
+  color: #2d4c32;
+}
+
+.theme-light .maplibregl-ctrl-group {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border: 1px solid rgba(46, 107, 55, 0.25) !important;
+  box-shadow: 0 0.5rem 1.5rem rgba(32, 60, 36, 0.15) !important;
+}
+
+.theme-light .maplibregl-ctrl-group button {
+  border-bottom: 1px solid rgba(46, 107, 55, 0.12) !important;
+}
+
+.theme-light .maplibregl-ctrl-icon {
+  filter: none;
 }
 
 .map-actions button,

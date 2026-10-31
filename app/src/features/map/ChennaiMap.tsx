@@ -13,7 +13,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import { fetchWardCardData } from './authorityData'
 import type { WardCardData } from './authorityTypes'
 import { WardInfoPanel } from './WardInfoPanel'
-import { MAP_CONFIG } from './mapConfig'
+import { MAP_CONFIG, type MapThemeMode } from './mapConfig'
 import { addWardLayers, addZoneLayers, WARD_FILL_LAYER_ID, WARD_SOURCE_ID } from './wardLayers'
 import type { WardFeatureCollection, WardProperties, ZoneBoundaryFeatureCollection } from './wardTypes'
 
@@ -23,20 +23,71 @@ type MapStatus = 'loading' | 'ready' | 'error'
 type AuthorityStatus = 'loading' | 'ready' | 'error'
 type FeatureId = string | number
 
-function createBasemapStyle(): StyleSpecification | string {
-  if (MAP_CONFIG.basemapStyleUrl) return MAP_CONFIG.basemapStyleUrl
-
-  return {
-    version: 8,
-    sources: {
-      osm: {
-        type: 'raster',
-        tiles: [MAP_CONFIG.basemapTileUrl],
-        tileSize: 256,
-        attribution: MAP_CONFIG.basemapAttribution,
+async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promise<StyleSpecification | string> {
+  const url = MAP_CONFIG.basemapStyles[mode]
+  if (!url) {
+    return {
+      version: 8,
+      sources: {
+        osm: {
+          type: 'raster',
+          tiles: [MAP_CONFIG.basemapTileUrl],
+          tileSize: 256,
+          attribution: MAP_CONFIG.basemapAttribution,
+        },
       },
-    },
-    layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
+      layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
+    }
+  }
+
+  try {
+    const res = await fetch(url, { signal })
+    if (!res.ok) return url
+    const style = (await res.json()) as StyleSpecification
+
+    if (mode === 'dark') {
+      for (const layer of style.layers) {
+        // Amplify water bodies
+        if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
+          layer.paint['fill-color'] = '#103444'
+        }
+        if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
+          layer.paint['line-color'] = '#16485e'
+        }
+        // Lighten place & street names for high contrast
+        if (layer.type === 'symbol' && layer.paint) {
+          if (layer.id.startsWith('place_') || layer.id.startsWith('highway_name')) {
+            layer.paint['text-color'] = '#e2e8f0'
+            layer.paint['text-halo-color'] = '#050b0d'
+            layer.paint['text-halo-width'] = 1.6
+          }
+        }
+      }
+    } else {
+      // Light Mode (Mild Green Palette)
+      for (const layer of style.layers) {
+        if (layer.type === 'background' && layer.paint) {
+          layer.paint['background-color'] = '#f3f6f1'
+        }
+        if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
+          layer.paint['fill-color'] = '#b6d7d4'
+        }
+        if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
+          layer.paint['line-color'] = '#9ac2be'
+        }
+        if (layer.type === 'symbol' && layer.paint) {
+          if (layer.id.includes('place') || layer.id.includes('highway') || layer.id.includes('road')) {
+            layer.paint['text-color'] = '#1c3624'
+            layer.paint['text-halo-color'] = '#ffffff'
+            layer.paint['text-halo-width'] = 1.5
+          }
+        }
+      }
+    }
+
+    return style
+  } catch {
+    return url
   }
 }
 
@@ -75,74 +126,29 @@ export function ChennaiMap() {
   const boundsRef = useRef<LngLatBounds | null>(null)
   const hoveredIdRef = useRef<FeatureId | null>(null)
   const selectedIdRef = useRef<FeatureId | null>(null)
+  const wardDataRef = useRef<WardFeatureCollection | null>(null)
+  const zoneDataRef = useRef<ZoneBoundaryFeatureCollection | null>(null)
+
+  const [themeMode, setThemeMode] = useState<MapThemeMode>(() => {
+    const saved = localStorage.getItem('madrasite_theme')
+    return saved === 'light' ? 'light' : 'dark'
+  })
   const [status, setStatus] = useState<MapStatus>('loading')
   const [errorMessage, setErrorMessage] = useState('')
   const [selectedWard, setSelectedWard] = useState<WardProperties | null>(null)
   const [authorityData, setAuthorityData] = useState<WardCardData | null>(null)
   const [authorityStatus, setAuthorityStatus] = useState<AuthorityStatus>('loading')
 
+  const toggleTheme = () => {
+    const nextMode = themeMode === 'dark' ? 'light' : 'dark'
+    setThemeMode(nextMode)
+    localStorage.setItem('madrasite_theme', nextMode)
+  }
+
+  // Load authority data once on mount
   useEffect(() => {
-    const container = mapContainerRef.current
-    if (!container) return undefined
-
-    let destroyed = false
     const abortController = new AbortController()
-    const map = new MapLibreMap({
-      container,
-      style: createBasemapStyle(),
-      center: [...MAP_CONFIG.fallbackCenter] as [number, number],
-      zoom: MAP_CONFIG.fallbackZoom,
-      attributionControl: { compact: true },
-    })
-    mapRef.current = map
-    map.addControl(new NavigationControl({ showCompass: false }), 'top-right')
-    map.addControl(new ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-right')
-
-    const clearHover = () => {
-      if (hoveredIdRef.current !== null) {
-        map.setFeatureState({ source: WARD_SOURCE_ID, id: hoveredIdRef.current }, { hover: false })
-        hoveredIdRef.current = null
-      }
-      map.getCanvas().style.cursor = ''
-    }
-
-    const clearSelection = () => {
-      if (selectedIdRef.current !== null) {
-        map.setFeatureState({ source: WARD_SOURCE_ID, id: selectedIdRef.current }, { selected: false })
-        selectedIdRef.current = null
-      }
-      setSelectedWard(null)
-    }
-
-    const handleMouseMove = (event: MapMouseEvent) => {
-      const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
-      const nextId = feature?.id
-      if (nextId === undefined) {
-        clearHover()
-        return
-      }
-
-      if (hoveredIdRef.current === nextId) return
-      clearHover()
-      map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { hover: true })
-      hoveredIdRef.current = nextId
-      map.getCanvas().style.cursor = 'pointer'
-    }
-
-    const handleClick = (event: MapMouseEvent) => {
-      const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
-      if (!feature || feature.id === undefined) {
-        clearSelection()
-        return
-      }
-
-      if (selectedIdRef.current !== feature.id) {
-        clearSelection()
-        map.setFeatureState({ source: WARD_SOURCE_ID, id: feature.id }, { selected: true })
-        selectedIdRef.current = feature.id
-      }
-      setSelectedWard(feature.properties as WardProperties)
-    }
+    let destroyed = false
 
     const loadAuthorityData = async () => {
       try {
@@ -157,55 +163,160 @@ export function ChennaiMap() {
     }
     void loadAuthorityData()
 
-    const setupWards = async () => {
+    return () => {
+      destroyed = true
+      abortController.abort()
+    }
+  }, [])
+
+  // Initialize and manage map instance on mount & theme change
+  useEffect(() => {
+    const container = mapContainerRef.current
+    if (!container) return undefined
+
+    let destroyed = false
+    const abortController = new AbortController()
+    let map: MapLibreMap | null = null
+
+    const initMap = async () => {
       try {
-        const [wardResponse, zoneResponse] = await Promise.all([
-          fetch(MAP_CONFIG.wardDataUrl, { signal: abortController.signal }),
-          fetch(MAP_CONFIG.zoneDataUrl, { signal: abortController.signal }),
-        ])
-
-        if (!wardResponse.ok) throw new Error('Ward data request failed with status ' + wardResponse.status + '.')
-
-        const wardData: unknown = await wardResponse.json()
-        if (!isWardFeatureCollection(wardData)) throw new Error('The ward dataset is not a valid GeoJSON FeatureCollection.')
-
-        const bounds = wardBounds(wardData)
+        setStatus('loading')
+        const style = await loadBasemapStyle(themeMode, abortController.signal)
         if (destroyed) return
 
-        addWardLayers(map, wardData)
+        map = new MapLibreMap({
+          container,
+          style,
+          center: [...MAP_CONFIG.fallbackCenter] as [number, number],
+          zoom: MAP_CONFIG.fallbackZoom,
+          attributionControl: { compact: true },
+        })
+        mapRef.current = map
+        map.addControl(new NavigationControl({ showCompass: false }), 'top-right')
+        map.addControl(new ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-right')
 
-        if (zoneResponse.ok) {
-          const zoneData: unknown = await zoneResponse.json()
-          if (isZoneBoundaryFeatureCollection(zoneData)) {
-            addZoneLayers(map, zoneData)
+        const clearHover = () => {
+          if (hoveredIdRef.current !== null && map) {
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: hoveredIdRef.current }, { hover: false })
+            hoveredIdRef.current = null
+          }
+          if (map) map.getCanvas().style.cursor = ''
+        }
+
+        const clearSelection = () => {
+          if (selectedIdRef.current !== null && map) {
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: selectedIdRef.current }, { selected: false })
+            selectedIdRef.current = null
+          }
+          setSelectedWard(null)
+        }
+
+        const handleMouseMove = (event: MapMouseEvent) => {
+          if (!map) return
+          const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
+          const nextId = feature?.id
+          if (nextId === undefined) {
+            clearHover()
+            return
+          }
+
+          if (hoveredIdRef.current === nextId) return
+          clearHover()
+          map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { hover: true })
+          hoveredIdRef.current = nextId
+          map.getCanvas().style.cursor = 'pointer'
+        }
+
+        const handleClick = (event: MapMouseEvent) => {
+          if (!map) return
+          const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
+          if (!feature || feature.id === undefined) {
+            clearSelection()
+            return
+          }
+
+          if (selectedIdRef.current !== feature.id) {
+            clearSelection()
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: feature.id }, { selected: true })
+            selectedIdRef.current = feature.id
+          }
+          setSelectedWard(feature.properties as WardProperties)
+        }
+
+        const setupWards = async () => {
+          if (!map) return
+          try {
+            let wardData = wardDataRef.current
+            let zoneData = zoneDataRef.current
+
+            if (!wardData) {
+              const [wardResponse, zoneResponse] = await Promise.all([
+                fetch(MAP_CONFIG.wardDataUrl, { signal: abortController.signal }),
+                fetch(MAP_CONFIG.zoneDataUrl, { signal: abortController.signal }),
+              ])
+
+              if (!wardResponse.ok) throw new Error('Ward data request failed with status ' + wardResponse.status + '.')
+
+              const parsedWards: unknown = await wardResponse.json()
+              if (!isWardFeatureCollection(parsedWards)) throw new Error('The ward dataset is not a valid GeoJSON FeatureCollection.')
+
+              wardData = parsedWards
+              wardDataRef.current = parsedWards
+
+              if (zoneResponse.ok) {
+                const parsedZones: unknown = await zoneResponse.json()
+                if (isZoneBoundaryFeatureCollection(parsedZones)) {
+                  zoneData = parsedZones
+                  zoneDataRef.current = parsedZones
+                }
+              }
+            }
+
+            const bounds = boundsRef.current ?? wardBounds(wardData)
+            boundsRef.current = bounds
+            if (destroyed) return
+
+            addWardLayers(map, wardData, themeMode)
+            if (zoneData) {
+              addZoneLayers(map, zoneData, themeMode)
+            }
+
+            // Restore selection feature state if a ward was already selected
+            if (selectedIdRef.current !== null) {
+              map.setFeatureState({ source: WARD_SOURCE_ID, id: selectedIdRef.current }, { selected: true })
+            }
+
+            map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 0, maxZoom: 12 })
+            map.on('mousemove', handleMouseMove)
+            map.on('click', handleClick)
+            map.getCanvas().addEventListener('mouseleave', clearHover)
+            setStatus('ready')
+          } catch (error) {
+            if (destroyed || (error instanceof DOMException && error.name === 'AbortError')) return
+            setErrorMessage(error instanceof Error ? error.message : 'The ward map could not be loaded.')
+            setStatus('error')
           }
         }
 
-        boundsRef.current = bounds
-        map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 0, maxZoom: 12 })
-        map.on('mousemove', handleMouseMove)
-        map.on('click', handleClick)
-        map.getCanvas().addEventListener('mouseleave', clearHover)
-        setStatus('ready')
+        map.once('load', setupWards)
       } catch (error) {
         if (destroyed || (error instanceof DOMException && error.name === 'AbortError')) return
-        setErrorMessage(error instanceof Error ? error.message : 'The ward map could not be loaded.')
+        setErrorMessage(error instanceof Error ? error.message : 'The basemap could not be loaded.')
         setStatus('error')
       }
     }
 
-    map.once('load', setupWards)
+    void initMap()
 
     return () => {
       destroyed = true
       abortController.abort()
-      map.off('mousemove', handleMouseMove)
-      map.off('click', handleClick)
-      map.getCanvas().removeEventListener('mouseleave', clearHover)
-      map.remove()
-      mapRef.current = null
+      if (map) {
+        map.remove()
+        mapRef.current = null
+      }
     }
-  }, [])
+  }, [themeMode])
 
   const resetMap = () => {
     const map = mapRef.current
@@ -230,7 +341,7 @@ export function ChennaiMap() {
   }
 
   return (
-    <section className="map-shell" aria-label="Interactive Chennai municipal ward map">
+    <section className={`map-shell theme-${themeMode}`} aria-label="Interactive Chennai municipal ward map">
       <div className="map-canvas" ref={mapContainerRef} />
       <header className="map-brand">
         <p>Madrasite</p>
@@ -239,6 +350,15 @@ export function ChennaiMap() {
       <div className="map-actions">
         <button type="button" onClick={resetMap} disabled={status !== 'ready'}>
           Return to Chennai
+        </button>
+        <button
+          type="button"
+          onClick={toggleTheme}
+          disabled={status !== 'ready'}
+          className="theme-toggle-btn"
+          aria-label={`Switch to ${themeMode === 'dark' ? 'light' : 'dark'} mode`}
+        >
+          {themeMode === 'dark' ? '☀️ Light' : '🌙 Dark'}
         </button>
       </div>
       <WardInfoPanel
