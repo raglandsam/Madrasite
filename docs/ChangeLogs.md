@@ -5,6 +5,7 @@
 - Configured Google Fonts preconnect and Montserrat font weights (300 to 900) in index.html.
 - Updated base global root styles in index.css to default to Montserrat across all UI elements, cards, and buttons.
 - Dynamically updated basemap vector style glyphs stack to OpenMapTiles Montserrat PBF glyphs, ensuring map place names, roads, and regions render in Montserrat.
+- Noted in project documentation that Montserrat is the current baseline typeface and will be iterated in future milestones.
 
 ## 2026-10-29 — Redesigned ward card with clean civic hierarchy
 

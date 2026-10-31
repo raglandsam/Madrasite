@@ -27,6 +27,10 @@ The primary source is GCC's 2025 Feature Service:
 
 Ward boundaries are layer `2` (`EDP_wardBoundary_2025`). The service reports EPSG:32644; browser GeoJSON must be genuinely reprojected to EPSG:4326, never merely relabelled.
 
+## Visual design & typography direction
+
+- **Typography**: Montserrat is adopted as the current working typeface across UI and basemap glyphs. Font selection is not final and will be revisited in future design iterations.
+
 ## Product principles
 
 1. Correct official boundary data before visual polish.

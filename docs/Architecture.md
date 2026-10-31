@@ -23,6 +23,11 @@ Madrasite/
 - Local GeoJSON for the first map prototype (ward polygons and derived zone boundary lines). MVT/vector tiles are a later performance option, not an initial requirement.
 - Neutral raster basemap style (Carto Voyager without labels) matching the restrained teal/cool-gray design palette.
 
+## Typography & Theming
+
+- **Current Font**: Montserrat (weights 300–900) is currently configured across all frontend UI elements and vector map text/place-name glyphs.
+- **Future Evolution**: Font choices are provisional and subject to future design iteration as branding and multilingual (Tamil / English) civic readability requirements evolve.
+
 ## Map feature boundaries
 
 `src/features/map/` owns map configuration, source-property types, visual layer definitions, and selection UI. It must not contain product logic for future civic reports or backend APIs.
