@@ -23,20 +23,49 @@ type MapStatus = 'loading' | 'ready' | 'error'
 type AuthorityStatus = 'loading' | 'ready' | 'error'
 type FeatureId = string | number
 
-function createBasemapStyle(): StyleSpecification | string {
-  if (MAP_CONFIG.basemapStyleUrl) return MAP_CONFIG.basemapStyleUrl
-
-  return {
-    version: 8,
-    sources: {
-      osm: {
-        type: 'raster',
-        tiles: [MAP_CONFIG.basemapTileUrl],
-        tileSize: 256,
-        attribution: MAP_CONFIG.basemapAttribution,
+async function loadBasemapStyle(signal: AbortSignal): Promise<StyleSpecification | string> {
+  const url = MAP_CONFIG.basemapStyleUrl
+  if (!url) {
+    return {
+      version: 8,
+      sources: {
+        osm: {
+          type: 'raster',
+          tiles: [MAP_CONFIG.basemapTileUrl],
+          tileSize: 256,
+          attribution: MAP_CONFIG.basemapAttribution,
+        },
       },
-    },
-    layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
+      layers: [{ id: 'osm', type: 'raster', source: 'osm' }],
+    }
+  }
+
+  try {
+    const res = await fetch(url, { signal })
+    if (!res.ok) return url
+    const style = (await res.json()) as StyleSpecification
+
+    for (const layer of style.layers) {
+      // Amplify and emphasize water bodies (rivers, lakes, coastline)
+      if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
+        layer.paint['fill-color'] = '#103444'
+      }
+      if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
+        layer.paint['line-color'] = '#16485e'
+      }
+      // Lighten place & street names for high contrast against dark canvas
+      if (layer.type === 'symbol' && layer.paint) {
+        if (layer.id.startsWith('place_') || layer.id.startsWith('highway_name')) {
+          layer.paint['text-color'] = '#e2e8f0'
+          layer.paint['text-halo-color'] = '#050b0d'
+          layer.paint['text-halo-width'] = 1.6
+        }
+      }
+    }
+
+    return style
+  } catch {
+    return url
   }
 }
 
@@ -80,6 +109,7 @@ export function ChennaiMap() {
   const [selectedWard, setSelectedWard] = useState<WardProperties | null>(null)
   const [authorityData, setAuthorityData] = useState<WardCardData | null>(null)
   const [authorityStatus, setAuthorityStatus] = useState<AuthorityStatus>('loading')
+  const [isZoomedIn, setIsZoomedIn] = useState(false)
 
   useEffect(() => {
     const container = mapContainerRef.current
@@ -87,62 +117,128 @@ export function ChennaiMap() {
 
     let destroyed = false
     const abortController = new AbortController()
-    const map = new MapLibreMap({
-      container,
-      style: createBasemapStyle(),
-      center: [...MAP_CONFIG.fallbackCenter] as [number, number],
-      zoom: MAP_CONFIG.fallbackZoom,
-      attributionControl: { compact: true },
-    })
-    mapRef.current = map
-    map.addControl(new NavigationControl({ showCompass: false }), 'top-right')
-    map.addControl(new ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-right')
+    let map: MapLibreMap | null = null
 
-    const clearHover = () => {
-      if (hoveredIdRef.current !== null) {
-        map.setFeatureState({ source: WARD_SOURCE_ID, id: hoveredIdRef.current }, { hover: false })
-        hoveredIdRef.current = null
+    const initMap = async () => {
+      try {
+        const style = await loadBasemapStyle(abortController.signal)
+        if (destroyed) return
+
+        map = new MapLibreMap({
+          container,
+          style,
+          center: [...MAP_CONFIG.fallbackCenter] as [number, number],
+          zoom: MAP_CONFIG.fallbackZoom,
+          attributionControl: { compact: true },
+        })
+        mapRef.current = map
+        map.addControl(new NavigationControl({ showCompass: false }), 'top-right')
+        map.addControl(new ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-right')
+
+        const updateZoomState = () => {
+          if (!map) return
+          // When zoom is > 10.75, user is inspected into neighbourhoods -> slide footer down
+          const zoom = map.getZoom()
+          setIsZoomedIn(zoom > 10.75)
+        }
+
+        map.on('zoom', updateZoomState)
+
+        const clearHover = () => {
+          if (hoveredIdRef.current !== null && map) {
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: hoveredIdRef.current }, { hover: false })
+            hoveredIdRef.current = null
+          }
+          if (map) map.getCanvas().style.cursor = ''
+        }
+
+        const clearSelection = () => {
+          if (selectedIdRef.current !== null && map) {
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: selectedIdRef.current }, { selected: false })
+            selectedIdRef.current = null
+          }
+          setSelectedWard(null)
+        }
+
+        const handleMouseMove = (event: MapMouseEvent) => {
+          if (!map) return
+          const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
+          const nextId = feature?.id
+          if (nextId === undefined) {
+            clearHover()
+            return
+          }
+
+          if (hoveredIdRef.current === nextId) return
+          clearHover()
+          map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { hover: true })
+          hoveredIdRef.current = nextId
+          map.getCanvas().style.cursor = 'pointer'
+        }
+
+        const handleClick = (event: MapMouseEvent) => {
+          if (!map) return
+          const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
+          if (!feature || feature.id === undefined) {
+            clearSelection()
+            return
+          }
+
+          if (selectedIdRef.current !== feature.id) {
+            clearSelection()
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: feature.id }, { selected: true })
+            selectedIdRef.current = feature.id
+          }
+          setSelectedWard(feature.properties as WardProperties)
+        }
+
+        const setupWards = async () => {
+          if (!map) return
+          try {
+            const [wardResponse, zoneResponse] = await Promise.all([
+              fetch(MAP_CONFIG.wardDataUrl, { signal: abortController.signal }),
+              fetch(MAP_CONFIG.zoneDataUrl, { signal: abortController.signal }),
+            ])
+
+            if (!wardResponse.ok) throw new Error('Ward data request failed with status ' + wardResponse.status + '.')
+
+            const wardData: unknown = await wardResponse.json()
+            if (!isWardFeatureCollection(wardData)) throw new Error('The ward dataset is not a valid GeoJSON FeatureCollection.')
+
+            const bounds = wardBounds(wardData)
+            if (destroyed) return
+
+            addWardLayers(map, wardData)
+
+            if (zoneResponse.ok) {
+              const zoneData: unknown = await zoneResponse.json()
+              if (isZoneBoundaryFeatureCollection(zoneData)) {
+                addZoneLayers(map, zoneData)
+              }
+            }
+
+            boundsRef.current = bounds
+            map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 0, maxZoom: 12 })
+            map.on('mousemove', handleMouseMove)
+            map.on('click', handleClick)
+            map.getCanvas().addEventListener('mouseleave', clearHover)
+            setStatus('ready')
+          } catch (error) {
+            if (destroyed || (error instanceof DOMException && error.name === 'AbortError')) return
+            setErrorMessage(error instanceof Error ? error.message : 'The ward map could not be loaded.')
+            setStatus('error')
+          }
+        }
+
+        map.once('load', setupWards)
+      } catch (error) {
+        if (destroyed || (error instanceof DOMException && error.name === 'AbortError')) return
+        setErrorMessage(error instanceof Error ? error.message : 'The basemap could not be loaded.')
+        setStatus('error')
       }
-      map.getCanvas().style.cursor = ''
     }
 
-    const clearSelection = () => {
-      if (selectedIdRef.current !== null) {
-        map.setFeatureState({ source: WARD_SOURCE_ID, id: selectedIdRef.current }, { selected: false })
-        selectedIdRef.current = null
-      }
-      setSelectedWard(null)
-    }
-
-    const handleMouseMove = (event: MapMouseEvent) => {
-      const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
-      const nextId = feature?.id
-      if (nextId === undefined) {
-        clearHover()
-        return
-      }
-
-      if (hoveredIdRef.current === nextId) return
-      clearHover()
-      map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { hover: true })
-      hoveredIdRef.current = nextId
-      map.getCanvas().style.cursor = 'pointer'
-    }
-
-    const handleClick = (event: MapMouseEvent) => {
-      const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
-      if (!feature || feature.id === undefined) {
-        clearSelection()
-        return
-      }
-
-      if (selectedIdRef.current !== feature.id) {
-        clearSelection()
-        map.setFeatureState({ source: WARD_SOURCE_ID, id: feature.id }, { selected: true })
-        selectedIdRef.current = feature.id
-      }
-      setSelectedWard(feature.properties as WardProperties)
-    }
+    void initMap()
 
     const loadAuthorityData = async () => {
       try {
@@ -157,53 +253,13 @@ export function ChennaiMap() {
     }
     void loadAuthorityData()
 
-    const setupWards = async () => {
-      try {
-        const [wardResponse, zoneResponse] = await Promise.all([
-          fetch(MAP_CONFIG.wardDataUrl, { signal: abortController.signal }),
-          fetch(MAP_CONFIG.zoneDataUrl, { signal: abortController.signal }),
-        ])
-
-        if (!wardResponse.ok) throw new Error('Ward data request failed with status ' + wardResponse.status + '.')
-
-        const wardData: unknown = await wardResponse.json()
-        if (!isWardFeatureCollection(wardData)) throw new Error('The ward dataset is not a valid GeoJSON FeatureCollection.')
-
-        const bounds = wardBounds(wardData)
-        if (destroyed) return
-
-        addWardLayers(map, wardData)
-
-        if (zoneResponse.ok) {
-          const zoneData: unknown = await zoneResponse.json()
-          if (isZoneBoundaryFeatureCollection(zoneData)) {
-            addZoneLayers(map, zoneData)
-          }
-        }
-
-        boundsRef.current = bounds
-        map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 0, maxZoom: 12 })
-        map.on('mousemove', handleMouseMove)
-        map.on('click', handleClick)
-        map.getCanvas().addEventListener('mouseleave', clearHover)
-        setStatus('ready')
-      } catch (error) {
-        if (destroyed || (error instanceof DOMException && error.name === 'AbortError')) return
-        setErrorMessage(error instanceof Error ? error.message : 'The ward map could not be loaded.')
-        setStatus('error')
-      }
-    }
-
-    map.once('load', setupWards)
-
     return () => {
       destroyed = true
       abortController.abort()
-      map.off('mousemove', handleMouseMove)
-      map.off('click', handleClick)
-      map.getCanvas().removeEventListener('mouseleave', clearHover)
-      map.remove()
-      mapRef.current = null
+      if (map) {
+        map.remove()
+        mapRef.current = null
+      }
     }
   }, [])
 
@@ -218,6 +274,7 @@ export function ChennaiMap() {
     }
     setSelectedWard(null)
     map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 700, maxZoom: 12 })
+    setIsZoomedIn(false)
   }
 
   const deselectWard = () => {
@@ -232,15 +289,38 @@ export function ChennaiMap() {
   return (
     <section className="map-shell" aria-label="Interactive Chennai municipal ward map">
       <div className="map-canvas" ref={mapContainerRef} />
-      <header className="map-brand">
-        <p>Madrasite</p>
-        <span>Chennai ward explorer</span>
+
+      {/* Top Header Bar */}
+      <header className="site-header-bar" role="banner">
+        <div className="site-header-left">
+          <span className="brand-logo" aria-hidden="true">🏛️</span>
+          <div className="brand-titles">
+            <h1 className="brand-name">Madrasite</h1>
+            <span className="brand-subtitle">Chennai Ward &amp; Civic Map</span>
+          </div>
+          <span className="badge-v0">v0 pre-release</span>
+        </div>
+
+        <div className="site-header-center">
+          <span className="header-status-pill">
+            <span className="status-dot-active" aria-hidden="true"></span>
+            200 GCC Wards &bull; 15 Zones
+          </span>
+        </div>
+
+        <div className="site-header-right">
+          <button
+            type="button"
+            className="header-action-btn"
+            onClick={resetMap}
+            disabled={status !== 'ready'}
+            title="Reset map view to entire Chennai"
+          >
+            <span>⟲</span> Return to Chennai
+          </button>
+        </div>
       </header>
-      <div className="map-actions">
-        <button type="button" onClick={resetMap} disabled={status !== 'ready'}>
-          Return to Chennai
-        </button>
-      </div>
+
       <WardInfoPanel
         ward={selectedWard}
         authorityData={authorityData}
@@ -248,12 +328,42 @@ export function ChennaiMap() {
         wardSourceUrl={MAP_CONFIG.wardSourceUrl}
         onDeselect={deselectWard}
       />
+
       {status === 'loading' && <div className="map-status">Loading validated ward boundaries…</div>}
       {status === 'error' && (
         <div className="map-status map-status--error" role="alert">
           <strong>Map unavailable.</strong> {errorMessage}
         </div>
       )}
+
+      {/* Bottom Footer Bar - slides down on zoom, returns on reset / full view */}
+      <footer
+        className={`site-footer-bar ${isZoomedIn ? 'site-footer-bar--hidden' : ''}`}
+        role="contentinfo"
+      >
+        <div className="footer-col-left">
+          <span className="footer-version-tag">Madrasite v0</span>
+          <span className="footer-sep">&bull;</span>
+          <span className="footer-note">Open civic cartography for Chennai citizens</span>
+        </div>
+
+        <div className="footer-col-center">
+          <span className="footer-crowd-hint">
+            Crowdsource-ready &bull; GCC GIS Verified Boundaries &bull; Public Domain Data
+          </span>
+        </div>
+
+        <div className="footer-col-right">
+          <a
+            href={MAP_CONFIG.wardSourceUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="footer-link"
+          >
+            GCC 2025 GIS Source ↗
+          </a>
+        </div>
+      </footer>
     </section>
   )
 }
