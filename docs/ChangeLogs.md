@@ -1,5 +1,12 @@
 # Change log
 
+## 2026-10-31 — Bilingual Tamil and English support
+
+- Enabled permanent dual-language place and region labels on the vector basemap (English on primary line, Tamil directly below).
+- Added Noto Sans Tamil typography via Google Fonts and integrated it into the global CSS font-family cascade.
+- Added a header language toggle button (English / தமிழ்) with persistent localStorage state.
+- Localized all UI text across header, counters, buttons, empty states, and ward cards (including GCC 15 zone names in Tamil).
+
 ## 2026-10-31 — Ward card streamlining and layout consistency
 
 - Removed the dismiss close button from the ward card in favour of direct map/ward click navigation.

@@ -13,6 +13,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import { fetchWardCardData } from './authorityData'
 import type { WardCardData } from './authorityTypes'
 import { WardInfoPanel } from './WardInfoPanel'
+import { I18N_STRINGS, type AppLanguage } from './i18n'
 import { MAP_CONFIG, type MapThemeMode } from './mapConfig'
 import { addWardLayers, addZoneLayers, WARD_FILL_LAYER_ID, WARD_SOURCE_ID } from './wardLayers'
 import type { WardFeatureCollection, WardProperties, ZoneBoundaryFeatureCollection } from './wardTypes'
@@ -45,14 +46,45 @@ async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promis
     if (!res.ok) return url
     const style = (await res.json()) as StyleSpecification
 
-    // Point basemap glyphs to Montserrat PBF fontstack
-    style.glyphs = 'https://fonts.openmaptiles.org/{fontstack}/{range}.pbf'
+    // Use glyphs supporting both Latin and Tamil character sets
+    style.glyphs = 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf'
+
+    // Bilingual Place/Region text-field expression: English on line 1, Tamil on line 2
+    const bilingualTextField = [
+      'case',
+      ['all', ['has', 'name:latin'], ['has', 'name:nonlatin']],
+      ['concat', ['get', 'name:latin'], '\n', ['get', 'name:nonlatin']],
+      ['all', ['has', 'name_en'], ['has', 'name:ta']],
+      ['concat', ['get', 'name_en'], '\n', ['get', 'name:ta']],
+      ['all', ['has', 'name_en'], ['has', 'name_ta']],
+      ['concat', ['get', 'name_en'], '\n', ['get', 'name_ta']],
+      ['has', 'name:nonlatin'],
+      ['concat', ['coalesce', ['get', 'name:latin'], ['get', 'name_en'], ['get', 'name']], '\n', ['get', 'name:nonlatin']],
+      ['coalesce', ['get', 'name_en'], ['get', 'name']],
+    ]
 
     if (Array.isArray(style.layers)) {
       for (const layer of style.layers) {
-        // Apply Montserrat Regular to all vector symbol text labels
-        if (layer.type === 'symbol' && layer.layout && 'text-font' in layer.layout) {
-          layer.layout['text-font'] = ['Montserrat Regular']
+        if (layer.type === 'symbol') {
+          // Use Noto Sans Regular for complete Tamil Unicode coverage
+          if (layer.layout && 'text-font' in layer.layout) {
+            layer.layout['text-font'] = ['Noto Sans Regular']
+          }
+
+          // Apply dual-language labels to all place, region, and suburb description layers
+          if (
+            layer.id.startsWith('place_') ||
+            layer.id.includes('city') ||
+            layer.id.includes('town') ||
+            layer.id.includes('village') ||
+            layer.id.includes('suburb') ||
+            layer.id.includes('neighborhood')
+          ) {
+            if (layer.layout) {
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              layer.layout['text-field'] = bilingualTextField as any
+            }
+          }
         }
 
         if (mode === 'dark') {
@@ -141,16 +173,30 @@ export function ChennaiMap() {
     const saved = localStorage.getItem('madrasite_theme')
     return saved === 'light' ? 'light' : 'dark'
   })
+
+  const [lang, setLang] = useState<AppLanguage>(() => {
+    const saved = localStorage.getItem('madrasite_lang')
+    return saved === 'ta' ? 'ta' : 'en'
+  })
+
   const [status, setStatus] = useState<MapStatus>('loading')
   const [errorMessage, setErrorMessage] = useState('')
   const [selectedWard, setSelectedWard] = useState<WardProperties | null>(null)
   const [authorityData, setAuthorityData] = useState<WardCardData | null>(null)
   const [authorityStatus, setAuthorityStatus] = useState<AuthorityStatus>('loading')
 
+  const t = I18N_STRINGS[lang]
+
   const toggleTheme = () => {
     const nextMode = themeMode === 'dark' ? 'light' : 'dark'
     setThemeMode(nextMode)
     localStorage.setItem('madrasite_theme', nextMode)
+  }
+
+  const toggleLang = () => {
+    const nextLang: AppLanguage = lang === 'en' ? 'ta' : 'en'
+    setLang(nextLang)
+    localStorage.setItem('madrasite_lang', nextLang)
   }
 
   // Load authority data once on mount
@@ -376,7 +422,7 @@ export function ChennaiMap() {
           <span className="brand-logo" aria-hidden="true">🏛️</span>
           <div className="brand-titles">
             <h1 className="brand-name">Madrasite</h1>
-            <span className="brand-subtitle">Chennai Ward &amp; Civic Map</span>
+            <span className="brand-subtitle">{t.brandSubtitle}</span>
           </div>
           <span className="badge-v0">v0</span>
         </div>
@@ -384,25 +430,37 @@ export function ChennaiMap() {
         <div className="site-header-center">
           <span className="header-status-pill">
             <span className="status-dot-active" aria-hidden="true"></span>
-            200 GCC Wards &bull; 15 Zones
+            {t.statusPill}
           </span>
         </div>
 
         <div className="site-header-right">
+          {/* Language Mode Toggle Button */}
+          <button
+            type="button"
+            className="lang-toggle-header-btn"
+            onClick={toggleLang}
+            title={t.langToggleTitle}
+            aria-label={t.langToggleTitle}
+          >
+            <span className="lang-toggle-icon" aria-hidden="true">🌐</span>
+            <span className="lang-toggle-text">{t.langToggle}</span>
+          </button>
+
           {/* Theme Mode Toggle Button */}
           <button
             type="button"
             className="theme-toggle-header-btn"
             onClick={toggleTheme}
             disabled={status !== 'ready'}
-            title={`Switch to ${themeMode === 'dark' ? 'Light' : 'Dark'} Mode`}
-            aria-label={`Switch to ${themeMode === 'dark' ? 'Light' : 'Dark'} Mode`}
+            title={`Switch to ${themeMode === 'dark' ? t.themeLight : t.themeDark} Mode`}
+            aria-label={`Switch to ${themeMode === 'dark' ? t.themeLight : t.themeDark} Mode`}
           >
             <span className="theme-toggle-icon" aria-hidden="true">
               {themeMode === 'dark' ? '☀️' : '🌙'}
             </span>
             <span className="theme-toggle-text">
-              {themeMode === 'dark' ? 'Light' : 'Dark'}
+              {themeMode === 'dark' ? t.themeLight : t.themeDark}
             </span>
           </button>
 
@@ -411,9 +469,9 @@ export function ChennaiMap() {
             className="header-action-btn"
             onClick={resetMap}
             disabled={status !== 'ready'}
-            title="Reset map view to entire Chennai"
+            title={t.returnToChennai}
           >
-            <span>⟲</span> Return to Chennai
+            <span>⟲</span> {t.returnToChennai}
           </button>
         </div>
       </header>
@@ -423,13 +481,14 @@ export function ChennaiMap() {
         authorityData={authorityData}
         authorityStatus={authorityStatus}
         wardSourceUrl={MAP_CONFIG.wardSourceUrl}
+        lang={lang}
         onDeselect={deselectWard}
       />
 
-      {status === 'loading' && <div className="map-status">Loading validated ward boundaries…</div>}
+      {status === 'loading' && <div className="map-status">{t.loadingBoundaries}</div>}
       {status === 'error' && (
         <div className="map-status map-status--error" role="alert">
-          <strong>Map unavailable.</strong> {errorMessage}
+          <strong>{t.mapUnavailable}</strong> {errorMessage}
         </div>
       )}
     </section>

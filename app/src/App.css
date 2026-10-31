@@ -113,6 +113,32 @@ main,
   gap: 0.65rem;
 }
 
+/* Language Toggle Button in Header */
+.lang-toggle-header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f0fdfa;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(45, 212, 191, 0.25);
+  border-radius: 0.55rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.lang-toggle-header-btn:hover {
+  background: rgba(45, 212, 191, 0.16);
+  border-color: #2dd4bf;
+  color: #2dd4bf;
+}
+
+.lang-toggle-icon {
+  font-size: 0.85rem;
+}
+
 /* Theme Toggle Button in Header */
 .theme-toggle-header-btn {
   display: inline-flex;
@@ -637,6 +663,18 @@ main,
   background: rgba(46, 107, 55, 0.08);
   border-color: rgba(46, 107, 55, 0.2);
   color: #244b2d;
+}
+
+.theme-light .lang-toggle-header-btn {
+  background: rgba(46, 107, 55, 0.08);
+  border-color: rgba(46, 107, 55, 0.28);
+  color: #1c4524;
+}
+
+.theme-light .lang-toggle-header-btn:hover {
+  background: rgba(46, 107, 55, 0.18);
+  border-color: #24582f;
+  color: #0f3016;
 }
 
 .theme-light .theme-toggle-header-btn {
