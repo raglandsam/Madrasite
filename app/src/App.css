@@ -45,7 +45,7 @@ main,
 }
 
 .brand-logo {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   line-height: 1;
 }
 
@@ -246,12 +246,13 @@ main,
 }
 
 /* ==========================================================================
-   Panels, Status and Controls Positioning
+   Map Status Toast
    ========================================================================== */
 
-.ward-panel,
 .map-status {
   position: absolute;
+  bottom: 5.25rem;
+  left: 1.25rem;
   z-index: 15;
   border: 1px solid rgba(45, 212, 191, 0.22);
   background: rgba(10, 20, 22, 0.92);
@@ -259,132 +260,491 @@ main,
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 0.75rem 2.5rem rgba(0, 0, 0, 0.5);
   color: #f0fdfa;
-}
-
-.ward-panel {
-  top: 7.75rem;
-  right: 1.25rem;
-  width: min(21.5rem, calc(100vw - 2.5rem));
-  max-height: calc(100dvh - 13rem);
-  padding: 1.25rem;
-  border-radius: 1rem;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-}
-
-.ward-panel--empty {
-  width: min(23rem, calc(100vw - 2.5rem));
-}
-
-.eyebrow {
-  margin: 0 0 0.55rem;
-  color: #a9e7db;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-.ward-panel h1 {
-  margin: 0;
-  color: #fff;
-  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
-  letter-spacing: -0.04em;
-  line-height: 1.1;
-}
-
-.ward-panel--empty h1 {
-  max-width: 16rem;
-}
-
-.ward-panel > p:not(.eyebrow) {
-  margin: 0.85rem 0 0;
-  color: #d1dfdb;
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-
-.ward-panel__heading {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.icon-button {
-  display: grid;
-  width: 2rem;
-  height: 2rem;
-  place-items: center;
-  border-radius: 50%;
-  font-size: 1.45rem;
-  line-height: 1;
-  border: 0;
-  color: #f7fbf9;
-  background: transparent;
-  cursor: pointer;
-}
-
-.icon-button:hover {
-  background: rgba(192, 236, 228, 0.16);
-}
-
-.ward-details {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.7rem;
-  margin: 1.1rem 0 0;
-}
-
-.ward-detail {
-  min-width: 0;
-  padding: 0.7rem;
-  border-radius: 0.6rem;
-  background: rgba(192, 236, 228, 0.1);
-}
-
-.ward-detail dt {
-  color: #b5c9c4;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-
-.ward-detail dd {
-  overflow-wrap: anywhere;
-  margin: 0.25rem 0 0;
-  color: #f7fbf9;
-  font-size: 0.86rem;
-  font-weight: 600;
-}
-
-.source-note {
-  margin: 1rem 0 0;
-  color: #aac2bc;
-  font-size: 0.72rem;
-  line-height: 1.4;
-}
-
-.map-status {
-  bottom: 5.25rem;
-  left: 1.25rem;
   max-width: min(25rem, calc(100vw - 2.5rem));
   padding: 0.75rem 0.9rem;
-  border-radius: 0.7rem;
-  color: #d8e7e3;
-  font-size: 0.82rem;
+  border-radius: 0.75rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
 }
 
 .map-status--error {
-  border-color: #e7a5a5;
-  background: rgba(94, 31, 31, 0.95);
-  color: #ffeded;
+  border-color: rgba(244, 63, 94, 0.45);
 }
 
+.map-status--error strong {
+  color: #fda4af;
+}
+
+/* MapLibre standard controls restyling */
 .maplibregl-ctrl-group {
-  border-radius: 0.7rem !important;
-  box-shadow: 0 0.5rem 1.5rem rgba(7, 26, 24, 0.2) !important;
+  border: 1px solid rgba(45, 212, 191, 0.25) !important;
+  background: rgba(13, 22, 24, 0.9) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4) !important;
+}
+
+.maplibregl-ctrl-group button {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.maplibregl-ctrl-group button:last-child {
+  border-bottom: none !important;
+}
+
+.maplibregl-ctrl-icon {
+  filter: invert(1) hue-rotate(140deg) brightness(1.2);
+}
+
+/* ==========================================================================
+   Redesigned Ward Card (Non-AI, Human-Crafted Architecture)
+   ========================================================================== */
+
+.ward-card {
+  position: absolute;
+  top: 7.75rem;
+  right: 1.25rem;
+  z-index: 20;
+  width: min(24rem, calc(100vw - 2.5rem));
+  max-height: calc(100dvh - 13rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: rgba(11, 20, 23, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(45, 212, 191, 0.22);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+/* Custom scrollbar for card */
+.ward-card::-webkit-scrollbar {
+  width: 5px;
+}
+.ward-card::-webkit-scrollbar-thumb {
+  background: rgba(45, 212, 191, 0.25);
+  border-radius: 4px;
+}
+
+/* Empty state */
+.ward-card--empty {
+  width: min(21.5rem, calc(100vw - 2.5rem));
+}
+
+.ward-card__header-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2dd4bf;
+  background: rgba(45, 212, 191, 0.12);
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.4rem;
+}
+
+.empty-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.empty-desc {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Card Hero Section */
+.ward-card__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ward-card__hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.zone-pill,
+.region-pill {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.35rem;
+  letter-spacing: 0.02em;
+}
+
+.zone-pill {
+  background: rgba(45, 212, 191, 0.12);
+  color: #2dd4bf;
+}
+
+.region-pill {
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+}
+
+.ward-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ward-card__title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.ward-hero-badge {
+  background: #2dd4bf;
+  color: #042f2e;
+  font-size: 1.05rem;
+  font-weight: 900;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.6rem;
+  line-height: 1;
+}
+
+.ward-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.dismiss-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  color: #94a3b8;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  transition: all 0.15s ease;
+}
+
+.dismiss-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Card Section Typography */
+.section-eyebrow {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2dd4bf;
+  margin-bottom: 0.6rem;
+}
+
+/* Primary Tier: Elected Councillor */
+.councillor-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.councillor-profile {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.councillor-photo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.65rem;
+  object-fit: cover;
+  border: 1px solid rgba(45, 212, 191, 0.3);
+}
+
+.councillor-avatar-fallback {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.65rem;
+  background: rgba(45, 212, 191, 0.1);
+  border: 1px solid rgba(45, 212, 191, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.councillor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.councillor-name {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.councillor-tagline {
+  color: #94a3b8;
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
+.vacant-notice {
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px dashed rgba(244, 63, 94, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.65rem;
+  font-size: 0.78rem;
+  color: #fda4af;
+  margin: 0;
+}
+
+/* Quick Action Contact Pills */
+.councillor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.45rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.contact-pill--call {
+  background: rgba(45, 212, 191, 0.12);
+  border: 1px solid rgba(45, 212, 191, 0.3);
+  color: #2dd4bf;
+}
+
+.contact-pill--call:hover {
+  background: rgba(45, 212, 191, 0.22);
+  border-color: #2dd4bf;
+}
+
+.contact-pill--email {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+}
+
+.contact-pill--email:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.contact-pill__icon {
+  font-size: 0.8rem;
+}
+
+.source-wrap {
+  margin-top: 0.2rem;
+}
+
+/* Secondary Tier: Zone Administration Grid */
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.gov-tile {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.65rem;
+  padding: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.gov-tile__role {
+  color: #64748b;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.gov-tile__name {
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.gov-tile__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.15rem;
+}
+
+.tile-contact-link {
+  color: #2dd4bf;
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
+.tile-contact-link:hover {
+  text-decoration: underline;
+}
+
+.gov-tile__empty {
+  color: #64748b;
+  font-size: 0.74rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.gov-tile__source {
+  margin-top: auto;
+  padding-top: 0.35rem;
+  font-size: 0.65rem;
+  color: #64748b;
+  text-decoration: none;
+}
+
+.gov-tile__source:hover {
+  color: #2dd4bf;
+}
+
+/* Tertiary Tier: Legislative Assembly */
+.assembly-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.gov-tile--ac {
+  grid-column: span 2;
+}
+
+.gov-tile__ac-head {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.ac-badge {
+  background: rgba(45, 212, 191, 0.15);
+  color: #2dd4bf;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+}
+
+.gov-tile__mla {
+  margin: 0.2rem 0 0;
+  color: #e2e8f0;
+  font-size: 0.82rem;
+}
+
+.mla-label {
+  color: #64748b;
+  font-weight: 700;
+  font-size: 0.74rem;
+}
+
+.gov-tile__ac-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.35rem;
+}
+
+.ac-party-tag {
+  color: #94a3b8;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.unmapped-ac-banner {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 0.65rem;
+  padding: 0.65rem 0.75rem;
+}
+
+.unmapped-ac-banner__tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+.unmapped-ac-banner p {
+  margin: 0.25rem 0 0;
+  color: #64748b;
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+/* Generic Source Links */
+.source-anchor {
+  color: #2dd4bf;
+  font-size: 0.72rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.source-anchor:hover {
+  text-decoration: underline;
+}
+
+.tier-status-text {
+  color: #64748b;
+  font-size: 0.76rem;
+  margin: 0;
+}
+
+/* Card footer */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  color: #64748b;
+  font-size: 0.72rem;
+}
+
+.bullet-sep {
+  opacity: 0.5;
 }
 
 /* ==========================================================================
@@ -392,14 +752,14 @@ main,
    ========================================================================== */
 
 .theme-light {
-  background: #f0f4ee;
+  background: #f4f7f2;
 }
 
-.theme-light .site-header-bar,
-.theme-light .site-footer-bar {
-  background: rgba(255, 255, 255, 0.94);
-  border-color: rgba(46, 107, 55, 0.22);
-  color: #1a3320;
+.theme-light .site-header-bar {
+  background: rgba(246, 250, 244, 0.92);
+  border-bottom: 1px solid rgba(46, 107, 55, 0.22);
+  box-shadow: 0 4px 20px rgba(25, 68, 32, 0.12);
+  color: #1a3322;
 }
 
 .theme-light .brand-name {
@@ -407,167 +767,215 @@ main,
 }
 
 .theme-light .brand-subtitle {
-  color: #557258;
+  color: #4f6b55;
 }
 
 .theme-light .badge-v0 {
-  background: rgba(46, 107, 55, 0.1);
-  border-color: rgba(46, 107, 55, 0.25);
-  color: #1b5327;
+  background: rgba(46, 107, 55, 0.12);
+  border-color: rgba(46, 107, 55, 0.35);
+  color: #194420;
 }
 
 .theme-light .header-status-pill {
-  background: rgba(46, 107, 55, 0.06);
-  border-color: rgba(46, 107, 55, 0.15);
-  color: #274c2d;
+  background: rgba(46, 107, 55, 0.08);
+  border-color: rgba(46, 107, 55, 0.2);
+  color: #244b2d;
 }
 
 .theme-light .theme-toggle-header-btn {
   background: rgba(46, 107, 55, 0.08);
-  border-color: rgba(46, 107, 55, 0.25);
-  color: #1b5327;
+  border-color: rgba(46, 107, 55, 0.28);
+  color: #1c4524;
 }
 
 .theme-light .theme-toggle-header-btn:hover:not(:disabled) {
-  background: rgba(46, 107, 55, 0.15);
-  border-color: #1b5327;
-  color: #0f3618;
+  background: rgba(46, 107, 55, 0.18);
+  border-color: #24582f;
+  color: #0f3016;
 }
 
 .theme-light .header-action-btn {
-  background: rgba(46, 107, 55, 0.12);
-  border-color: rgba(46, 107, 55, 0.3);
-  color: #1b5327;
+  background: rgba(46, 107, 55, 0.14);
+  border-color: rgba(46, 107, 55, 0.35);
+  color: #13381a;
 }
 
 .theme-light .header-action-btn:hover:not(:disabled) {
-  background: rgba(46, 107, 55, 0.2);
+  background: rgba(46, 107, 55, 0.24);
   border-color: #1b5327;
-  color: #0f3618;
+  color: #0c2611;
 }
 
-.theme-light .footer-version-tag,
-.theme-light .footer-link {
-  color: #1b5327;
+.theme-light .site-footer-bar {
+  background: rgba(246, 250, 244, 0.94);
+  border-top: 1px solid rgba(46, 107, 55, 0.2);
+  box-shadow: 0 -4px 20px rgba(25, 68, 32, 0.12);
+  color: #496350;
+}
+
+.theme-light .footer-version-tag {
+  color: #1e5c2b;
 }
 
 .theme-light .footer-note {
-  color: #3b5c40;
+  color: #2e4a34;
 }
 
 .theme-light .footer-crowd-hint {
-  color: #557258;
+  color: #637d68;
 }
 
-.theme-light .ward-panel,
+.theme-light .footer-link {
+  color: #1e5c2b;
+}
+
+.theme-light .footer-link:hover {
+  color: #143e1c;
+}
+
+.theme-light .ward-card,
 .theme-light .map-status {
-  border: 1px solid rgba(46, 107, 55, 0.28);
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 0.75rem 2.2rem rgba(32, 60, 36, 0.15);
-  color: #1a3320;
+  border-color: rgba(46, 107, 55, 0.25);
+  background: rgba(248, 250, 246, 0.94);
+  box-shadow: 0 0.75rem 2.5rem rgba(25, 68, 32, 0.15);
+  color: #1a3322;
 }
 
-.theme-light .eyebrow {
-  color: #2e6b37;
+.theme-light .ward-card__header-tag {
+  background: rgba(46, 107, 55, 0.12);
+  color: #194420;
 }
 
-.theme-light .ward-panel h1 {
-  color: #123018;
+.theme-light .empty-title,
+.theme-light .ward-title,
+.theme-light .councillor-name,
+.theme-light .gov-tile__name {
+  color: #123319;
 }
 
-.theme-light .ward-panel > p:not(.eyebrow) {
-  color: #3b5c40;
+.theme-light .empty-desc,
+.theme-light .tier-status-text,
+.theme-light .councillor-tagline,
+.theme-light .card-footer {
+  color: #4a6851;
 }
 
-.theme-light .ward-name {
-  color: #276332;
+.theme-light .section-eyebrow {
+  color: #1e5c2b;
 }
 
-.theme-light .icon-button {
-  color: #1e5229;
+.theme-light .ward-hero-badge {
+  background: #194420;
+  color: #ffffff;
 }
 
-.theme-light .icon-button:hover {
-  background: rgba(67, 138, 77, 0.12);
+.theme-light .zone-pill {
+  background: rgba(46, 107, 55, 0.12);
+  color: #1c4524;
 }
 
-.theme-light .ward-detail {
-  background: rgba(67, 138, 77, 0.08);
-  border: 1px solid rgba(67, 138, 77, 0.14);
+.theme-light .region-pill {
+  background: rgba(64, 94, 76, 0.1);
+  color: #2a5234;
 }
 
-.theme-light .ward-detail dt {
-  color: #4f7353;
+.theme-light .dismiss-btn {
+  background: rgba(0, 0, 0, 0.05);
+  color: #4a6851;
 }
 
-.theme-light .ward-detail dd {
-  color: #123018;
+.theme-light .dismiss-btn:hover {
+  background: rgba(46, 107, 55, 0.15);
+  color: #123319;
 }
 
-.theme-light .ward-section {
-  border-top-color: rgba(67, 138, 77, 0.2);
+.theme-light .councillor-photo {
+  border-color: rgba(46, 107, 55, 0.35);
 }
 
-.theme-light .ward-section__title {
-  color: #26592f;
+.theme-light .councillor-avatar-fallback {
+  background: rgba(46, 107, 55, 0.15);
+  border-color: rgba(46, 107, 55, 0.3);
+  color: #194420;
 }
 
-.theme-light .ward-status-note {
-  color: #4a664e;
+.theme-light .contact-pill--call {
+  background: rgba(46, 107, 55, 0.1);
+  border-color: rgba(46, 107, 55, 0.3);
+  color: #153e1b;
 }
 
-.theme-light .ward-representative strong,
-.theme-light .ward-official > strong,
-.theme-light .ward-ac-record > div > strong {
-  color: #102d15;
+.theme-light .contact-pill--call:hover {
+  background: rgba(46, 107, 55, 0.18);
+  border-color: #194420;
 }
 
-.theme-light .ward-representative__role,
-.theme-light .ward-contact__label,
-.theme-light .ward-official__role,
-.theme-light .ward-ac-number,
-.theme-light .ward-ac-party {
-  color: #4f7353;
+.theme-light .contact-pill--email {
+  background: rgba(64, 94, 76, 0.08);
+  border-color: rgba(64, 94, 76, 0.25);
+  color: #1d4526;
 }
 
-.theme-light .ward-representative__photo {
-  border-color: #2e6b37;
+.theme-light .contact-pill--email:hover {
+  background: rgba(64, 94, 76, 0.16);
+  border-color: #194420;
 }
 
-.theme-light .ward-contact__links a,
-.theme-light .ward-source-link {
-  color: #1e632b;
+.theme-light .gov-tile {
+  background: rgba(235, 242, 232, 0.85);
+  border-color: rgba(46, 107, 55, 0.2);
 }
 
-.theme-light .ward-ac-record + .ward-ac-record {
-  border-top-color: rgba(67, 138, 77, 0.18);
+.theme-light .gov-tile__role,
+.theme-light .mla-label {
+  color: #4a6851;
 }
 
-.theme-light .ward-ac-record p {
-  color: #2d4c32;
+.theme-light .tile-contact-link,
+.theme-light .source-anchor,
+.theme-light .gov-tile__source {
+  color: #1b5327;
 }
 
-.theme-light .source-note {
-  color: #557258;
+.theme-light .ac-badge {
+  background: rgba(46, 107, 55, 0.15);
+  color: #143e1c;
 }
 
-.theme-light .map-status {
-  color: #2d4c32;
+.theme-light .ac-party-tag {
+  color: #4a6851;
+}
+
+.theme-light .unmapped-ac-banner {
+  background: rgba(235, 242, 232, 0.7);
+  border-color: rgba(46, 107, 55, 0.25);
+}
+
+.theme-light .unmapped-ac-banner__tag {
+  color: #8c5b05;
+}
+
+.theme-light .unmapped-ac-banner p {
+  color: #4a6851;
 }
 
 .theme-light .maplibregl-ctrl-group {
-  background: rgba(255, 255, 255, 0.94) !important;
-  border: 1px solid rgba(46, 107, 55, 0.25) !important;
-  box-shadow: 0 0.5rem 1.5rem rgba(32, 60, 36, 0.15) !important;
+  border-color: rgba(46, 107, 55, 0.25) !important;
+  background: rgba(246, 250, 244, 0.95) !important;
+  box-shadow: 0 0.5rem 1.5rem rgba(25, 68, 32, 0.12) !important;
 }
 
 .theme-light .maplibregl-ctrl-group button {
-  border-bottom: 1px solid rgba(46, 107, 55, 0.12) !important;
+  border-bottom: 1px solid rgba(46, 107, 55, 0.15) !important;
 }
 
 .theme-light .maplibregl-ctrl-icon {
-  filter: none;
+  filter: invert(0.2) sepia(0.8) hue-rotate(85deg) saturate(1.8);
 }
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
 
 @media (max-width: 44rem) {
   .site-header-bar {
@@ -576,8 +984,7 @@ main,
   }
 
   .site-header-center,
-  .brand-subtitle,
-  .theme-toggle-text {
+  .brand-subtitle {
     display: none;
   }
 
@@ -591,8 +998,8 @@ main,
     display: none;
   }
 
-  .ward-panel,
-  .ward-panel--empty {
+  .ward-card,
+  .ward-card--empty {
     top: auto;
     right: 0.75rem;
     bottom: 4.85rem;
@@ -606,155 +1013,4 @@ main,
     left: 0.75rem;
     top: 6rem;
   }
-
-  .ward-details {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .source-note {
-    display: none;
-  }
-}
-
-@media (max-width: 32rem) {
-  .ward-details {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.ward-name {
-  margin: 0.35rem 0 0;
-  color: #c0ece4;
-  font-size: 0.98rem;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.ward-section {
-  margin-top: 1rem;
-  padding-top: 0.9rem;
-  border-top: 1px solid rgba(192, 236, 228, 0.2);
-}
-
-.ward-section__title {
-  margin: 0 0 0.65rem;
-  color: #d8eee8;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.ward-section .ward-details {
-  margin-top: 0;
-}
-
-.ward-status-note {
-  margin: 0.35rem 0 0;
-  color: #c7d9d4;
-  font-size: 0.78rem;
-  line-height: 1.45;
-}
-
-.ward-representative {
-  display: grid;
-  grid-template-columns: 3.5rem minmax(0, 1fr);
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.ward-representative__photo {
-  width: 3.5rem;
-  height: 3.5rem;
-  border: 1px solid rgba(192, 236, 228, 0.35);
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.ward-representative strong,
-.ward-official > strong,
-.ward-ac-record > div > strong {
-  color: #fff;
-  font-size: 0.88rem;
-  line-height: 1.35;
-}
-
-.ward-representative__role {
-  margin: 0.2rem 0 0;
-  color: #b5c9c4;
-  font-size: 0.74rem;
-}
-
-.ward-contact {
-  display: grid;
-  gap: 0.2rem;
-  margin-top: 0.55rem;
-}
-
-.ward-contact__label,
-.ward-official__role {
-  color: #b5c9c4;
-  font-size: 0.68rem;
-  font-weight: 700;
-}
-
-.ward-contact__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 0.7rem;
-}
-
-.ward-contact__links a {
-  color: #c0ece4;
-  font-size: 0.75rem;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-  overflow-wrap: anywhere;
-}
-
-.ward-official + .ward-official {
-  margin-top: 0.8rem;
-}
-
-.ward-official > strong {
-  display: block;
-  margin-top: 0.18rem;
-}
-
-.ward-ac-record + .ward-ac-record {
-  margin-top: 0.75rem;
-  padding-top: 0.7rem;
-  border-top: 1px solid rgba(192, 236, 228, 0.16);
-}
-
-.ward-ac-record > div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.3rem 0.5rem;
-}
-
-.ward-ac-number,
-.ward-ac-party {
-  color: #b5c9c4;
-  font-size: 0.72rem;
-}
-
-.ward-ac-record p {
-  margin: 0.28rem 0 0;
-  color: #d1dfdb;
-  font-size: 0.78rem;
-}
-
-.ward-source-link {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #a9e7db;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-underline-offset: 2px;
-}
-
-.source-note .ward-source-link {
-  margin-top: 0;
 }

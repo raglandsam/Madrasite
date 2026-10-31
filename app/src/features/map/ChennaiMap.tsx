@@ -45,41 +45,49 @@ async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promis
     if (!res.ok) return url
     const style = (await res.json()) as StyleSpecification
 
-    if (mode === 'dark') {
+    // Point basemap glyphs to Montserrat PBF fontstack
+    style.glyphs = 'https://fonts.openmaptiles.org/{fontstack}/{range}.pbf'
+
+    if (Array.isArray(style.layers)) {
       for (const layer of style.layers) {
-        // Amplify water bodies
-        if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
-          layer.paint['fill-color'] = '#103444'
+        // Apply Montserrat Regular to all vector symbol text labels
+        if (layer.type === 'symbol' && layer.layout && 'text-font' in layer.layout) {
+          layer.layout['text-font'] = ['Montserrat Regular']
         }
-        if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
-          layer.paint['line-color'] = '#16485e'
-        }
-        // Lighten place & street names for high contrast
-        if (layer.type === 'symbol' && layer.paint) {
-          if (layer.id.startsWith('place_') || layer.id.startsWith('highway_name')) {
-            layer.paint['text-color'] = '#e2e8f0'
-            layer.paint['text-halo-color'] = '#050b0d'
-            layer.paint['text-halo-width'] = 1.6
+
+        if (mode === 'dark') {
+          // Amplify water bodies
+          if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
+            layer.paint['fill-color'] = '#103444'
           }
-        }
-      }
-    } else {
-      // Light Mode (Mild Green Palette)
-      for (const layer of style.layers) {
-        if (layer.type === 'background' && layer.paint) {
-          layer.paint['background-color'] = '#f3f6f1'
-        }
-        if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
-          layer.paint['fill-color'] = '#b6d7d4'
-        }
-        if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
-          layer.paint['line-color'] = '#9ac2be'
-        }
-        if (layer.type === 'symbol' && layer.paint) {
-          if (layer.id.includes('place') || layer.id.includes('highway') || layer.id.includes('road')) {
-            layer.paint['text-color'] = '#1c3624'
-            layer.paint['text-halo-color'] = '#ffffff'
-            layer.paint['text-halo-width'] = 1.5
+          if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
+            layer.paint['line-color'] = '#16485e'
+          }
+          // Lighten place & street names for high contrast
+          if (layer.type === 'symbol' && layer.paint) {
+            if (layer.id.startsWith('place_') || layer.id.startsWith('highway_name')) {
+              layer.paint['text-color'] = '#e2e8f0'
+              layer.paint['text-halo-color'] = '#050b0d'
+              layer.paint['text-halo-width'] = 1.6
+            }
+          }
+        } else {
+          // Light Mode (Mild Green Palette)
+          if (layer.type === 'background' && layer.paint) {
+            layer.paint['background-color'] = '#f3f6f1'
+          }
+          if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
+            layer.paint['fill-color'] = '#b6d7d4'
+          }
+          if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
+            layer.paint['line-color'] = '#9ac2be'
+          }
+          if (layer.type === 'symbol' && layer.paint) {
+            if (layer.id.includes('place') || layer.id.includes('highway') || layer.id.includes('road')) {
+              layer.paint['text-color'] = '#1c3624'
+              layer.paint['text-halo-color'] = '#ffffff'
+              layer.paint['text-halo-width'] = 1.5
+            }
           }
         }
       }
@@ -170,10 +178,9 @@ export function ChennaiMap() {
     }
   }, [])
 
-  // Initialize and manage map instance on mount & theme change
   useEffect(() => {
     const container = mapContainerRef.current
-    if (!container) return undefined
+    if (!container) return
 
     let destroyed = false
     const abortController = new AbortController()
@@ -196,14 +203,11 @@ export function ChennaiMap() {
         map.addControl(new NavigationControl({ showCompass: false }), 'top-right')
         map.addControl(new ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-right')
 
-        const updateZoomState = () => {
+        // Track zoom level to toggle footer visibility
+        map.on('zoom', () => {
           if (!map) return
-          // When zoom is > 10.75, user is zoomed into neighbourhoods -> slide footer down
-          const zoom = map.getZoom()
-          setIsZoomedIn(zoom > 10.75)
-        }
-
-        map.on('zoom', updateZoomState)
+          setIsZoomedIn(map.getZoom() > 10.75)
+        })
 
         const clearHover = () => {
           if (hoveredIdRef.current !== null && map) {
@@ -223,34 +227,54 @@ export function ChennaiMap() {
 
         const handleMouseMove = (event: MapMouseEvent) => {
           if (!map) return
-          const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
-          const nextId = feature?.id
+          const features = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })
+          const nextFeature = features[0]
+
+          if (!nextFeature) {
+            clearHover()
+            return
+          }
+
+          const nextId = nextFeature.id ?? (nextFeature.properties?.ward_id as FeatureId | undefined)
           if (nextId === undefined) {
             clearHover()
             return
           }
 
-          if (hoveredIdRef.current === nextId) return
-          clearHover()
-          map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { hover: true })
-          hoveredIdRef.current = nextId
           map.getCanvas().style.cursor = 'pointer'
+          if (hoveredIdRef.current !== nextId) {
+            if (hoveredIdRef.current !== null) {
+              map.setFeatureState({ source: WARD_SOURCE_ID, id: hoveredIdRef.current }, { hover: false })
+            }
+            hoveredIdRef.current = nextId
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { hover: true })
+          }
         }
 
         const handleClick = (event: MapMouseEvent) => {
           if (!map) return
-          const feature = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })[0]
-          if (!feature || feature.id === undefined) {
+          const features = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })
+          const nextFeature = features[0]
+
+          if (!nextFeature) {
             clearSelection()
             return
           }
 
-          if (selectedIdRef.current !== feature.id) {
+          const nextId = nextFeature.id ?? (nextFeature.properties?.ward_id as FeatureId | undefined)
+          if (nextId === undefined) {
             clearSelection()
-            map.setFeatureState({ source: WARD_SOURCE_ID, id: feature.id }, { selected: true })
-            selectedIdRef.current = feature.id
+            return
           }
-          setSelectedWard(feature.properties as WardProperties)
+
+          if (selectedIdRef.current !== null) {
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: selectedIdRef.current }, { selected: false })
+          }
+
+          selectedIdRef.current = nextId
+          map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { selected: true })
+          setSelectedWard(nextFeature.properties as WardProperties)
+          setIsZoomedIn(true)
         }
 
         const setupWards = async () => {

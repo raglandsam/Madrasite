@@ -7,6 +7,21 @@
 - Integrated persistent light/dark theme toggle into the top navigation header bar alongside brand identity and search placeholder.
 - Updated responsive rules for mobile viewports maintaining proportionate bar sizing.
 
+## 2026-10-29 — Standardised Montserrat typography across app and map layers
+
+- Configured Google Fonts preconnect and Montserrat font weights (300 to 900) in index.html.
+- Updated base global root styles in index.css to default to Montserrat across all UI elements, cards, and buttons.
+- Dynamically updated basemap vector style glyphs stack to OpenMapTiles Montserrat PBF glyphs, ensuring map place names, roads, and regions render in Montserrat.
+- Noted in project documentation that Montserrat is the current baseline typeface and will be iterated in future milestones.
+
+## 2026-10-29 — Redesigned ward card with clean civic hierarchy
+
+- Replaced the flat-text layout with structured visual tiers for instant readability (Hero identifier -> Elected Councillor -> Zone Admin -> Assembly & MLA).
+- Added direct action contact pills (call and email) with phone-number formatting for councillors.
+- Designed compact two-column tiles for Zonal Administration (Committee Chairman & Zonal Officer).
+- Formatted Assembly Constituency and MLA as a dedicated legislative record with clear party and AC badges.
+- Retained full fidelity of verified data without guessing or inventing unconfirmed details.
+
 ## 2026-10-29 — Vector basemap with dark theme and high-detail road rendering
 
 - Replaced raster tiles with OpenFreeMap Dark Vector Map style (zero API keys, zero watermarks).
