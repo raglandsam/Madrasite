@@ -104,3 +104,4 @@ export const I18N_STRINGS = {
     mapUnavailable: 'வரைபடம் கிடைக்கவில்லை.',
   },
 } as const
+

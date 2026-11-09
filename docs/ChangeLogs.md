@@ -1,5 +1,14 @@
 # Change log
 
+## 2026-11-09 — Rendering performance optimization and professional icon polish
+
+- Optimized map hover event handling: transitioned from full-canvas mousemove and synchronous `queryRenderedFeatures` to layer-targeted event listener (`map.on('mousemove', WARD_FILL_LAYER_ID)`) with `requestAnimationFrame` batching and early returns.
+- Eliminated GPU line re-tessellation lag: fixed ward boundary `line-width` to a constant `1.0px` and moved dynamic hover/selection state feedback to GPU-accelerated shader properties (`line-color` and `line-opacity`).
+- Removed costly `backdrop-filter: blur(...)` compositing overhead across the WebGL map canvas, substituting crisp, lightweight solid semi-translucent backings with `contain: layout style` and hardware acceleration hints.
+- Replaced informal emojis across header, switches, contacts, and avatar fallbacks with sleek, accessible vector SVG icons (`CivicLogoIcon`, `SunIcon`, `MoonIcon`, `ResetViewIcon`, `PhoneIcon`, `MailIcon`, `AvatarSilhouette`).
+- Replaced emoji indicators on language switch with clean textual uppercase locale pills (`EN` / `தமிழ்`).
+
+
 ## 2026-10-31 — Bilingual Tamil and English support
 
 - Enabled permanent dual-language place and region labels on the vector basemap (English on primary line, Tamil directly below).

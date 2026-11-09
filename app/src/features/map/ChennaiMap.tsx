@@ -5,6 +5,7 @@ import {
   NavigationControl,
   ScaleControl,
   setWorkerUrl,
+  type MapLayerMouseEvent,
   type MapMouseEvent,
   type StyleSpecification,
 } from 'maplibre-gl'
@@ -23,6 +24,44 @@ setWorkerUrl(workerUrl)
 type MapStatus = 'loading' | 'ready' | 'error'
 type AuthorityStatus = 'loading' | 'ready' | 'error'
 type FeatureId = string | number
+
+/* Minimalist Vector Icons (Zero Emojis) */
+function CivicLogoIcon() {
+  return (
+    <svg className="brand-logo-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 21h18" />
+      <path d="M5 21V7l7-4 7 4v14" />
+      <path d="M9 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+      <path d="M9 21v-5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v5" />
+    </svg>
+  )
+}
+
+function SunIcon() {
+  return (
+    <svg className="theme-toggle-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+    </svg>
+  )
+}
+
+function MoonIcon() {
+  return (
+    <svg className="theme-toggle-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+    </svg>
+  )
+}
+
+function ResetViewIcon() {
+  return (
+    <svg className="action-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+      <path d="M3 3v5h5" />
+    </svg>
+  )
+}
 
 async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promise<StyleSpecification | string> {
   const url = MAP_CONFIG.basemapStyles[mode]
@@ -57,7 +96,7 @@ async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promis
       ['all', ['has', 'name_en'], ['has', 'name:ta']],
       ['concat', ['get', 'name_en'], '\n', ['get', 'name:ta']],
       ['all', ['has', 'name_en'], ['has', 'name_ta']],
-      ['concat', ['get', 'name_en'], '\n', ['get', 'name_ta']],
+      ['concat', ['get', 'name_en'], '\n', ['get', 'name:ta']],
       ['has', 'name:nonlatin'],
       ['concat', ['coalesce', ['get', 'name:latin'], ['get', 'name_en'], ['get', 'name']], '\n', ['get', 'name:nonlatin']],
       ['coalesce', ['get', 'name_en'], ['get', 'name']],
@@ -168,6 +207,7 @@ export function ChennaiMap() {
   const selectedIdRef = useRef<FeatureId | null>(null)
   const wardDataRef = useRef<WardFeatureCollection | null>(null)
   const zoneDataRef = useRef<ZoneBoundaryFeatureCollection | null>(null)
+  const rafHoverRef = useRef<number | null>(null)
 
   const [themeMode, setThemeMode] = useState<MapThemeMode>(() => {
     const saved = localStorage.getItem('madrasite_theme')
@@ -249,6 +289,10 @@ export function ChennaiMap() {
         map.addControl(new ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-right')
 
         const clearHover = () => {
+          if (rafHoverRef.current !== null) {
+            cancelAnimationFrame(rafHoverRef.current)
+            rafHoverRef.current = null
+          }
           if (hoveredIdRef.current !== null && map) {
             map.setFeatureState({ source: WARD_SOURCE_ID, id: hoveredIdRef.current }, { hover: false })
             hoveredIdRef.current = null
@@ -264,43 +308,45 @@ export function ChennaiMap() {
           setSelectedWard(null)
         }
 
-        const handleMouseMove = (event: MapMouseEvent) => {
+        // High-performance layer-targeted hover with requestAnimationFrame batching
+        const handleWardMouseMove = (event: MapLayerMouseEvent) => {
           if (!map) return
-          const features = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })
-          const nextFeature = features[0]
+          const feature = event.features?.[0]
+          if (!feature) return
 
-          if (!nextFeature) {
-            clearHover()
-            return
-          }
-
-          const nextId = nextFeature.id ?? (nextFeature.properties?.ward_id as FeatureId | undefined)
-          if (nextId === undefined) {
-            clearHover()
-            return
-          }
+          const nextId = feature.id ?? (feature.properties?.ward_id as FeatureId | undefined)
+          if (nextId === undefined || nextId === hoveredIdRef.current) return
 
           map.getCanvas().style.cursor = 'pointer'
-          if (hoveredIdRef.current !== nextId) {
+
+          if (rafHoverRef.current !== null) {
+            cancelAnimationFrame(rafHoverRef.current)
+          }
+
+          rafHoverRef.current = requestAnimationFrame(() => {
+            if (!map) return
             if (hoveredIdRef.current !== null) {
               map.setFeatureState({ source: WARD_SOURCE_ID, id: hoveredIdRef.current }, { hover: false })
             }
             hoveredIdRef.current = nextId
             map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { hover: true })
-          }
+            rafHoverRef.current = null
+          })
         }
 
-        const handleClick = (event: MapMouseEvent) => {
-          if (!map) return
-          const features = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })
-          const nextFeature = features[0]
+        const handleWardMouseLeave = () => {
+          clearHover()
+        }
 
-          if (!nextFeature) {
+        const handleWardClick = (event: MapLayerMouseEvent) => {
+          if (!map) return
+          const feature = event.features?.[0]
+          if (!feature) {
             clearSelection()
             return
           }
 
-          const nextId = nextFeature.id ?? (nextFeature.properties?.ward_id as FeatureId | undefined)
+          const nextId = feature.id ?? (feature.properties?.ward_id as FeatureId | undefined)
           if (nextId === undefined) {
             clearSelection()
             return
@@ -312,7 +358,16 @@ export function ChennaiMap() {
 
           selectedIdRef.current = nextId
           map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { selected: true })
-          setSelectedWard(nextFeature.properties as WardProperties)
+          setSelectedWard(feature.properties as WardProperties)
+        }
+
+        const handleMapClick = (event: MapMouseEvent) => {
+          if (!map) return
+          // Deselect when clicking outside any ward polygon
+          const hits = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })
+          if (hits.length === 0) {
+            clearSelection()
+          }
         }
 
         const setupWards = async () => {
@@ -359,9 +414,13 @@ export function ChennaiMap() {
             }
 
             map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 0, maxZoom: 12 })
-            map.on('mousemove', handleMouseMove)
-            map.on('click', handleClick)
-            map.getCanvas().addEventListener('mouseleave', clearHover)
+
+            // Layer-targeted listeners prevent full-canvas mousemove overhead
+            map.on('mousemove', WARD_FILL_LAYER_ID, handleWardMouseMove)
+            map.on('mouseleave', WARD_FILL_LAYER_ID, handleWardMouseLeave)
+            map.on('click', WARD_FILL_LAYER_ID, handleWardClick)
+            map.on('click', handleMapClick)
+
             setStatus('ready')
           } catch (error) {
             if (destroyed || (error instanceof DOMException && error.name === 'AbortError')) return
@@ -383,6 +442,10 @@ export function ChennaiMap() {
     return () => {
       destroyed = true
       abortController.abort()
+      if (rafHoverRef.current !== null) {
+        cancelAnimationFrame(rafHoverRef.current)
+        rafHoverRef.current = null
+      }
       if (map) {
         map.remove()
         mapRef.current = null
@@ -419,7 +482,9 @@ export function ChennaiMap() {
       {/* Top Header Bar */}
       <header className="site-header-bar" role="banner">
         <div className="site-header-left">
-          <span className="brand-logo" aria-hidden="true">🏛️</span>
+          <span className="brand-logo" aria-hidden="true">
+            <CivicLogoIcon />
+          </span>
           <div className="brand-titles">
             <h1 className="brand-name">Madrasite</h1>
             <span className="brand-subtitle">{t.brandSubtitle}</span>
@@ -443,7 +508,6 @@ export function ChennaiMap() {
             title={t.langToggleTitle}
             aria-label={t.langToggleTitle}
           >
-            <span className="lang-toggle-icon" aria-hidden="true">🌐</span>
             <span className="lang-toggle-text">{t.langToggle}</span>
           </button>
 
@@ -457,7 +521,7 @@ export function ChennaiMap() {
             aria-label={`Switch to ${themeMode === 'dark' ? t.themeLight : t.themeDark} Mode`}
           >
             <span className="theme-toggle-icon" aria-hidden="true">
-              {themeMode === 'dark' ? '☀️' : '🌙'}
+              {themeMode === 'dark' ? <SunIcon /> : <MoonIcon />}
             </span>
             <span className="theme-toggle-text">
               {themeMode === 'dark' ? t.themeLight : t.themeDark}
@@ -471,7 +535,8 @@ export function ChennaiMap() {
             disabled={status !== 'ready'}
             title={t.returnToChennai}
           >
-            <span>⟲</span> {t.returnToChennai}
+            <ResetViewIcon />
+            <span>{t.returnToChennai}</span>
           </button>
         </div>
       </header>

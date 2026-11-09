@@ -57,14 +57,15 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection, mod
         isLight ? '#2e6b37' : '#14b8a6',
         isLight ? '#8ba887' : '#1f4749', // Subtle crisp olive-sage ward boundary
       ],
-      'line-width': [
+      'line-opacity': [
         'case',
         ['boolean', ['feature-state', 'selected'], false],
-        2.5,
+        1.0,
         ['boolean', ['feature-state', 'hover'], false],
-        1.8,
-        0.8,
+        0.95,
+        0.65,
       ],
+      'line-width': 1.0,
     },
   })
 }
