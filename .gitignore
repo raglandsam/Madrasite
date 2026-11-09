@@ -12,6 +12,7 @@
 *secret*
 *credential*
 service-account*.json
+secrets/
 .auth/
 tokens/
 
