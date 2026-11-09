@@ -1,11 +1,52 @@
-# Dependencies and generated build output
+# ==============================================================================
+# SECRETS & CREDENTIALS (NEVER COMMIT)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.pfx
+*.p12
+*secret*
+*credential*
+service-account*.json
+.auth/
+tokens/
+
+# ==============================================================================
+# PRIVATE IDEAS, BRAINSTORMS, DRAFTS & ROADMAPS
+# ==============================================================================
+# Dedicated private folders for internal ideas & unreleased plans
+private/
+ideas/
+notes/
+drafts/
+scratch/
+brainstorm/
+
+# Any file marked as private or draft anywhere in the workspace
+*.private.*
+*.draft.*
+TODO.private.md
+ROADMAP.private.md
+IDEAS.md
+NOTES.md
+
+# ==============================================================================
+# DEPENDENCIES & BUILD ARTIFACTS
+# ==============================================================================
 **/node_modules/
 **/dist/
 **/dist-ssr/
 **/coverage/
 **/.vite/
+.turbo/
 
-# Logs
+# ==============================================================================
+# LOGS & TEMPORARY FILES
+# ==============================================================================
 **/logs/
 *.log
 npm-debug.log*
@@ -13,19 +54,25 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+*.tmp
+*.bak
+*.sw?
+*~
 
-# Local files
+# ==============================================================================
+# LOCAL FILES
+# ==============================================================================
 *.local
 
-# Editor directories and files
+# ==============================================================================
+# OS & EDITOR SPECIFIC
+# ==============================================================================
+.DS_Store
+Thumbs.db
 **/.vscode/*
 !**/.vscode/extensions.json
 **/.idea/
-.DS_Store
-Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
-/docs
