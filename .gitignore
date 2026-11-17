@@ -26,6 +26,7 @@ notes/
 drafts/
 scratch/
 brainstorm/
+academic artefacts/
 
 # Any file marked as private or draft anywhere in the workspace
 *.private.*
