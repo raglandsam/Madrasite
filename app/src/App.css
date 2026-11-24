@@ -886,13 +886,38 @@ main,
 
 @media (max-width: 44rem) {
   .site-header-bar {
-    padding: 0 1rem;
-    height: 5.5rem;
+    height: auto;
+    min-height: 5.5rem;
+    padding: 0.65rem 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.55rem;
   }
 
   .site-header-center,
   .brand-subtitle {
     display: none;
+  }
+
+  .site-header-left {
+    flex: 1 1 100%;
+    gap: 0.55rem;
+  }
+
+  .site-header-right {
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    gap: 0.4rem;
+    width: 100%;
+  }
+
+  .lang-toggle-header-btn,
+  .theme-toggle-header-btn,
+  .header-action-btn {
+    justify-content: center;
+    min-width: 0;
+    padding: 0.4rem 0.5rem;
+    white-space: nowrap;
+    font-size: 0.72rem;
   }
 
   .ward-card,
@@ -908,6 +933,6 @@ main,
   .map-status {
     bottom: auto;
     left: 0.75rem;
-    top: 6rem;
+    top: 8rem;
   }
 }
