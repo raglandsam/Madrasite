@@ -10,6 +10,27 @@ main,
   background: #0d1315;
 }
 
+.map-shell--loading {
+  display: grid;
+  place-items: center;
+}
+
+.map-loading-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  background: #2dd4bf;
+  box-shadow: 0 0 1.25rem rgba(45, 212, 191, 0.65);
+  animation: map-loading-pulse 1s ease-in-out infinite;
+}
+
+@keyframes map-loading-pulse {
+  50% {
+    opacity: 0.45;
+    transform: scale(0.82);
+  }
+}
+
 .map-canvas {
   position: absolute;
   inset: 0;

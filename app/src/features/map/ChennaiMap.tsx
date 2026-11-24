@@ -207,12 +207,14 @@ export function ChennaiMap() {
   const selectedIdRef = useRef<FeatureId | null>(null)
   const wardDataRef = useRef<WardFeatureCollection | null>(null)
   const zoneDataRef = useRef<ZoneBoundaryFeatureCollection | null>(null)
+  const authorityDataRef = useRef<WardCardData | null>(null)
   const rafHoverRef = useRef<number | null>(null)
 
   const [themeMode, setThemeMode] = useState<MapThemeMode>(() => {
     const saved = localStorage.getItem('madrasite_theme')
     return saved === 'light' ? 'light' : 'dark'
   })
+  const themeModeRef = useRef<MapThemeMode>(themeMode)
 
   const [lang, setLang] = useState<AppLanguage>(() => {
     const saved = localStorage.getItem('madrasite_lang')
@@ -229,6 +231,7 @@ export function ChennaiMap() {
 
   const toggleTheme = () => {
     const nextMode = themeMode === 'dark' ? 'light' : 'dark'
+    themeModeRef.current = nextMode
     setThemeMode(nextMode)
     localStorage.setItem('madrasite_theme', nextMode)
   }
@@ -239,8 +242,10 @@ export function ChennaiMap() {
     localStorage.setItem('madrasite_lang', nextLang)
   }
 
-  // Load authority data once on mount
+  // Load authority data only after the first ward selection.
   useEffect(() => {
+    if (!selectedWard || authorityData) return
+
     const abortController = new AbortController()
     let destroyed = false
 
@@ -248,6 +253,7 @@ export function ChennaiMap() {
       try {
         const data = await fetchWardCardData(abortController.signal)
         if (destroyed) return
+        authorityDataRef.current = data
         setAuthorityData(data)
         setAuthorityStatus('ready')
       } catch (error) {
@@ -261,7 +267,7 @@ export function ChennaiMap() {
       destroyed = true
       abortController.abort()
     }
-  }, [])
+  }, [selectedWard, authorityData])
 
   useEffect(() => {
     const container = mapContainerRef.current
@@ -274,7 +280,7 @@ export function ChennaiMap() {
     const initMap = async () => {
       try {
         setStatus('loading')
-        const style = await loadBasemapStyle(themeMode, abortController.signal)
+        const style = await loadBasemapStyle(themeModeRef.current, abortController.signal)
         if (destroyed) return
 
         map = new MapLibreMap({
@@ -282,6 +288,11 @@ export function ChennaiMap() {
           style,
           center: [...MAP_CONFIG.fallbackCenter] as [number, number],
           zoom: MAP_CONFIG.fallbackZoom,
+          minZoom: MAP_CONFIG.minimumZoom,
+          maxZoom: MAP_CONFIG.maximumZoom,
+          maxBounds: MAP_CONFIG.viewportBounds,
+          dragRotate: false,
+          pitchWithRotate: false,
           attributionControl: { compact: true },
         })
         mapRef.current = map
@@ -358,6 +369,7 @@ export function ChennaiMap() {
 
           selectedIdRef.current = nextId
           map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { selected: true })
+          if (!authorityDataRef.current) setAuthorityStatus('loading')
           setSelectedWard(feature.properties as WardProperties)
         }
 
@@ -403,9 +415,9 @@ export function ChennaiMap() {
             boundsRef.current = bounds
             if (destroyed) return
 
-            addWardLayers(map, wardData, themeMode)
+            addWardLayers(map, wardData, themeModeRef.current)
             if (zoneData) {
-              addZoneLayers(map, zoneData, themeMode)
+              addZoneLayers(map, zoneData, themeModeRef.current)
             }
 
             // Restore selection feature state if a ward was already selected
@@ -429,7 +441,7 @@ export function ChennaiMap() {
           }
         }
 
-        map.once('load', setupWards)
+        map.once('style.load', setupWards)
       } catch (error) {
         if (destroyed || (error instanceof DOMException && error.name === 'AbortError')) return
         setErrorMessage(error instanceof Error ? error.message : 'The basemap could not be loaded.')
@@ -451,6 +463,40 @@ export function ChennaiMap() {
         mapRef.current = null
       }
     }
+  }, [])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+
+    const abortController = new AbortController()
+
+    const applyTheme = async () => {
+      try {
+        const style = await loadBasemapStyle(themeMode, abortController.signal)
+        if (abortController.signal.aborted) return
+
+        map.setStyle(style)
+        map.once('style.load', () => {
+          const wardData = wardDataRef.current
+          const zoneData = zoneDataRef.current
+          if (wardData) addWardLayers(map, wardData, themeMode)
+          if (zoneData) addZoneLayers(map, zoneData, themeMode)
+
+          if (selectedIdRef.current !== null) {
+            map.setFeatureState({ source: WARD_SOURCE_ID, id: selectedIdRef.current }, { selected: true })
+          }
+        })
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return
+        setErrorMessage(error instanceof Error ? error.message : 'The map theme could not be changed.')
+        setStatus('error')
+      }
+    }
+
+    void applyTheme()
+
+    return () => abortController.abort()
   }, [themeMode])
 
   const resetMap = () => {

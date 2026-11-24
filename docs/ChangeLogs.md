@@ -1,5 +1,13 @@
 # Change log
 
+## 2026-11-24 - Initial-load and navigation performance
+
+- Split the React map feature and MapLibre runtime into lazy-loaded application chunks.
+- Deferred all four static authority JSON datasets until the first ward is selected and cached the loaded records.
+- Added ward and zone setup at basemap `style.load` instead of waiting for the basemap's full `load` event.
+- Added a documented Chennai-periphery navigation envelope covering Chennai and the immediate Chengalpattu, Kanchipuram, and Tiruvallur context, with constrained pan and zoom.
+- Theme changes now update the basemap style and reapply ward/zone layers without recreating the MapLibre map instance.
+
 ## 2026-11-09 — Rendering performance optimization and professional icon polish
 
 - Optimized map hover event handling: transitioned from full-canvas mousemove and synchronous `queryRenderedFeatures` to layer-targeted event listener (`map.on('mousemove', WARD_FILL_LAYER_ID)`) with `requestAnimationFrame` batching and early returns.
