@@ -1,5 +1,10 @@
 # Change log
 
+## 2026-11-24 - Preserve map labels and tiles during theme changes
+
+- Insert ward and zone boundaries below basemap symbol labels so zone graphics no longer obscure locality names.
+- Preserve unchanged vector/raster basemap sources through theme style diffs to reuse tile data, and ignore map clicks while style transitions temporarily remove interactive layers.
+
 ## 2026-11-24 - Theme switching and mobile map controls
 
 - Preserve the loaded ward and zone GeoJSON sources and overlay layers across basemap theme changes, register style readiness before swapping, and ignore stale callbacks so overlays remain visible without refetching or reparsing boundary data.

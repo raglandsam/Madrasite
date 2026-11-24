@@ -383,7 +383,7 @@ export function ChennaiMap() {
         }
 
         const handleMapClick = (event: MapMouseEvent) => {
-          if (!map) return
+          if (!map || !map.getLayer(WARD_FILL_LAYER_ID)) return
           // Deselect when clicking outside any ward polygon
           const hits = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })
           if (hits.length === 0) {
@@ -518,15 +518,27 @@ export function ChennaiMap() {
               ZONE_OUTLINE_LAYER_ID,
             ])
             const overlayLayers = previousStyle.layers.filter((layer) => overlayLayerIds.has(layer.id))
+            const reusableSources = Object.fromEntries(
+              Object.entries(nextStyle.sources).flatMap(([id, nextSource]) => {
+                const previousSource = previousStyle.sources[id]
+                return previousSource && JSON.stringify(previousSource) === JSON.stringify(nextSource)
+                  ? [[id, previousSource]]
+                  : []
+              }),
+            )
+            const nextLayers = [...nextStyle.layers]
+            const firstSymbolIndex = nextLayers.findIndex((layer) => layer.type === 'symbol')
+            nextLayers.splice(firstSymbolIndex < 0 ? nextLayers.length : firstSymbolIndex, 0, ...overlayLayers)
 
             return {
               ...nextStyle,
               sources: {
                 ...nextStyle.sources,
+                ...reusableSources,
                 ...(wardSource ? { [WARD_SOURCE_ID]: wardSource } : {}),
                 ...(zoneSource ? { [ZONE_SOURCE_ID]: zoneSource } : {}),
               },
-              layers: [...nextStyle.layers, ...overlayLayers],
+              layers: nextLayers,
             }
           },
         })

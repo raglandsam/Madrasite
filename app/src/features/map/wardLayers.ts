@@ -1,4 +1,4 @@
-import type { Map as MapLibreMap } from 'maplibre-gl'
+import type { AddLayerObject, Map as MapLibreMap } from 'maplibre-gl'
 import type { MapThemeMode } from './mapConfig'
 import type { WardFeatureCollection, ZoneBoundaryFeatureCollection } from './wardTypes'
 
@@ -8,6 +8,11 @@ export const WARD_OUTLINE_LAYER_ID = 'gcc-wards-outline'
 
 export const ZONE_SOURCE_ID = 'gcc-zones'
 export const ZONE_OUTLINE_LAYER_ID = 'gcc-zones-outline'
+
+function addLayerBelowLabels(map: MapLibreMap, layer: AddLayerObject) {
+  const firstSymbolLayerId = map.getStyle().layers.find((styleLayer) => styleLayer.type === 'symbol')?.id
+  map.addLayer(layer, firstSymbolLayerId)
+}
 
 export function updateWardLayerTheme(map: MapLibreMap, mode: MapThemeMode = 'dark') {
   const isLight = mode === 'light'
@@ -78,10 +83,10 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection, mod
   }
 
   if (!map.getLayer(WARD_FILL_LAYER_ID)) {
-    map.addLayer({ id: WARD_FILL_LAYER_ID, type: 'fill', source: WARD_SOURCE_ID })
+    addLayerBelowLabels(map, { id: WARD_FILL_LAYER_ID, type: 'fill', source: WARD_SOURCE_ID })
   }
   if (!map.getLayer(WARD_OUTLINE_LAYER_ID)) {
-    map.addLayer({ id: WARD_OUTLINE_LAYER_ID, type: 'line', source: WARD_SOURCE_ID })
+    addLayerBelowLabels(map, { id: WARD_OUTLINE_LAYER_ID, type: 'line', source: WARD_SOURCE_ID })
   }
 
   updateWardLayerTheme(map, mode)
@@ -96,10 +101,10 @@ export function addZoneLayers(map: MapLibreMap, data: ZoneBoundaryFeatureCollect
   }
 
   if (!map.getLayer(`${ZONE_OUTLINE_LAYER_ID}-casing`)) {
-    map.addLayer({ id: `${ZONE_OUTLINE_LAYER_ID}-casing`, type: 'line', source: ZONE_SOURCE_ID })
+    addLayerBelowLabels(map, { id: `${ZONE_OUTLINE_LAYER_ID}-casing`, type: 'line', source: ZONE_SOURCE_ID })
   }
   if (!map.getLayer(ZONE_OUTLINE_LAYER_ID)) {
-    map.addLayer({ id: ZONE_OUTLINE_LAYER_ID, type: 'line', source: ZONE_SOURCE_ID })
+    addLayerBelowLabels(map, { id: ZONE_OUTLINE_LAYER_ID, type: 'line', source: ZONE_SOURCE_ID })
   }
 
   updateZoneLayerTheme(map, mode)
