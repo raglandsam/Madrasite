@@ -1,5 +1,10 @@
 # Change log
 
+## 2026-11-24 — Confirmed Ward 109 locality from GCC sources
+
+- Corrected Ward 109 from Gopalapuram to Choolaimedu in the supplied candidate list and ward profile data.
+- Added GCC Gazette and School Location Service references; the generator now promotes explicitly sourced locality confirmations while preserving candidate status for other labels.
+
 ## 2026-11-09 — Rendering performance optimization and professional icon polish
 
 - Optimized map hover event handling: transitioned from full-canvas mousemove and synchronous `queryRenderedFeatures` to layer-targeted event listener (`map.on('mousemove', WARD_FILL_LAYER_ID)`) with `requestAnimationFrame` batching and early returns.
