@@ -2274,10 +2274,10 @@
     {
       "wardNumber": 109,
       "wardId": "18995",
-      "name": "Gopalapuram",
-      "nameStatus": "candidate",
-      "nameConfirmed": "no",
-      "nameSource": "User-supplied ward-name list (candidate labels)",
+      "name": "Choolaimedu",
+      "nameStatus": "confirmed",
+      "nameConfirmed": "yes",
+      "nameSource": "Confirmed from Greater Chennai Corporation Gazette and School Location Service",
       "zone": {
         "number": 9,
         "name": "Teynampet",
