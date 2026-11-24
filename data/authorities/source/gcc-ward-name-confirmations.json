@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "description": "Official GCC evidence for confirmed ward locality labels.",
+  "records": [
+    {
+      "wardNumber": 109,
+      "name": "Choolaimedu",
+      "verifiedAt": "2026-11-24",
+      "sourceDescription": "Greater Chennai Corporation Area Sabha Gazette (2022), Ward 109 street listings; GCC School Location Service, Ward 109 listings.",
+      "sources": [
+        {
+          "title": "Chennai District Gazette Extraordinary — Area Sabha street coverage (Ward 109)",
+          "url": "https://chennaicorporation.gov.in/gcc/area_sabha/pdf/gazette.pdf"
+        },
+        {
+          "title": "GCC School Location Service",
+          "url": "https://chennaicorporation.gov.in/gcc/citizen-details/location-service/ser_schools.jsp"
+        }
+      ]
+    }
+  ]
+}

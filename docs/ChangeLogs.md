@@ -1,5 +1,9 @@
 # Change log
 
+## 2026-11-24 — Confirmed Ward 109 locality from GCC sources
+
+- Corrected Ward 109 from Gopalapuram to Choolaimedu in the supplied candidate list and ward profile data.
+- Added GCC Gazette and School Location Service references; the generator now promotes explicitly sourced locality confirmations while preserving candidate status for other labels.
 ## 2026-11-24 - Preserve map labels and tiles during theme changes
 
 - Insert ward and zone boundaries below basemap symbol labels so zone graphics no longer obscure locality names.
