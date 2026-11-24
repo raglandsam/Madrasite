@@ -1,5 +1,9 @@
 # Change log
 
+## 2026-11-24 - Fix map canvas sizing after lazy loading
+
+- Restored explicit full-shell positioning and dimensions for the MapLibre canvas container. Its asynchronously loaded stylesheet had overridden the app's lower-specificity canvas rule, collapsing the map area to zero height while leaving surrounding UI visible.
+
 ## 2026-11-24 - Initial-load and navigation performance
 
 - Split the React map feature and MapLibre runtime into lazy-loaded application chunks.
