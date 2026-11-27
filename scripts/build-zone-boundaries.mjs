@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const canonicalWardsPath = resolve(repositoryRoot, 'data/wards/canonical/gcc-ward-boundaries-2025.geojson')
 const canonicalZonesPath = resolve(repositoryRoot, 'data/wards/canonical/gcc-zone-boundaries-2025.geojson')
-const browserZonesPath = resolve(repositoryRoot, 'app/public/data/wards/chennai-zones.geojson')
+const browserZonesPath = resolve(repositoryRoot, 'app/public/data/wards/chennai-zones.json')
 
 function ptKey(point) {
   return `${point[0].toFixed(7)},${point[1].toFixed(7)}`

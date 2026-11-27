@@ -1,9 +1,41 @@
 # Change log
 
+## 2026-11-27 - Enable CDN compression for browser map data
+
+- Serve unchanged browser-ready GeoJSON using `.json` filenames so Render assigns a JSON content type and applies its automatic Brotli compression.
+- Update map URLs and data-generation scripts; canonical and source data remain unchanged.
+
+## 2026-11-27 - Refine dark-mode boundary rendering
+
+- Use a continuous dark-mode zone boundary and strengthen the selected ward fill to prevent detailed basemap lines from making overlays appear broken.
+- Leave light-mode styling and all boundary data unchanged.
+
 ## 2026-11-24 — Confirmed Ward 109 locality from GCC sources
 
 - Corrected Ward 109 from Gopalapuram to Choolaimedu in the supplied candidate list and ward profile data.
 - Added GCC Gazette and School Location Service references; the generator now promotes explicitly sourced locality confirmations while preserving candidate status for other labels.
+## 2026-11-24 - Preserve map labels and tiles during theme changes
+
+- Insert ward and zone boundaries below basemap symbol labels so zone graphics no longer obscure locality names.
+- Preserve unchanged vector/raster basemap sources through theme style diffs to reuse tile data, and ignore map clicks while style transitions temporarily remove interactive layers.
+
+## 2026-11-24 - Theme switching and mobile map controls
+
+- Preserve the loaded ward and zone GeoJSON sources and overlay layers across basemap theme changes, register style readiness before swapping, and ignore stale callbacks so overlays remain visible without refetching or reparsing boundary data.
+- Reflow mobile header controls into a contained two-row layout so Return to Chennai remains visible.
+- Fit the ward extent inside the viewport area not covered by the header or ward card when returning to Chennai.
+
+## 2026-11-24 - Fix map canvas sizing after lazy loading
+
+- Restored explicit full-shell positioning and dimensions for the MapLibre canvas container. Its asynchronously loaded stylesheet had overridden the app's lower-specificity canvas rule, collapsing the map area to zero height while leaving surrounding UI visible.
+
+## 2026-11-24 - Initial-load and navigation performance
+
+- Split the React map feature and MapLibre runtime into lazy-loaded application chunks.
+- Deferred all four static authority JSON datasets until the first ward is selected and cached the loaded records.
+- Added ward and zone setup at basemap `style.load` instead of waiting for the basemap's full `load` event.
+- Added a documented Chennai-periphery navigation envelope covering Chennai and the immediate Chengalpattu, Kanchipuram, and Tiruvallur context, with constrained pan and zoom.
+- Theme changes now update the basemap style and reapply ward/zone layers without recreating the MapLibre map instance.
 
 ## 2026-11-09 — Rendering performance optimization and professional icon polish
 
