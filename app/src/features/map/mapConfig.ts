@@ -8,8 +8,8 @@ export const MAP_CONFIG = {
   // Viewer navigation envelope for Chennai and its immediate metro periphery.
   // This is a UI constraint, not official district or municipal boundary data.
   viewportBounds: [[79.55, 12.45], [80.55, 13.55]] as [[number, number], [number, number]],
-  wardDataUrl: '/data/wards/chennai-wards.geojson',
-  zoneDataUrl: '/data/wards/chennai-zones.geojson',
+  wardDataUrl: '/data/wards/chennai-wards.json',
+  zoneDataUrl: '/data/wards/chennai-zones.json',
   wardSourceUrl: 'https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2',
   authorityDataUrls: {
     wards: '/data/authorities/ward-profiles.json',

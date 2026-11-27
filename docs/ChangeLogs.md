@@ -1,5 +1,10 @@
 # Change log
 
+## 2026-11-27 - Enable CDN compression for browser map data
+
+- Serve unchanged browser-ready GeoJSON using `.json` filenames so Render assigns a JSON content type and applies its automatic Brotli compression.
+- Update map URLs and data-generation scripts; canonical and source data remain unchanged.
+
 ## 2026-11-24 — Confirmed Ward 109 locality from GCC sources
 
 - Corrected Ward 109 from Gopalapuram to Choolaimedu in the supplied candidate list and ward profile data.
