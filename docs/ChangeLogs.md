@@ -5,11 +5,6 @@
 - Serve unchanged browser-ready GeoJSON using `.json` filenames so Render assigns a JSON content type and applies its automatic Brotli compression.
 - Update map URLs and data-generation scripts; canonical and source data remain unchanged.
 
-## 2026-11-27 - Refine dark-mode boundary rendering
-
-- Use a continuous dark-mode zone boundary and strengthen the selected ward fill to prevent detailed basemap lines from making overlays appear broken.
-- Leave light-mode styling and all boundary data unchanged.
-
 ## 2026-11-24 — Confirmed Ward 109 locality from GCC sources
 
 - Corrected Ward 109 from Gopalapuram to Choolaimedu in the supplied candidate list and ward profile data.
