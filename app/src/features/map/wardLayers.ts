@@ -1,4 +1,4 @@
-import type { Map as MapLibreMap } from 'maplibre-gl'
+import type { AddLayerObject, Map as MapLibreMap } from 'maplibre-gl'
 import type { MapThemeMode } from './mapConfig'
 import type { WardFeatureCollection, ZoneBoundaryFeatureCollection } from './wardTypes'
 
@@ -9,6 +9,70 @@ export const WARD_OUTLINE_LAYER_ID = 'gcc-wards-outline'
 export const ZONE_SOURCE_ID = 'gcc-zones'
 export const ZONE_OUTLINE_LAYER_ID = 'gcc-zones-outline'
 
+function addLayerBelowLabels(map: MapLibreMap, layer: AddLayerObject) {
+  const firstSymbolLayerId = map.getStyle().layers.find((styleLayer) => styleLayer.type === 'symbol')?.id
+  map.addLayer(layer, firstSymbolLayerId)
+}
+
+export function updateWardLayerTheme(map: MapLibreMap, mode: MapThemeMode = 'dark') {
+  const isLight = mode === 'light'
+
+  if (map.getLayer(WARD_FILL_LAYER_ID)) {
+    map.setPaintProperty(WARD_FILL_LAYER_ID, 'fill-color', [
+      'case',
+      ['boolean', ['feature-state', 'selected'], false],
+      isLight ? '#2f683a' : '#028478',
+      ['boolean', ['feature-state', 'hover'], false],
+      isLight ? '#52824e' : '#0f766e',
+      isLight ? '#e2ecdf' : '#11292d',
+    ])
+    map.setPaintProperty(WARD_FILL_LAYER_ID, 'fill-opacity', [
+      'case',
+      ['boolean', ['feature-state', 'selected'], false],
+      isLight ? 0.62 : 0.68,
+      ['boolean', ['feature-state', 'hover'], false],
+      isLight ? 0.48 : 0.42,
+      isLight ? 0.35 : 0.28,
+    ])
+  }
+
+  if (map.getLayer(WARD_OUTLINE_LAYER_ID)) {
+    map.setPaintProperty(WARD_OUTLINE_LAYER_ID, 'line-color', [
+      'case',
+      ['boolean', ['feature-state', 'selected'], false],
+      isLight ? '#194420' : '#2dd4bf',
+      ['boolean', ['feature-state', 'hover'], false],
+      isLight ? '#2e6b37' : '#14b8a6',
+      isLight ? '#8ba887' : '#1f4749',
+    ])
+    map.setPaintProperty(WARD_OUTLINE_LAYER_ID, 'line-opacity', [
+      'case',
+      ['boolean', ['feature-state', 'selected'], false],
+      1.0,
+      ['boolean', ['feature-state', 'hover'], false],
+      0.95,
+      0.65,
+    ])
+  }
+}
+
+export function updateZoneLayerTheme(map: MapLibreMap, mode: MapThemeMode = 'dark') {
+  const isLight = mode === 'light'
+
+  if (map.getLayer(`${ZONE_OUTLINE_LAYER_ID}-casing`)) {
+    map.setPaintProperty(`${ZONE_OUTLINE_LAYER_ID}-casing`, 'line-color', isLight ? '#f4f8f2' : '#061314')
+    map.setPaintProperty(`${ZONE_OUTLINE_LAYER_ID}-casing`, 'line-width', 4.5)
+    map.setPaintProperty(`${ZONE_OUTLINE_LAYER_ID}-casing`, 'line-opacity', isLight ? 0.9 : 0.7)
+  }
+
+  if (map.getLayer(ZONE_OUTLINE_LAYER_ID)) {
+    map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-color', isLight ? '#1a4320' : '#00e5c8')
+    map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-width', 2.6)
+    map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-opacity', 0.95)
+    map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-dasharray', isLight ? [3, 1] : undefined)
+  }
+}
+
 export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection, mode: MapThemeMode = 'dark') {
   if (!map.getSource(WARD_SOURCE_ID)) {
     map.addSource(WARD_SOURCE_ID, {
@@ -18,56 +82,14 @@ export function addWardLayers(map: MapLibreMap, data: WardFeatureCollection, mod
     })
   }
 
-  const isLight = mode === 'light'
+  if (!map.getLayer(WARD_FILL_LAYER_ID)) {
+    addLayerBelowLabels(map, { id: WARD_FILL_LAYER_ID, type: 'fill', source: WARD_SOURCE_ID })
+  }
+  if (!map.getLayer(WARD_OUTLINE_LAYER_ID)) {
+    addLayerBelowLabels(map, { id: WARD_OUTLINE_LAYER_ID, type: 'line', source: WARD_SOURCE_ID })
+  }
 
-  map.addLayer({
-    id: WARD_FILL_LAYER_ID,
-    type: 'fill',
-    source: WARD_SOURCE_ID,
-    paint: {
-      'fill-color': [
-        'case',
-        ['boolean', ['feature-state', 'selected'], false],
-        isLight ? '#2f683a' : '#028478', // Deep forest/olive green in light mode, radiant deep teal in dark mode
-        ['boolean', ['feature-state', 'hover'], false],
-        isLight ? '#52824e' : '#0f766e', // Medium olive/sage in light mode, vibrant mid-teal in dark mode
-        isLight ? '#e2ecdf' : '#11292d', // Light mild pale green fill vs dark cool-teal
-      ],
-      'fill-opacity': [
-        'case',
-        ['boolean', ['feature-state', 'selected'], false],
-        isLight ? 0.62 : 0.58,
-        ['boolean', ['feature-state', 'hover'], false],
-        isLight ? 0.48 : 0.42,
-        isLight ? 0.35 : 0.28,
-      ],
-    },
-  })
-
-  map.addLayer({
-    id: WARD_OUTLINE_LAYER_ID,
-    type: 'line',
-    source: WARD_SOURCE_ID,
-    paint: {
-      'line-color': [
-        'case',
-        ['boolean', ['feature-state', 'selected'], false],
-        isLight ? '#194420' : '#2dd4bf', // Dark pine green border on selection in light mode, luminous teal in dark mode
-        ['boolean', ['feature-state', 'hover'], false],
-        isLight ? '#2e6b37' : '#14b8a6',
-        isLight ? '#8ba887' : '#1f4749', // Subtle crisp olive-sage ward boundary
-      ],
-      'line-opacity': [
-        'case',
-        ['boolean', ['feature-state', 'selected'], false],
-        1.0,
-        ['boolean', ['feature-state', 'hover'], false],
-        0.95,
-        0.65,
-      ],
-      'line-width': 1.0,
-    },
-  })
+  updateWardLayerTheme(map, mode)
 }
 
 export function addZoneLayers(map: MapLibreMap, data: ZoneBoundaryFeatureCollection, mode: MapThemeMode = 'dark') {
@@ -78,32 +100,13 @@ export function addZoneLayers(map: MapLibreMap, data: ZoneBoundaryFeatureCollect
     })
   }
 
-  const isLight = mode === 'light'
+  if (!map.getLayer(`${ZONE_OUTLINE_LAYER_ID}-casing`)) {
+    addLayerBelowLabels(map, { id: `${ZONE_OUTLINE_LAYER_ID}-casing`, type: 'line', source: ZONE_SOURCE_ID })
+  }
+  if (!map.getLayer(ZONE_OUTLINE_LAYER_ID)) {
+    addLayerBelowLabels(map, { id: ZONE_OUTLINE_LAYER_ID, type: 'line', source: ZONE_SOURCE_ID })
+  }
 
-  // Zone border casing / subtle halo for high contrast over street networks
-  map.addLayer({
-    id: `${ZONE_OUTLINE_LAYER_ID}-casing`,
-    type: 'line',
-    source: ZONE_SOURCE_ID,
-    paint: {
-      'line-color': isLight ? '#f4f8f2' : '#061314',
-      'line-width': 4.5,
-      'line-opacity': isLight ? 0.9 : 0.7,
-    },
-  })
-
-  // Prominent distinct zone graphical boundary line
-  map.addLayer({
-    id: ZONE_OUTLINE_LAYER_ID,
-    type: 'line',
-    source: ZONE_SOURCE_ID,
-    paint: {
-      // In light mode: dark olive-pine green (#1a4320); In dark mode: radiant cyan-teal (#00e5c8)
-      'line-color': isLight ? '#1a4320' : '#00e5c8',
-      'line-width': 2.6,
-      'line-opacity': 0.95,
-      'line-dasharray': [3, 1], // Clear distinct graphical pattern for zone demarcation
-    },
-  })
+  updateZoneLayerTheme(map, mode)
 }
 

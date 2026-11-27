@@ -19,9 +19,9 @@ Madrasite/
 
 - React and TypeScript via Vite.
 - MapLibre GL JS for interactive rendering.
-- Map navigation is constrained to a documented Chennai metro-periphery viewer envelope in `mapConfig.ts`; this is not an official civic boundary.
+- The map feature and MapLibre runtime load in a lazy application chunk; authority datasets load only after a ward is selected.
 - A configurable basemap style URL, never hard-coded throughout components.
-- Local GeoJSON for the first map prototype (ward polygons and derived zone boundary lines). MVT/vector tiles are a later performance option, not an initial requirement.
+- Local GeoJSON for the first map prototype (ward polygons and derived zone boundary lines). Browser copies retain six decimal places and use a `.json` extension for CDN compression; source extracts and canonical geometry remain unchanged. MVT/vector tiles are a later performance option, not an initial requirement.
 - Neutral raster basemap style (Carto Voyager without labels) matching the restrained teal/cool-gray design palette.
 
 ## Typography & Theming

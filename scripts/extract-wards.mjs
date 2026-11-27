@@ -1,6 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { roundFeatureCollectionToSixDecimals } from './geometry-utils.mjs'
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const sourceDirectory = resolve(repositoryRoot, 'data/wards/source')
@@ -143,6 +144,7 @@ const canonical = {
   },
   features: canonicalFeatures,
 }
+const browserReady = roundFeatureCollectionToSixDecimals(canonical)
 
 const report = {
   retrievedAt,
@@ -163,7 +165,7 @@ await Promise.all([
   writeFile(resolve(sourceDirectory, 'gcc-ward-boundaries-2025-metadata.json'), JSON.stringify(metadata, null, 2)),
   writeFile(resolve(canonicalDirectory, 'gcc-ward-boundaries-2025.geojson'), JSON.stringify(canonical)),
   writeFile(resolve(repositoryRoot, 'data/wards/validation-report.json'), JSON.stringify(report, null, 2)),
-  writeFile(resolve(browserDirectory, 'chennai-wards.geojson'), JSON.stringify(canonical)),
+  writeFile(resolve(browserDirectory, 'chennai-wards.json'), JSON.stringify(browserReady)),
 ])
 
 console.log(`Imported and validated ${canonicalFeatures.length} GCC wards.`)

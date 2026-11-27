@@ -1,11 +1,12 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { roundFeatureCollectionToSixDecimals } from './geometry-utils.mjs'
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const canonicalWardsPath = resolve(repositoryRoot, 'data/wards/canonical/gcc-ward-boundaries-2025.geojson')
 const canonicalZonesPath = resolve(repositoryRoot, 'data/wards/canonical/gcc-zone-boundaries-2025.geojson')
-const browserZonesPath = resolve(repositoryRoot, 'app/public/data/wards/chennai-zones.geojson')
+const browserZonesPath = resolve(repositoryRoot, 'app/public/data/wards/chennai-zones.json')
 
 function ptKey(point) {
   return `${point[0].toFixed(7)},${point[1].toFixed(7)}`
@@ -129,10 +130,11 @@ async function buildZoneBoundaries() {
   }
 
   await mkdir(dirname(browserZonesPath), { recursive: true })
-  const outputJson = JSON.stringify(zoneBoundariesGeoJson)
+  const canonicalOutputJson = JSON.stringify(zoneBoundariesGeoJson)
+  const browserOutputJson = JSON.stringify(roundFeatureCollectionToSixDecimals(zoneBoundariesGeoJson))
   await Promise.all([
-    writeFile(canonicalZonesPath, outputJson),
-    writeFile(browserZonesPath, outputJson),
+    writeFile(canonicalZonesPath, canonicalOutputJson),
+    writeFile(browserZonesPath, browserOutputJson),
   ])
 
   console.log(`Generated ${multiLine.length} zone boundary lines.`)

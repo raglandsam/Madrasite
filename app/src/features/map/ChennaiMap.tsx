@@ -16,7 +16,15 @@ import type { WardCardData } from './authorityTypes'
 import { WardInfoPanel } from './WardInfoPanel'
 import { I18N_STRINGS, type AppLanguage } from './i18n'
 import { MAP_CONFIG, type MapThemeMode } from './mapConfig'
-import { addWardLayers, addZoneLayers, WARD_FILL_LAYER_ID, WARD_SOURCE_ID } from './wardLayers'
+import {
+  addWardLayers,
+  addZoneLayers,
+  WARD_FILL_LAYER_ID,
+  WARD_OUTLINE_LAYER_ID,
+  WARD_SOURCE_ID,
+  ZONE_OUTLINE_LAYER_ID,
+  ZONE_SOURCE_ID,
+} from './wardLayers'
 import type { WardFeatureCollection, WardProperties, ZoneBoundaryFeatureCollection } from './wardTypes'
 
 setWorkerUrl(workerUrl)
@@ -207,12 +215,15 @@ export function ChennaiMap() {
   const selectedIdRef = useRef<FeatureId | null>(null)
   const wardDataRef = useRef<WardFeatureCollection | null>(null)
   const zoneDataRef = useRef<ZoneBoundaryFeatureCollection | null>(null)
+  const authorityDataRef = useRef<WardCardData | null>(null)
   const rafHoverRef = useRef<number | null>(null)
+  const styleRevisionRef = useRef(0)
 
   const [themeMode, setThemeMode] = useState<MapThemeMode>(() => {
     const saved = localStorage.getItem('madrasite_theme')
     return saved === 'light' ? 'light' : 'dark'
   })
+  const themeModeRef = useRef<MapThemeMode>(themeMode)
 
   const [lang, setLang] = useState<AppLanguage>(() => {
     const saved = localStorage.getItem('madrasite_lang')
@@ -229,6 +240,7 @@ export function ChennaiMap() {
 
   const toggleTheme = () => {
     const nextMode = themeMode === 'dark' ? 'light' : 'dark'
+    themeModeRef.current = nextMode
     setThemeMode(nextMode)
     localStorage.setItem('madrasite_theme', nextMode)
   }
@@ -239,8 +251,10 @@ export function ChennaiMap() {
     localStorage.setItem('madrasite_lang', nextLang)
   }
 
-  // Load authority data once on mount
+  // Load authority data only after the first ward selection.
   useEffect(() => {
+    if (!selectedWard || authorityData) return
+
     const abortController = new AbortController()
     let destroyed = false
 
@@ -248,6 +262,7 @@ export function ChennaiMap() {
       try {
         const data = await fetchWardCardData(abortController.signal)
         if (destroyed) return
+        authorityDataRef.current = data
         setAuthorityData(data)
         setAuthorityStatus('ready')
       } catch (error) {
@@ -261,7 +276,7 @@ export function ChennaiMap() {
       destroyed = true
       abortController.abort()
     }
-  }, [])
+  }, [selectedWard, authorityData])
 
   useEffect(() => {
     const container = mapContainerRef.current
@@ -274,7 +289,7 @@ export function ChennaiMap() {
     const initMap = async () => {
       try {
         setStatus('loading')
-        const style = await loadBasemapStyle(themeMode, abortController.signal)
+        const style = await loadBasemapStyle(themeModeRef.current, abortController.signal)
         if (destroyed) return
 
         map = new MapLibreMap({
@@ -282,9 +297,8 @@ export function ChennaiMap() {
           style,
           center: [...MAP_CONFIG.fallbackCenter] as [number, number],
           zoom: MAP_CONFIG.fallbackZoom,
-          minZoom: MAP_CONFIG.minimumZoom,
-          maxZoom: MAP_CONFIG.maximumZoom,
-          maxBounds: MAP_CONFIG.viewportBounds,
+          dragRotate: false,
+          pitchWithRotate: false,
           attributionControl: { compact: true },
         })
         mapRef.current = map
@@ -361,11 +375,12 @@ export function ChennaiMap() {
 
           selectedIdRef.current = nextId
           map.setFeatureState({ source: WARD_SOURCE_ID, id: nextId }, { selected: true })
+          if (!authorityDataRef.current) setAuthorityStatus('loading')
           setSelectedWard(feature.properties as WardProperties)
         }
 
         const handleMapClick = (event: MapMouseEvent) => {
-          if (!map) return
+          if (!map || !map.getLayer(WARD_FILL_LAYER_ID)) return
           // Deselect when clicking outside any ward polygon
           const hits = map.queryRenderedFeatures(event.point, { layers: [WARD_FILL_LAYER_ID] })
           if (hits.length === 0) {
@@ -406,9 +421,9 @@ export function ChennaiMap() {
             boundsRef.current = bounds
             if (destroyed) return
 
-            addWardLayers(map, wardData, themeMode)
+            addWardLayers(map, wardData, themeModeRef.current)
             if (zoneData) {
-              addZoneLayers(map, zoneData, themeMode)
+              addZoneLayers(map, zoneData, themeModeRef.current)
             }
 
             // Restore selection feature state if a ward was already selected
@@ -432,7 +447,7 @@ export function ChennaiMap() {
           }
         }
 
-        map.once('load', setupWards)
+        map.once('style.load', setupWards)
       } catch (error) {
         if (destroyed || (error instanceof DOMException && error.name === 'AbortError')) return
         setErrorMessage(error instanceof Error ? error.message : 'The basemap could not be loaded.')
@@ -454,6 +469,86 @@ export function ChennaiMap() {
         mapRef.current = null
       }
     }
+  }, [])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+
+    const abortController = new AbortController()
+    const styleRevision = ++styleRevisionRef.current
+
+    const applyTheme = async () => {
+      try {
+        const style = await loadBasemapStyle(themeMode, abortController.signal)
+        if (abortController.signal.aborted) return
+
+        map.once('style.load', () => {
+          if (styleRevision !== styleRevisionRef.current) return
+
+          const wardData = wardDataRef.current
+          const zoneData = zoneDataRef.current
+          try {
+            const currentTheme = themeModeRef.current
+            if (wardData) addWardLayers(map, wardData, currentTheme)
+            if (zoneData) addZoneLayers(map, zoneData, currentTheme)
+
+            if (selectedIdRef.current !== null) {
+              map.setFeatureState({ source: WARD_SOURCE_ID, id: selectedIdRef.current }, { selected: true })
+            }
+          } catch (error) {
+            setErrorMessage(error instanceof Error ? error.message : 'The map theme could not be changed.')
+            setStatus('error')
+          }
+        })
+
+        map.setStyle(style, {
+          transformStyle: (previousStyle, nextStyle) => {
+            if (!previousStyle) return nextStyle
+
+            const wardSource = previousStyle.sources[WARD_SOURCE_ID]
+            const zoneSource = previousStyle.sources[ZONE_SOURCE_ID]
+            const overlayLayerIds = new Set([
+              WARD_FILL_LAYER_ID,
+              WARD_OUTLINE_LAYER_ID,
+              `${ZONE_OUTLINE_LAYER_ID}-casing`,
+              ZONE_OUTLINE_LAYER_ID,
+            ])
+            const overlayLayers = previousStyle.layers.filter((layer) => overlayLayerIds.has(layer.id))
+            const reusableSources = Object.fromEntries(
+              Object.entries(nextStyle.sources).flatMap(([id, nextSource]) => {
+                const previousSource = previousStyle.sources[id]
+                return previousSource && JSON.stringify(previousSource) === JSON.stringify(nextSource)
+                  ? [[id, previousSource]]
+                  : []
+              }),
+            )
+            const nextLayers = [...nextStyle.layers]
+            const firstSymbolIndex = nextLayers.findIndex((layer) => layer.type === 'symbol')
+            nextLayers.splice(firstSymbolIndex < 0 ? nextLayers.length : firstSymbolIndex, 0, ...overlayLayers)
+
+            return {
+              ...nextStyle,
+              sources: {
+                ...nextStyle.sources,
+                ...reusableSources,
+                ...(wardSource ? { [WARD_SOURCE_ID]: wardSource } : {}),
+                ...(zoneSource ? { [ZONE_SOURCE_ID]: zoneSource } : {}),
+              },
+              layers: nextLayers,
+            }
+          },
+        })
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return
+        setErrorMessage(error instanceof Error ? error.message : 'The map theme could not be changed.')
+        setStatus('error')
+      }
+    }
+
+    void applyTheme()
+
+    return () => abortController.abort()
   }, [themeMode])
 
   const resetMap = () => {
@@ -466,7 +561,25 @@ export function ChennaiMap() {
       selectedIdRef.current = null
     }
     setSelectedWard(null)
-    map.fitBounds(bounds, { padding: { top: 72, right: 72, bottom: 72, left: 72 }, duration: 700, maxZoom: 12 })
+
+    requestAnimationFrame(() => {
+      const mapBounds = map.getContainer().getBoundingClientRect()
+      const shell = map.getContainer().parentElement
+      const header = shell?.querySelector('.site-header-bar')?.getBoundingClientRect()
+      const card = shell?.querySelector('.ward-card')?.getBoundingClientRect()
+      const isMobile = window.matchMedia('(max-width: 44rem)').matches
+
+      map.fitBounds(bounds, {
+        padding: {
+          top: header ? Math.max(72, header.bottom - mapBounds.top + 16) : 72,
+          right: isMobile || !card ? 16 : Math.max(72, mapBounds.right - card.left + 16),
+          bottom: isMobile && card ? Math.max(72, mapBounds.bottom - card.top + 16) : 72,
+          left: 16,
+        },
+        duration: 700,
+        maxZoom: 12,
+      })
+    })
   }
 
   const deselectWard = () => {
