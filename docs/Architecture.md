@@ -20,6 +20,7 @@ Madrasite/
 - React and TypeScript via Vite.
 - MapLibre GL JS for interactive rendering.
 - The map feature and MapLibre runtime load in a lazy application chunk; authority datasets load only after a ward is selected.
+- Map panning is limited to the configured viewer rectangle; vector and raster tile sources use the same bounds to avoid requesting out-of-area tiles. This is not an official civic boundary.
 - A configurable basemap style URL, never hard-coded throughout components.
 - Local GeoJSON for the first map prototype (ward polygons and derived zone boundary lines). Browser copies retain six decimal places and use a `.json` extension for CDN compression; source extracts and canonical geometry remain unchanged. MVT/vector tiles are a later performance option, not an initial requirement.
 - Neutral raster basemap style (Carto Voyager without labels) matching the restrained teal/cool-gray design palette.

@@ -71,7 +71,12 @@ function ResetViewIcon() {
   )
 }
 
-async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promise<StyleSpecification | string> {
+function getBasemapTileBounds(): [number, number, number, number] {
+  const [[west, south], [east, north]] = MAP_CONFIG.viewportBounds
+  return [west, south, east, north]
+}
+
+async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promise<StyleSpecification> {
   const url = MAP_CONFIG.basemapStyles[mode]
   if (!url) {
     return {
@@ -81,6 +86,7 @@ async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promis
           type: 'raster',
           tiles: [MAP_CONFIG.basemapTileUrl],
           tileSize: 256,
+          bounds: getBasemapTileBounds(),
           attribution: MAP_CONFIG.basemapAttribution,
         },
       },
@@ -88,94 +94,98 @@ async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promis
     }
   }
 
-  try {
-    const res = await fetch(url, { signal })
-    if (!res.ok) return url
-    const style = (await res.json()) as StyleSpecification
+  const res = await fetch(url, { signal })
+  if (!res.ok) {
+    throw new Error(`Basemap style request failed (${res.status}): ${url}`)
+  }
+  const style = (await res.json()) as StyleSpecification
 
-    // Use glyphs supporting both Latin and Tamil character sets
-    style.glyphs = 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf'
+  // Use glyphs supporting both Latin and Tamil character sets
+  style.glyphs = 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf'
 
-    // Bilingual Place/Region text-field expression: English on line 1, Tamil on line 2
-    const bilingualTextField = [
-      'case',
-      ['all', ['has', 'name:latin'], ['has', 'name:nonlatin']],
-      ['concat', ['get', 'name:latin'], '\n', ['get', 'name:nonlatin']],
-      ['all', ['has', 'name_en'], ['has', 'name:ta']],
-      ['concat', ['get', 'name_en'], '\n', ['get', 'name:ta']],
-      ['all', ['has', 'name_en'], ['has', 'name_ta']],
-      ['concat', ['get', 'name_en'], '\n', ['get', 'name:ta']],
-      ['has', 'name:nonlatin'],
-      ['concat', ['coalesce', ['get', 'name:latin'], ['get', 'name_en'], ['get', 'name']], '\n', ['get', 'name:nonlatin']],
-      ['coalesce', ['get', 'name_en'], ['get', 'name']],
-    ]
+  const bilingualTextField = [
+    'case',
+    ['all', ['has', 'name:latin'], ['has', 'name:nonlatin']],
+    ['concat', ['get', 'name:latin'], '\n', ['get', 'name:nonlatin']],
+    ['all', ['has', 'name_en'], ['has', 'name:ta']],
+    ['concat', ['get', 'name_en'], '\n', ['get', 'name:ta']],
+    ['all', ['has', 'name_en'], ['has', 'name_ta']],
+    ['concat', ['get', 'name_en'], '\n', ['get', 'name:ta']],
+    ['has', 'name:nonlatin'],
+    ['concat', ['coalesce', ['get', 'name:latin'], ['get', 'name_en'], ['get', 'name']], '\n', ['get', 'name:nonlatin']],
+    ['coalesce', ['get', 'name_en'], ['get', 'name']],
+  ]
 
-    if (Array.isArray(style.layers)) {
-      for (const layer of style.layers) {
-        if (layer.type === 'symbol') {
-          // Use Noto Sans Regular for complete Tamil Unicode coverage
-          if (layer.layout && 'text-font' in layer.layout) {
-            layer.layout['text-font'] = ['Noto Sans Regular']
-          }
-
-          // Apply dual-language labels to all place, region, and suburb description layers
-          if (
-            layer.id.startsWith('place_') ||
-            layer.id.includes('city') ||
-            layer.id.includes('town') ||
-            layer.id.includes('village') ||
-            layer.id.includes('suburb') ||
-            layer.id.includes('neighborhood')
-          ) {
-            if (layer.layout) {
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              layer.layout['text-field'] = bilingualTextField as any
-            }
-          }
+  if (Array.isArray(style.layers)) {
+    for (const layer of style.layers) {
+      if (layer.type === 'symbol') {
+        // Use Noto Sans Regular for complete Tamil Unicode coverage
+        if (layer.layout && 'text-font' in layer.layout) {
+          layer.layout['text-font'] = ['Noto Sans Regular']
         }
 
-        if (mode === 'dark') {
-          // Amplify water bodies
-          if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
-            layer.paint['fill-color'] = '#103444'
+        // Apply dual-language labels to all place, region, and suburb description layers
+        if (
+          layer.id.startsWith('place_') ||
+          layer.id.includes('city') ||
+          layer.id.includes('town') ||
+          layer.id.includes('village') ||
+          layer.id.includes('suburb') ||
+          layer.id.includes('neighborhood')
+        ) {
+          if (layer.layout) {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            layer.layout['text-field'] = bilingualTextField as any
           }
-          if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
-            layer.paint['line-color'] = '#16485e'
+        }
+      }
+
+      if (mode === 'dark') {
+        // Amplify water bodies
+        if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
+          layer.paint['fill-color'] = '#103444'
+        }
+        if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
+          layer.paint['line-color'] = '#16485e'
+        }
+        // Lighten place & street names for high contrast
+        if (layer.type === 'symbol' && layer.paint) {
+          if (layer.id.startsWith('place_') || layer.id.startsWith('highway_name')) {
+            layer.paint['text-color'] = '#e2e8f0'
+            layer.paint['text-halo-color'] = '#050b0d'
+            layer.paint['text-halo-width'] = 1.6
           }
-          // Lighten place & street names for high contrast
-          if (layer.type === 'symbol' && layer.paint) {
-            if (layer.id.startsWith('place_') || layer.id.startsWith('highway_name')) {
-              layer.paint['text-color'] = '#e2e8f0'
-              layer.paint['text-halo-color'] = '#050b0d'
-              layer.paint['text-halo-width'] = 1.6
-            }
-          }
-        } else {
-          // Light Mode (Mild Green Palette)
-          if (layer.type === 'background' && layer.paint) {
-            layer.paint['background-color'] = '#f3f6f1'
-          }
-          if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
-            layer.paint['fill-color'] = '#b6d7d4'
-          }
-          if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
-            layer.paint['line-color'] = '#9ac2be'
-          }
-          if (layer.type === 'symbol' && layer.paint) {
-            if (layer.id.includes('place') || layer.id.includes('highway') || layer.id.includes('road')) {
-              layer.paint['text-color'] = '#1c3624'
-              layer.paint['text-halo-color'] = '#ffffff'
-              layer.paint['text-halo-width'] = 1.5
-            }
+        }
+      } else {
+        // Light Mode (Mild Green Palette)
+        if (layer.type === 'background' && layer.paint) {
+          layer.paint['background-color'] = '#f3f6f1'
+        }
+        if (layer.id === 'water' && layer.type === 'fill' && layer.paint) {
+          layer.paint['fill-color'] = '#b6d7d4'
+        }
+        if (layer.id === 'waterway' && layer.type === 'line' && layer.paint) {
+          layer.paint['line-color'] = '#9ac2be'
+        }
+        if (layer.type === 'symbol' && layer.paint) {
+          if (layer.id.includes('place') || layer.id.includes('highway') || layer.id.includes('road')) {
+            layer.paint['text-color'] = '#1c3624'
+            layer.paint['text-halo-color'] = '#ffffff'
+            layer.paint['text-halo-width'] = 1.5
           }
         }
       }
     }
-
-    return style
-  } catch {
-    return url
   }
+
+  const tileBounds = getBasemapTileBounds()
+  for (const source of Object.values(style.sources)) {
+    if (source.type === 'vector' || source.type === 'raster' || source.type === 'raster-dem') {
+      source.bounds = tileBounds
+    }
+  }
+
+  return style
 }
 
 function isWardFeatureCollection(value: unknown): value is WardFeatureCollection {
@@ -297,6 +307,9 @@ export function ChennaiMap() {
           style,
           center: [...MAP_CONFIG.fallbackCenter] as [number, number],
           zoom: MAP_CONFIG.fallbackZoom,
+          minZoom: MAP_CONFIG.minimumZoom,
+          maxZoom: MAP_CONFIG.maximumZoom,
+          maxBounds: MAP_CONFIG.viewportBounds,
           dragRotate: false,
           pitchWithRotate: false,
           attributionControl: { compact: true },

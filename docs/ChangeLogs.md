@@ -1,8 +1,9 @@
 # Change log
 
-## 2026-11-27 - Restore unrestricted map navigation
+## 2026-11-27 - Bound map navigation and basemap tile requests
 
-- Remove application-level zoom and viewport bounds while retaining Chennai as the initial view.
+- Restrict map navigation to the agreed Chennai-area rectangle and zoom range.
+- Apply the same extent to raster/vector tile sources so tiles outside the viewer area are not requested.
 
 ## 2026-11-27 - Preserve browser geometry precision optimization
 

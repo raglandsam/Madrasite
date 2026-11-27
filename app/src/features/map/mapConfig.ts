@@ -3,6 +3,9 @@ export type MapThemeMode = 'dark' | 'light'
 export const MAP_CONFIG = {
   fallbackCenter: [80.2707, 13.0827] as const,
   fallbackZoom: 10,
+  minimumZoom: 8,
+  maximumZoom: 18,
+  viewportBounds: [[79.55, 12.35], [81.2, 13.55]] as [[number, number], [number, number]],
   wardDataUrl: '/data/wards/chennai-wards.json',
   zoneDataUrl: '/data/wards/chennai-zones.json',
   wardSourceUrl: 'https://gisgcc.chennaicorporation.gov.in/server/rest/services/GCCDepts/EDPMobile2025/FeatureServer/2',
