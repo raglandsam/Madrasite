@@ -8,18 +8,4 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules/maplibre-gl')) {
-            return 'vendor-maplibre'
-          }
-          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
-            return 'vendor-react'
-          }
-        },
-      },
-    },
-  },
 })

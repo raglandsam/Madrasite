@@ -163,7 +163,7 @@ await Promise.all([
   writeFile(resolve(sourceDirectory, 'gcc-ward-boundaries-2025-metadata.json'), JSON.stringify(metadata, null, 2)),
   writeFile(resolve(canonicalDirectory, 'gcc-ward-boundaries-2025.geojson'), JSON.stringify(canonical)),
   writeFile(resolve(repositoryRoot, 'data/wards/validation-report.json'), JSON.stringify(report, null, 2)),
-  writeFile(resolve(browserDirectory, 'chennai-wards.json'), JSON.stringify(canonical)),
+  writeFile(resolve(browserDirectory, 'chennai-wards.geojson'), JSON.stringify(canonical)),
 ])
 
 console.log(`Imported and validated ${canonicalFeatures.length} GCC wards.`)
