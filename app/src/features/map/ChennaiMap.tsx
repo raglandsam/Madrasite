@@ -282,6 +282,9 @@ export function ChennaiMap() {
           style,
           center: [...MAP_CONFIG.fallbackCenter] as [number, number],
           zoom: MAP_CONFIG.fallbackZoom,
+          minZoom: MAP_CONFIG.minimumZoom,
+          maxZoom: MAP_CONFIG.maximumZoom,
+          maxBounds: MAP_CONFIG.viewportBounds,
           attributionControl: { compact: true },
         })
         mapRef.current = map

@@ -1,5 +1,9 @@
 # Change log
 
+## 2026-11-27 - Restore Chennai-area map navigation limits
+
+- Constrain zoom and panning to the documented Chennai metro-periphery viewer envelope; this is a UI constraint, not an official civic boundary.
+
 ## 2026-11-24 — Confirmed Ward 109 locality from GCC sources
 
 - Corrected Ward 109 from Gopalapuram to Choolaimedu in the supplied candidate list and ward profile data.
