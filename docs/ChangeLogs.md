@@ -1,5 +1,9 @@
 # Change log
 
+## 2026-11-27 - Match dark-mode overlays to main
+
+- Restore the main branch's dashed zone boundary and selected-ward fill opacity in dark mode.
+
 ## 2026-11-27 - Bound map navigation and basemap tile requests
 
 - Restrict map navigation to the agreed Chennai-area rectangle and zoom range.

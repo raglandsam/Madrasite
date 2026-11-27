@@ -29,7 +29,7 @@ export function updateWardLayerTheme(map: MapLibreMap, mode: MapThemeMode = 'dar
     map.setPaintProperty(WARD_FILL_LAYER_ID, 'fill-opacity', [
       'case',
       ['boolean', ['feature-state', 'selected'], false],
-      isLight ? 0.62 : 0.68,
+      isLight ? 0.62 : 0.58,
       ['boolean', ['feature-state', 'hover'], false],
       isLight ? 0.48 : 0.42,
       isLight ? 0.35 : 0.28,
@@ -69,7 +69,7 @@ export function updateZoneLayerTheme(map: MapLibreMap, mode: MapThemeMode = 'dar
     map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-color', isLight ? '#1a4320' : '#00e5c8')
     map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-width', 2.6)
     map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-opacity', 0.95)
-    map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-dasharray', isLight ? [3, 1] : undefined)
+    map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-dasharray', [3, 1])
   }
 }
 
