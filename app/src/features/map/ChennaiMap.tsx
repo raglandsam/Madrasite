@@ -176,6 +176,11 @@ async function loadBasemapStyle(mode: MapThemeMode, signal: AbortSignal): Promis
         }
       }
     }
+
+    // Keep symbol labels above geometry; the dark style interleaves the two.
+    const basemapGeometryLayers = style.layers.filter((layer) => layer.type !== 'symbol')
+    const basemapSymbolLayers = style.layers.filter((layer) => layer.type === 'symbol')
+    style.layers = [...basemapGeometryLayers, ...basemapSymbolLayers]
   }
 
   const tileBounds = getBasemapTileBounds()

@@ -1,5 +1,9 @@
 # Change log
 
+## 2026-11-27 - Prevent dark basemap layers obscuring overlays
+
+- Keep all basemap geometry below ward and zone overlays, with symbol labels above them, so dark-style roads and buildings cannot cover parts of the boundaries.
+
 ## 2026-11-27 - Keep dark-mode zone boundaries continuous
 
 - Remove the dark-mode dash pattern that made zone boundaries look fragmented; preserve the light-mode pattern and main-branch ward selection opacity.
