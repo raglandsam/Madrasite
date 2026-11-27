@@ -1,5 +1,9 @@
 # Change log
 
+## 2026-11-27 - Keep dark-mode zone boundaries continuous
+
+- Remove the dark-mode dash pattern that made zone boundaries look fragmented; preserve the light-mode pattern and main-branch ward selection opacity.
+
 ## 2026-11-27 - Match dark-mode overlays to main
 
 - Restore the main branch's dashed zone boundary and selected-ward fill opacity in dark mode.

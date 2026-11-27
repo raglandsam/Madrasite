@@ -69,7 +69,7 @@ export function updateZoneLayerTheme(map: MapLibreMap, mode: MapThemeMode = 'dar
     map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-color', isLight ? '#1a4320' : '#00e5c8')
     map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-width', 2.6)
     map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-opacity', 0.95)
-    map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-dasharray', [3, 1])
+    map.setPaintProperty(ZONE_OUTLINE_LAYER_ID, 'line-dasharray', isLight ? [3, 1] : undefined)
   }
 }
 
