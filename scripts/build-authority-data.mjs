@@ -15,6 +15,18 @@ for (const line of candidateText.split(/\r?\n/)) {
   const match = line.match(/Ward\s+(\d+)\s*:\s*(.+?)\s*$/i);
   if (match) nameByWard.set(Number(match[1]), match[2].trim());
 }
+const nameConfirmationRecords = readJson("data/authorities/source/gcc-ward-name-confirmations.json").records;
+const confirmedNameByWard = new Map();
+for (const record of nameConfirmationRecords) {
+  if (!Number.isInteger(record.wardNumber) || !record.name || !record.sourceDescription || !Array.isArray(record.sources) || record.sources.length === 0) {
+    throw new Error("Invalid official ward-name confirmation record.");
+  }
+  if (confirmedNameByWard.has(record.wardNumber)) {
+    throw new Error("Duplicate official ward-name confirmation for ward " + record.wardNumber);
+  }
+  confirmedNameByWard.set(record.wardNumber, record);
+  nameByWard.set(record.wardNumber, record.name);
+}
 nameByWard.set(190, "Ramchandra Nagar");
 
 const zoneNames = {
@@ -71,13 +83,14 @@ for (let wardNumber = 1; wardNumber <= 200; wardNumber++) {
   const rawAcNo = String(properties.ac_no ?? "").trim();
   const acNumber = /^\d+$/.test(rawAcNo) ? Number(rawAcNo) : null;
   const assembly = acNumber ? assemblies.find((item) => item.number === acNumber) : null;
+  const nameConfirmation = confirmedNameByWard.get(wardNumber);
   wards.push({
     wardNumber,
     wardId: String(properties.ward_id ?? ""),
-    name: nameByWard.get(wardNumber) ?? null,
-    nameStatus: nameByWard.has(wardNumber) ? "candidate" : "unknown",
-    nameConfirmed: nameByWard.has(wardNumber) ? "no" : null,
-    nameSource: wardNumber === 190 ? "User-supplied Ward 190 description (not independently confirmed)" : "User-supplied ward-name list (candidate labels)",
+    name: nameConfirmation?.name ?? nameByWard.get(wardNumber) ?? null,
+    nameStatus: nameConfirmation ? "confirmed" : nameByWard.has(wardNumber) ? "candidate" : "unknown",
+    nameConfirmed: nameConfirmation ? "yes" : nameByWard.has(wardNumber) ? "no" : null,
+    nameSource: nameConfirmation?.sourceDescription ?? (wardNumber === 190 ? "User-supplied Ward 190 description (not independently confirmed)" : "User-supplied ward-name list (candidate labels)"),
     zone: {
       number: Number(properties.zone),
       name: zoneNames[Number(properties.zone)] ?? null,
